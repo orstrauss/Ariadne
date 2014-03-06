@@ -25,6 +25,7 @@ import fr.obeo.ariadne.model.scm.Tag;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -233,9 +234,12 @@ public class GitExplorer extends AbstractAriadneExplorer {
 					for (Branch branch : branches) {
 						EcoreUtil.remove(branch);
 					}
-					List<Commit> commits = aRepository.getCommits();
-					for (Commit commit : commits) {
-						EcoreUtil.remove(commit);
+
+					List<Commit> commits = Collections.synchronizedList(aRepository.getCommits());
+					synchronized(commits) {
+						for (Commit commit : commits) {
+							EcoreUtil.remove(commit);
+						}
 					}
 
 					List<Tag> tags = aRepository.getTags();
