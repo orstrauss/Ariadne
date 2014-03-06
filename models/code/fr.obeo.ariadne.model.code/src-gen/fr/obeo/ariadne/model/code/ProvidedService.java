@@ -12,8 +12,6 @@ package fr.obeo.ariadne.model.code;
 
 import fr.obeo.ariadne.model.core.VersionedElement;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Provided Service</b></em>'.

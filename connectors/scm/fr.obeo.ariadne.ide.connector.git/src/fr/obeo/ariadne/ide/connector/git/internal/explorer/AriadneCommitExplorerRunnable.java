@@ -130,7 +130,7 @@ public class AriadneCommitExplorerRunnable implements Callable<AriadneCommitExpl
 			for (RevCommit parent : eGitCommit.getParents()) {
 				revWalk.parseBody(parent);
 			}
-			diffs = FileDiff.compute(treewalk, eGitCommit);
+			diffs = FileDiff.compute(repository, treewalk, eGitCommit);
 		} catch (MissingObjectException e) {
 			e.printStackTrace();
 		} catch (IncorrectObjectTypeException e) {

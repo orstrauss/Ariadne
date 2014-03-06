@@ -18,8 +18,6 @@ import fr.obeo.ariadne.model.code.Parameter;
 import fr.obeo.ariadne.model.code.Type;
 import fr.obeo.ariadne.model.code.VisibilityKind;
 
-import fr.obeo.ariadne.model.core.VersionedElement;
-
 import fr.obeo.ariadne.model.core.impl.VersionedElementImpl;
 
 import java.util.Collection;
@@ -468,6 +466,17 @@ public class OperationImpl extends VersionedElementImpl implements Operation
    * <!-- end-user-doc -->
    * @generated
    */
+  public Classifier basicGetClassifier()
+  {
+    if (eContainerFeatureID() != CodePackage.OPERATION__CLASSIFIER) return null;
+    return (Classifier)eInternalContainer();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetClassifier(Classifier newClassifier, NotificationChain msgs)
   {
     msgs = eBasicSetContainer((InternalEObject)newClassifier, CodePackage.OPERATION__CLASSIFIER, msgs);
@@ -635,7 +644,8 @@ public class OperationImpl extends VersionedElementImpl implements Operation
       case CodePackage.OPERATION__PARAMETERS:
         return getParameters();
       case CodePackage.OPERATION__CLASSIFIER:
-        return getClassifier();
+        if (resolve) return getClassifier();
+        return basicGetClassifier();
       case CodePackage.OPERATION__RETURN_TYPES:
         return getReturnTypes();
       case CodePackage.OPERATION__TYPES:
@@ -787,7 +797,7 @@ public class OperationImpl extends VersionedElementImpl implements Operation
       case CodePackage.OPERATION__PARAMETERS:
         return parameters != null && !parameters.isEmpty();
       case CodePackage.OPERATION__CLASSIFIER:
-        return getClassifier() != null;
+        return basicGetClassifier() != null;
       case CodePackage.OPERATION__RETURN_TYPES:
         return returnTypes != null && !returnTypes.isEmpty();
       case CodePackage.OPERATION__TYPES:

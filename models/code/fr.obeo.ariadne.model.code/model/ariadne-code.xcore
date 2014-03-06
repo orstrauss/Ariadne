@@ -88,7 +88,7 @@ class PrimitiveType extends Type {
 
 class Classifier extends Type {
 	ClassifierKind kind
-	boolean static
+	boolean ^static
 	boolean final
 	boolean immutable
 	boolean ^abstract
@@ -110,7 +110,7 @@ enum ClassifierKind {
 class Field extends VersionedElement {
 	String qualifiedName
 	VisibilityKind visibility
-	boolean static
+	boolean ^static
 	boolean ^abstract
 	boolean final
 	boolean immutable
@@ -123,7 +123,7 @@ class Field extends VersionedElement {
 class Constructor extends VersionedElement {
 	String qualifiedName
 	VisibilityKind visibility
-	boolean static
+	boolean ^static
 	boolean ^abstract
 	boolean final
 	boolean immutable
@@ -137,7 +137,7 @@ class Constructor extends VersionedElement {
 class Operation extends VersionedElement {
 	String qualifiedName
 	VisibilityKind visibility
-	boolean static
+	boolean ^static
 	boolean ^abstract
 	boolean final
 	boolean immutable

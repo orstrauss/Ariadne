@@ -266,6 +266,17 @@ public class ProjectImpl extends VersionedElementImpl implements Project
    * <!-- end-user-doc -->
    * @generated
    */
+  public Category basicGetCategory()
+  {
+    if (eContainerFeatureID() != OrganizationPackage.PROJECT__CATEGORY) return null;
+    return (Category)eInternalContainer();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetCategory(Category newCategory, NotificationChain msgs)
   {
     msgs = eBasicSetContainer((InternalEObject)newCategory, OrganizationPackage.PROJECT__CATEGORY, msgs);
@@ -380,7 +391,8 @@ public class ProjectImpl extends VersionedElementImpl implements Project
       case OrganizationPackage.PROJECT__REPOSITORIES:
         return getRepositories();
       case OrganizationPackage.PROJECT__CATEGORY:
-        return getCategory();
+        if (resolve) return getCategory();
+        return basicGetCategory();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -494,7 +506,7 @@ public class ProjectImpl extends VersionedElementImpl implements Project
       case OrganizationPackage.PROJECT__REPOSITORIES:
         return repositories != null && !repositories.isEmpty();
       case OrganizationPackage.PROJECT__CATEGORY:
-        return getCategory() != null;
+        return basicGetCategory() != null;
     }
     return super.eIsSet(featureID);
   }

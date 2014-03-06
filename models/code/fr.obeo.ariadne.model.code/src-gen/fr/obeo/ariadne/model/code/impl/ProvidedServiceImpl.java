@@ -13,22 +13,15 @@ package fr.obeo.ariadne.model.code.impl;
 import fr.obeo.ariadne.model.code.CodePackage;
 import fr.obeo.ariadne.model.code.ProvidedService;
 import fr.obeo.ariadne.model.code.ReferencedService;
-import fr.obeo.ariadne.model.code.Type;
 
 import fr.obeo.ariadne.model.core.impl.VersionedElementImpl;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -187,7 +180,6 @@ public class ProvidedServiceImpl extends VersionedElementImpl implements Provide
    * <!-- end-user-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {

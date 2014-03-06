@@ -13,7 +13,6 @@ package fr.obeo.ariadne.model.code.impl;
 import fr.obeo.ariadne.model.code.CodePackage;
 import fr.obeo.ariadne.model.code.ProvidedService;
 import fr.obeo.ariadne.model.code.ReferencedService;
-import fr.obeo.ariadne.model.code.Type;
 
 import fr.obeo.ariadne.model.core.impl.VersionedElementImpl;
 

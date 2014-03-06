@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see fr.obeo.ariadne.model.core.CoreFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/GenModel basePackage='fr.obeo.ariadne.model' editDirectory='/fr.obeo.ariadne.model.core.edit/src-gen' editorDirectory='/fr.obeo.ariadne.model.core.editor/src-gen' fileExtensions='ariadnecore' copyrightText='Copyright (c) 2012 Obeo.\r\nAll rights reserved. This program and the accompanying materials\r\nare made available under the terms of the Eclipse Public License v1.0\r\nwhich accompanies this distribution, and is available at\r\nhttp://www.eclipse.org/legal/epl-v10.html\r\n\r\nContributors:\r\n    Stephane Begaudeau (Obeo) - initial API and implementation'"
+ *        annotation="http://www.eclipse.org/emf/2002/GenModel editDirectory='/fr.obeo.ariadne.model.core.edit/src-gen' editorDirectory='/fr.obeo.ariadne.model.core.editor/src-gen' fileExtensions='ariadnecore' copyrightText='Copyright (c) 2012 Obeo.\r\nAll rights reserved. This program and the accompanying materials\r\nare made available under the terms of the Eclipse Public License v1.0\r\nwhich accompanies this distribution, and is available at\r\nhttp://www.eclipse.org/legal/epl-v10.html\r\n\r\nContributors:\r\n    Stephane Begaudeau (Obeo) - initial API and implementation' basePackage='fr.obeo.ariadne.model'"
  * @generated
  */
 public interface CorePackage extends EPackage

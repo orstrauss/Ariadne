@@ -17,8 +17,6 @@ import fr.obeo.ariadne.model.code.Parameter;
 import fr.obeo.ariadne.model.code.Type;
 import fr.obeo.ariadne.model.code.VisibilityKind;
 
-import fr.obeo.ariadne.model.core.VersionedElement;
-
 import fr.obeo.ariadne.model.core.impl.VersionedElementImpl;
 
 import java.util.Collection;
@@ -314,6 +312,17 @@ public class ParameterImpl extends VersionedElementImpl implements Parameter
    * <!-- end-user-doc -->
    * @generated
    */
+  public Operation basicGetOperation()
+  {
+    if (eContainerFeatureID() != CodePackage.PARAMETER__OPERATION) return null;
+    return (Operation)eInternalContainer();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetOperation(Operation newOperation, NotificationChain msgs)
   {
     msgs = eBasicSetContainer((InternalEObject)newOperation, CodePackage.PARAMETER__OPERATION, msgs);
@@ -416,7 +425,8 @@ public class ParameterImpl extends VersionedElementImpl implements Parameter
       case CodePackage.PARAMETER__ANNOTATIONS:
         return getAnnotations();
       case CodePackage.PARAMETER__OPERATION:
-        return getOperation();
+        if (resolve) return getOperation();
+        return basicGetOperation();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -517,7 +527,7 @@ public class ParameterImpl extends VersionedElementImpl implements Parameter
       case CodePackage.PARAMETER__ANNOTATIONS:
         return annotations != null && !annotations.isEmpty();
       case CodePackage.PARAMETER__OPERATION:
-        return getOperation() != null;
+        return basicGetOperation() != null;
     }
     return super.eIsSet(featureID);
   }

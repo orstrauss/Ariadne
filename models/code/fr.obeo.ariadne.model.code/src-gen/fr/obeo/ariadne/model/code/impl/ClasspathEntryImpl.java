@@ -242,6 +242,17 @@ public class ClasspathEntryImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
+  public Component basicGetComponent()
+  {
+    if (eContainerFeatureID() != CodePackage.CLASSPATH_ENTRY__COMPONENT) return null;
+    return (Component)eInternalContainer();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetComponent(Component newComponent, NotificationChain msgs)
   {
     msgs = eBasicSetContainer((InternalEObject)newComponent, CodePackage.CLASSPATH_ENTRY__COMPONENT, msgs);
@@ -342,7 +353,8 @@ public class ClasspathEntryImpl extends MinimalEObjectImpl.Container implements 
       case CodePackage.CLASSPATH_ENTRY__TYPES_CONTAINERS:
         return getTypesContainers();
       case CodePackage.CLASSPATH_ENTRY__COMPONENT:
-        return getComponent();
+        if (resolve) return getComponent();
+        return basicGetComponent();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -426,7 +438,7 @@ public class ClasspathEntryImpl extends MinimalEObjectImpl.Container implements 
       case CodePackage.CLASSPATH_ENTRY__TYPES_CONTAINERS:
         return typesContainers != null && !typesContainers.isEmpty();
       case CodePackage.CLASSPATH_ENTRY__COMPONENT:
-        return getComponent() != null;
+        return basicGetComponent() != null;
     }
     return super.eIsSet(featureID);
   }

@@ -38,7 +38,7 @@ public class CoreFactoryImpl extends EFactoryImpl implements CoreFactory
   {
     try
     {
-      CoreFactory theCoreFactory = (CoreFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.obeo.fr/dsl/Ariadne/Core"); 
+      CoreFactory theCoreFactory = (CoreFactory)EPackage.Registry.INSTANCE.getEFactory(CorePackage.eNS_URI);
       if (theCoreFactory != null)
       {
         return theCoreFactory;

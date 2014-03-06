@@ -39,7 +39,7 @@ public class ContinuousintegrationFactoryImpl extends EFactoryImpl implements Co
   {
     try
     {
-      ContinuousintegrationFactory theContinuousintegrationFactory = (ContinuousintegrationFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.obeo.fr/dsl/Ariadne/ContinuousIntegration"); 
+      ContinuousintegrationFactory theContinuousintegrationFactory = (ContinuousintegrationFactory)EPackage.Registry.INSTANCE.getEFactory(ContinuousintegrationPackage.eNS_URI);
       if (theContinuousintegrationFactory != null)
       {
         return theContinuousintegrationFactory;

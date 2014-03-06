@@ -39,7 +39,7 @@ public class OrganizationFactoryImpl extends EFactoryImpl implements Organizatio
   {
     try
     {
-      OrganizationFactory theOrganizationFactory = (OrganizationFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.obeo.fr/dsl/Ariadne/Organization"); 
+      OrganizationFactory theOrganizationFactory = (OrganizationFactory)EPackage.Registry.INSTANCE.getEFactory(OrganizationPackage.eNS_URI);
       if (theOrganizationFactory != null)
       {
         return theOrganizationFactory;

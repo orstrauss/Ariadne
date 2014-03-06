@@ -39,7 +39,7 @@ public class CodeFactoryImpl extends EFactoryImpl implements CodeFactory
   {
     try
     {
-      CodeFactory theCodeFactory = (CodeFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.obeo.fr/dsl/Ariadne/Code"); 
+      CodeFactory theCodeFactory = (CodeFactory)EPackage.Registry.INSTANCE.getEFactory(CodePackage.eNS_URI);
       if (theCodeFactory != null)
       {
         return theCodeFactory;

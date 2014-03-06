@@ -39,7 +39,7 @@ public class ScmFactoryImpl extends EFactoryImpl implements ScmFactory
   {
     try
     {
-      ScmFactory theScmFactory = (ScmFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.obeo.fr/dsl/Ariadne/SCM"); 
+      ScmFactory theScmFactory = (ScmFactory)EPackage.Registry.INSTANCE.getEFactory(ScmPackage.eNS_URI);
       if (theScmFactory != null)
       {
         return theScmFactory;

@@ -13,17 +13,9 @@ package fr.obeo.ariadne.model.code.impl;
 import fr.obeo.ariadne.model.code.CodePackage;
 import fr.obeo.ariadne.model.code.Resource;
 
-import fr.obeo.ariadne.model.core.VersionedElement;
-
 import fr.obeo.ariadne.model.core.impl.VersionedElementImpl;
 
-import java.util.Collection;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->

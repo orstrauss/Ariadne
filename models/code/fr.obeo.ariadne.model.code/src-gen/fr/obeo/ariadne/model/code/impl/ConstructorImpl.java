@@ -17,8 +17,6 @@ import fr.obeo.ariadne.model.code.Parameter;
 import fr.obeo.ariadne.model.code.Type;
 import fr.obeo.ariadne.model.code.VisibilityKind;
 
-import fr.obeo.ariadne.model.core.VersionedElement;
-
 import fr.obeo.ariadne.model.core.impl.VersionedElementImpl;
 
 import java.util.Collection;

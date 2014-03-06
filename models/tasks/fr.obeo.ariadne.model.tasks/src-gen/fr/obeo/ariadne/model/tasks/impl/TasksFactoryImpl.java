@@ -38,7 +38,7 @@ public class TasksFactoryImpl extends EFactoryImpl implements TasksFactory
   {
     try
     {
-      TasksFactory theTasksFactory = (TasksFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.obeo.fr/dsl/Ariadne/Tasks"); 
+      TasksFactory theTasksFactory = (TasksFactory)EPackage.Registry.INSTANCE.getEFactory(TasksPackage.eNS_URI);
       if (theTasksFactory != null)
       {
         return theTasksFactory;
