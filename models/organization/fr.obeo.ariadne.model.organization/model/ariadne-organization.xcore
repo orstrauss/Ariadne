@@ -29,6 +29,7 @@ import fr.obeo.ariadne.model.scm.Repository
 
 import fr.obeo.ariadne.model.tasks.Task
 import fr.obeo.ariadne.model.tasks.TasksRepository
+import eu.artist.reusevol.wcm.model.modeling.MegaModel
 
 class Organization {
 	String name
@@ -56,6 +57,7 @@ class Project extends VersionedElement {
 	refers Project[] dependentProjects
 	refers Repository[] repositories
 	container Category category opposite projects
+	contains MegaModel[] megaModels
 }
 
 class OrganizationDependency extends VersionedElement {

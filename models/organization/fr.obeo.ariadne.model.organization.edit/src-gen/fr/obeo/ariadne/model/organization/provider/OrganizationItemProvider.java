@@ -12,27 +12,18 @@ package fr.obeo.ariadne.model.organization.provider;
 
 
 import fr.obeo.ariadne.model.continuousintegration.ContinuousintegrationFactory;
-
 import fr.obeo.ariadne.model.core.CoreFactory;
-
 import fr.obeo.ariadne.model.organization.Organization;
 import fr.obeo.ariadne.model.organization.OrganizationFactory;
 import fr.obeo.ariadne.model.organization.OrganizationPackage;
-
 import fr.obeo.ariadne.model.scm.ScmFactory;
-
 import fr.obeo.ariadne.model.tasks.TasksFactory;
-
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;

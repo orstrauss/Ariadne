@@ -11,6 +11,7 @@
 package fr.obeo.ariadne.model.organization.provider;
 
 
+import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 import fr.obeo.ariadne.model.code.CodeFactory;
 
 import fr.obeo.ariadne.model.core.provider.VersionedElementItemProvider;
@@ -172,6 +173,7 @@ public class ProjectItemProvider
       childrenFeatures.add(OrganizationPackage.Literals.PROJECT__RUNTIME_ENVIRONMENTS);
       childrenFeatures.add(OrganizationPackage.Literals.PROJECT__SUB_PROJECTS);
       childrenFeatures.add(OrganizationPackage.Literals.PROJECT__RELEASES);
+      childrenFeatures.add(OrganizationPackage.Literals.PROJECT__MEGA_MODELS);
     }
     return childrenFeatures;
   }
@@ -236,6 +238,7 @@ public class ProjectItemProvider
       case OrganizationPackage.PROJECT__RUNTIME_ENVIRONMENTS:
       case OrganizationPackage.PROJECT__SUB_PROJECTS:
       case OrganizationPackage.PROJECT__RELEASES:
+      case OrganizationPackage.PROJECT__MEGA_MODELS:
         fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
         return;
     }
@@ -278,6 +281,11 @@ public class ProjectItemProvider
       (createChildParameter
         (OrganizationPackage.Literals.PROJECT__RELEASES,
          OrganizationFactory.eINSTANCE.createRelease()));
+
+    newChildDescriptors.add
+      (createChildParameter
+        (OrganizationPackage.Literals.PROJECT__MEGA_MODELS,
+         ModelingFactory.eINSTANCE.createMegaModel()));
   }
 
   /**

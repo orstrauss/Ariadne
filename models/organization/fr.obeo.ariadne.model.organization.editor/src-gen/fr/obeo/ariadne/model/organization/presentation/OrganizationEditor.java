@@ -124,6 +124,7 @@ import org.eclipse.emf.edit.ui.util.EditUIMarkerHelper;
 import org.eclipse.emf.edit.ui.util.EditUIUtil;
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 import fr.obeo.ariadne.model.organization.provider.OrganizationItemProviderAdapterFactory;
+import eu.artist.reusevol.wcm.model.modeling.provider.ModelingItemProviderAdapterFactory;
 import fr.obeo.ariadne.model.code.provider.CodeItemProviderAdapterFactory;
 import fr.obeo.ariadne.model.continuousintegration.provider.ContinuousintegrationItemProviderAdapterFactory;
 import fr.obeo.ariadne.model.core.provider.CoreItemProviderAdapterFactory;
@@ -755,11 +756,12 @@ public class OrganizationEditor
 
     adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
     adapterFactory.addAdapterFactory(new OrganizationItemProviderAdapterFactory());
-    adapterFactory.addAdapterFactory(new CodeItemProviderAdapterFactory());
-    adapterFactory.addAdapterFactory(new ScmItemProviderAdapterFactory());
-    adapterFactory.addAdapterFactory(new CoreItemProviderAdapterFactory());
     adapterFactory.addAdapterFactory(new TasksItemProviderAdapterFactory());
     adapterFactory.addAdapterFactory(new ContinuousintegrationItemProviderAdapterFactory());
+    adapterFactory.addAdapterFactory(new CoreItemProviderAdapterFactory());
+    adapterFactory.addAdapterFactory(new ModelingItemProviderAdapterFactory());
+    adapterFactory.addAdapterFactory(new CodeItemProviderAdapterFactory());
+    adapterFactory.addAdapterFactory(new ScmItemProviderAdapterFactory());
     adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
     // Create the command stack that will notify this editor as commands are executed.

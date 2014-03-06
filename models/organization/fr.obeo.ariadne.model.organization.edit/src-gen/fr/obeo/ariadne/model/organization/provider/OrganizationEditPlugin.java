@@ -10,6 +10,7 @@
  */
 package fr.obeo.ariadne.model.organization.provider;
 
+import eu.artist.reusevol.wcm.model.modeling.provider.ModelingEditPlugin;
 import fr.obeo.ariadne.model.code.provider.CodeEditPlugin;
 
 import fr.obeo.ariadne.model.continuousintegration.provider.ContinuousintegrationEditPlugin;
@@ -59,11 +60,12 @@ public final class OrganizationEditPlugin extends EMFPlugin
     super
       (new ResourceLocator [] 
        {
-         CodeEditPlugin.INSTANCE,
-         ScmEditPlugin.INSTANCE,
-         CoreEditPlugin.INSTANCE,
          TasksEditPlugin.INSTANCE,
          ContinuousintegrationEditPlugin.INSTANCE,
+         CoreEditPlugin.INSTANCE,
+         ModelingEditPlugin.INSTANCE,
+         CodeEditPlugin.INSTANCE,
+         ScmEditPlugin.INSTANCE,
        });
   }
 

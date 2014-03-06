@@ -235,6 +235,8 @@ public class GitExplorer extends AbstractAriadneExplorer {
 						EcoreUtil.remove(branch);
 					}
 
+					// I don't know why synchronization is necessary here, but omitting it causes a
+					// ConcurrentModificationException
 					List<Commit> commits = Collections.synchronizedList(aRepository.getCommits());
 					synchronized(commits) {
 						for (Commit commit : commits) {

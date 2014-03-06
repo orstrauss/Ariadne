@@ -10,6 +10,8 @@
  */
 package fr.obeo.ariadne.model.organization.impl;
 
+import eu.artist.reusevol.wcm.model.modeling.ModelingPackage;
+
 import fr.obeo.ariadne.model.code.CodePackage;
 
 import fr.obeo.ariadne.model.continuousintegration.ContinuousintegrationPackage;
@@ -137,10 +139,11 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     isInited = true;
 
     // Initialize simple dependencies
-    CodePackage.eINSTANCE.eClass();
-    ScmPackage.eINSTANCE.eClass();
     TasksPackage.eINSTANCE.eClass();
     ContinuousintegrationPackage.eINSTANCE.eClass();
+    ModelingPackage.eINSTANCE.eClass();
+    CodePackage.eINSTANCE.eClass();
+    ScmPackage.eINSTANCE.eClass();
 
     // Create package meta-data objects
     theOrganizationPackage.createPackageContents();
@@ -382,6 +385,16 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getProject_MegaModels()
+  {
+    return (EReference)projectEClass.getEStructuralFeatures().get(8);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getOrganizationDependency()
   {
     return organizationDependencyEClass;
@@ -531,6 +544,7 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     createEReference(projectEClass, PROJECT__DEPENDENT_PROJECTS);
     createEReference(projectEClass, PROJECT__REPOSITORIES);
     createEReference(projectEClass, PROJECT__CATEGORY);
+    createEReference(projectEClass, PROJECT__MEGA_MODELS);
 
     organizationDependencyEClass = createEClass(ORGANIZATION_DEPENDENCY);
     createEAttribute(organizationDependencyEClass, ORGANIZATION_DEPENDENCY__ORGANIZATION_DEPENDENCY_KINDS);
@@ -578,6 +592,7 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     ContinuousintegrationPackage theContinuousintegrationPackage = (ContinuousintegrationPackage)EPackage.Registry.INSTANCE.getEPackage(ContinuousintegrationPackage.eNS_URI);
     TasksPackage theTasksPackage = (TasksPackage)EPackage.Registry.INSTANCE.getEPackage(TasksPackage.eNS_URI);
     CodePackage theCodePackage = (CodePackage)EPackage.Registry.INSTANCE.getEPackage(CodePackage.eNS_URI);
+    ModelingPackage theModelingPackage = (ModelingPackage)EPackage.Registry.INSTANCE.getEPackage(ModelingPackage.eNS_URI);
 
     // Create type parameters
 
@@ -614,6 +629,7 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     initEReference(getProject_DependentProjects(), this.getProject(), null, "dependentProjects", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProject_Repositories(), theScmPackage.getRepository(), null, "repositories", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProject_Category(), this.getCategory(), this.getCategory_Projects(), "category", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getProject_MegaModels(), theModelingPackage.getMegaModel(), null, "megaModels", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(organizationDependencyEClass, OrganizationDependency.class, "OrganizationDependency", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getOrganizationDependency_OrganizationDependencyKinds(), this.getOrganizationDependencyKind(), "organizationDependencyKinds", null, 0, -1, OrganizationDependency.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
