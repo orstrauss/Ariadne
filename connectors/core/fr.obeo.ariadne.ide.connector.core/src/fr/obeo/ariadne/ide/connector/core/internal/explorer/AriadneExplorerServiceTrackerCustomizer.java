@@ -55,6 +55,7 @@ public class AriadneExplorerServiceTrackerCustomizer implements ServiceTrackerCu
 	 */
 	@Override
 	public AbstractAriadneExplorer addingService(ServiceReference<Object> reference) {
+		System.out.println("Service: " + reference.toString());
 		Object service = this.context.getService(reference);
 		if (service instanceof AbstractAriadneExplorer) {
 			this.explorers.add((AbstractAriadneExplorer)service);

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated rcm-modeling -->
+      <package
+            uri="http://www.artist-project.eu/wcm/modeling"
+            class="eu.artist.reusevol.wcm.model.modeling.ModelingPackage"
+            genModel="model/rcm-modeling.xcore"/>
+   </extension>
+
+</plugin>

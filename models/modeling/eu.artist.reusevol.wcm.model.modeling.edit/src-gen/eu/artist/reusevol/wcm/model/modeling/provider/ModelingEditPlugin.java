@@ -1,37 +1,29 @@
 /**
- * Copyright (c) 2012 Obeo.
+ * Copyright (c) 2014 ARTIST Project.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contributors:
- *     Stephane Begaudeau (Obeo) - initial API and implementation
+ *     Oliver Strauﬂ (Fraunhofer IAO) - Modeling extension
+ *     Stephane Begaudeau (Obeo)      - Initial framework
  */
-package fr.obeo.ariadne.model.organization.provider;
-
-import eu.artist.reusevol.wcm.model.modeling.provider.ModelingEditPlugin;
-import fr.obeo.ariadne.model.code.provider.CodeEditPlugin;
-
-import fr.obeo.ariadne.model.continuousintegration.provider.ContinuousintegrationEditPlugin;
+package eu.artist.reusevol.wcm.model.modeling.provider;
 
 import fr.obeo.ariadne.model.core.provider.CoreEditPlugin;
-
-import fr.obeo.ariadne.model.scm.provider.ScmEditPlugin;
-
-import fr.obeo.ariadne.model.tasks.provider.TasksEditPlugin;
 
 import org.eclipse.emf.common.EMFPlugin;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
 /**
- * This is the central singleton for the Organization edit plugin.
+ * This is the central singleton for the Modeling edit plugin.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public final class OrganizationEditPlugin extends EMFPlugin
+public final class ModelingEditPlugin extends EMFPlugin
 {
   /**
    * Keep track of the singleton.
@@ -39,7 +31,7 @@ public final class OrganizationEditPlugin extends EMFPlugin
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final OrganizationEditPlugin INSTANCE = new OrganizationEditPlugin();
+  public static final ModelingEditPlugin INSTANCE = new ModelingEditPlugin();
 
   /**
    * Keep track of the singleton.
@@ -55,17 +47,12 @@ public final class OrganizationEditPlugin extends EMFPlugin
    * <!-- end-user-doc -->
    * @generated
    */
-  public OrganizationEditPlugin()
+  public ModelingEditPlugin()
   {
     super
       (new ResourceLocator [] 
        {
-         CodeEditPlugin.INSTANCE,
-         TasksEditPlugin.INSTANCE,
          CoreEditPlugin.INSTANCE,
-         ContinuousintegrationEditPlugin.INSTANCE,
-         ScmEditPlugin.INSTANCE,
-         ModelingEditPlugin.INSTANCE,
        });
   }
 

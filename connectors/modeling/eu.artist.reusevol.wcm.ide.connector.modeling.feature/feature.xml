@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="eu.artist.reusevol.wcm.ide.connector.modeling.feature"
+      label="%featureName"
+      version="1.0.0.qualifier"
+      provider-name="%providerName">
+
+   <description>
+      Extension of http://sbegaudeau.github.com/Ariadne
+
+%description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="epl-v10.html">
+      %license
+   </license>
+
+   <plugin
+         id="eu.artist.reusevol.wcm.ide.connector.modeling"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

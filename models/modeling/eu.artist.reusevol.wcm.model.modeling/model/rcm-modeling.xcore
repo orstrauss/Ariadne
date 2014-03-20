@@ -1,0 +1,83 @@
+@Ecore(nsURI="http://www.artist-project.eu/wcm/modeling", nsPrefix="wcm-modeling")
+@GenModel(editDirectory="/eu.artist.reusevol.wcm.model.modeling.edit/src-gen")
+@GenModel(editorDirectory="/eu.artist.reusevol.wcm.model.modeling.editor/src-gen")
+@GenModel(fileExtensions="wcmmodel")
+@GenModel(copyrightText="Copyright (c) 2014 ARTIST Project.
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+
+Contributors:
+    Oliver Strauﬂ (Fraunhofer IAO) - Modeling extension
+    Stephane Begaudeau (Obeo)      - Initial framework")
+
+package eu.artist.reusevol.wcm.model.modeling
+
+import fr.obeo.ariadne.model.core.VersionedElement
+
+abstract class Element extends VersionedElement {
+	String identifier
+	refers Relationship[] relatedTo opposite linked
+	refers DirectedRelationship[] sourceOf opposite sources
+	refers DirectedRelationship[] targetOf opposite targets
+}
+
+class Entity extends Element { 	
+	refers MegaModel megaModel opposite elements
+}
+
+class Model extends Entity {
+	String namespaceUri	
+	refers ReferenceModel conformsTo opposite specifies
+}
+
+class ReferenceModel extends Model {
+	refers ReferenceModel[] ^extends
+	refers Model[] specifies opposite conformsTo
+}
+
+class MetaMetaModel extends ReferenceModel {
+	
+}
+
+class MetaModel extends ReferenceModel {
+	
+}
+
+class TerminalModel extends Model {
+ 
+}
+
+class WeavingModel extends TerminalModel {
+	
+}
+
+class TransformationModel extends TerminalModel {
+	
+}
+
+class MegaModel extends TerminalModel {
+	contains Entity[] elements opposite megaModel
+}
+
+class Relationship extends Element {
+	refers Element[] linked opposite relatedTo
+}
+
+abstract class DirectedRelationship extends Relationship {
+	refers Element[] sources opposite sourceOf 
+	refers Element[] targets opposite targetOf 
+}
+
+class Transformation extends DirectedRelationship {
+	refers TransformationModel model
+	refers ReferenceModel[] sourceReferenceModelbindings
+	refers ReferenceModel[] targetReferenceModelbindings
+}
+
+class TransformationRecord extends DirectedRelationship {
+	refers Transformation transformation
+	refers Model[] sourceModelbindings
+	refers Model[] targetModelbindings
+}
