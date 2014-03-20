@@ -9,6 +9,7 @@ package eu.artist.reusevol.wcm.ide.connector.modeling.scanner;
 
 import eu.artist.reusevol.wcm.ide.connector.modeling.utils.XMLInfoExtractionHandler;
 import eu.artist.reusevol.wcm.model.modeling.Artefact;
+import eu.artist.reusevol.wcm.model.modeling.Model;
 import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 
 import java.io.FileNotFoundException;
@@ -19,9 +20,12 @@ import org.eclipse.core.runtime.CoreException;
 import org.xml.sax.SAXException;
 
 /**
+ * A scanner for UML2 models.
+ * 
  * @author Oliver Strauﬂ
  */
-public class XMLContentTypeScanner implements IContentTypeScanner {
+public class UML2ContentTypeScanner implements IContentTypeScanner {
+	public static final String ID = "org.eclipse.uml2.uml"; //$NON-NLS-1$
 
 	/**
 	 * {@inheritDoc}
@@ -30,7 +34,7 @@ public class XMLContentTypeScanner implements IContentTypeScanner {
 	 */
 	@Override
 	public String contentTypeId() {
-		return "org.eclipse.core.runtime.xml"; //$NON-NLS-1$
+		return ID;
 	}
 
 	/**
@@ -40,13 +44,10 @@ public class XMLContentTypeScanner implements IContentTypeScanner {
 	 */
 	@Override
 	public Artefact exploreContent(IFile file) {
-		Artefact result = ModelingFactory.eINSTANCE.createArtefact();
-		result.setName(file.getName());
-		result.setIdentifier(file.getFullPath().toPortableString());
-
+		Model result = ModelingFactory.eINSTANCE.createModel();
 		try {
 			XMLInfoExtractionHandler handler = XMLInfoExtractionHandler.getInfo(file.getContents());
-			result.setDescription(handler.getPrefixes().get(""));
+			result.setDescription(handler.getPrefixes().get("uml"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {
@@ -57,6 +58,8 @@ public class XMLContentTypeScanner implements IContentTypeScanner {
 			e.printStackTrace();
 		}
 
+		result.setName(file.getName());
+		result.setIdentifier(file.getProjectRelativePath().toPortableString());
 		return result;
 	}
 }

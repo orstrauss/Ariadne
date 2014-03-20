@@ -9,7 +9,7 @@
 
 package eu.artist.reusevol.wcm.ide.connector.modeling.scanner;
 
-import eu.artist.reusevol.wcm.model.modeling.Entity;
+import eu.artist.reusevol.wcm.model.modeling.Artefact;
 
 import org.eclipse.core.resources.IFile;
 
@@ -35,5 +35,5 @@ public interface IContentTypeScanner {
 	 *            input file
 	 * @return an entity of the WCM model containing the extracted information
 	 */
-	public Entity exploreContent(IFile file);
+	public Artefact exploreContent(IFile file);
 }

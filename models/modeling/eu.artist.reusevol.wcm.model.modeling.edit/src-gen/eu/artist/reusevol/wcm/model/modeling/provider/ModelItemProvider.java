@@ -38,7 +38,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class ModelItemProvider
-  extends EntityItemProvider
+  extends ArtefactItemProvider
   implements
     IEditingDomainItemProvider,
     IStructuredItemContentProvider,

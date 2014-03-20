@@ -12,16 +12,14 @@
 package eu.artist.reusevol.wcm.model.modeling.provider;
 
 
-import eu.artist.reusevol.wcm.model.modeling.Entity;
+import eu.artist.reusevol.wcm.model.modeling.Artefact;
 
-import eu.artist.reusevol.wcm.model.modeling.ModelingPackage;
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
@@ -30,12 +28,12 @@ import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
 /**
- * This is the item provider adapter for a {@link eu.artist.reusevol.wcm.model.modeling.Entity} object.
+ * This is the item provider adapter for a {@link eu.artist.reusevol.wcm.model.modeling.Artefact} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class EntityItemProvider
+public class ArtefactItemProvider
   extends ElementItemProvider
   implements
     IEditingDomainItemProvider,
@@ -50,7 +48,7 @@ public class EntityItemProvider
    * <!-- end-user-doc -->
    * @generated
    */
-  public EntityItemProvider(AdapterFactory adapterFactory)
+  public ArtefactItemProvider(AdapterFactory adapterFactory)
   {
     super(adapterFactory);
   }
@@ -68,36 +66,12 @@ public class EntityItemProvider
     {
       super.getPropertyDescriptors(object);
 
-      addMegaModelPropertyDescriptor(object);
     }
     return itemPropertyDescriptors;
   }
 
   /**
-   * This adds a property descriptor for the Mega Model feature.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void addMegaModelPropertyDescriptor(Object object)
-  {
-    itemPropertyDescriptors.add
-      (createItemPropertyDescriptor
-        (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-         getResourceLocator(),
-         getString("_UI_Entity_megaModel_feature"),
-         getString("_UI_PropertyDescriptor_description", "_UI_Entity_megaModel_feature", "_UI_Entity_type"),
-         ModelingPackage.Literals.ENTITY__MEGA_MODEL,
-         true,
-         false,
-         true,
-         null,
-         null,
-         null));
-  }
-
-  /**
-   * This returns Entity.gif.
+   * This returns Artefact.gif.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -105,7 +79,7 @@ public class EntityItemProvider
   @Override
   public Object getImage(Object object)
   {
-    return overlayImage(object, getResourceLocator().getImage("full/obj16/Entity"));
+    return overlayImage(object, getResourceLocator().getImage("full/obj16/Artefact"));
   }
 
   /**
@@ -117,10 +91,10 @@ public class EntityItemProvider
   @Override
   public String getText(Object object)
   {
-    String label = ((Entity)object).getName();
+    String label = ((Artefact)object).getName();
     return label == null || label.length() == 0 ?
-      getString("_UI_Entity_type") :
-      getString("_UI_Entity_type") + " " + label;
+      getString("_UI_Artefact_type") :
+      getString("_UI_Artefact_type") + " " + label;
   }
 
   /**

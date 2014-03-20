@@ -23,11 +23,11 @@ abstract class Element extends VersionedElement {
 	refers DirectedRelationship[] targetOf opposite targets
 }
 
-class Entity extends Element { 	
-	refers MegaModel megaModel opposite elements
+class Artefact extends Element { 	
+	
 }
 
-class Model extends Entity {
+class Model extends Artefact {
 	String namespaceUri	
 	refers ReferenceModel conformsTo opposite specifies
 }
@@ -58,7 +58,7 @@ class TransformationModel extends TerminalModel {
 }
 
 class MegaModel extends TerminalModel {
-	contains Entity[] elements opposite megaModel
+	contains Artefact[] elements
 }
 
 class Relationship extends Element {

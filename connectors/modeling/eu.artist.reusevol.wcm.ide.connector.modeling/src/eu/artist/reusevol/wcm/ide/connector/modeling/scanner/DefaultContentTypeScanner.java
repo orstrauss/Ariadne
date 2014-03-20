@@ -7,15 +7,18 @@
  *******************************************************************************/
 package eu.artist.reusevol.wcm.ide.connector.modeling.scanner;
 
-import eu.artist.reusevol.wcm.model.modeling.Entity;
+import eu.artist.reusevol.wcm.model.modeling.Artefact;
 import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 
 import org.eclipse.core.resources.IFile;
 
 /**
+ * Default scanner that is used if no other scanner has matched.
+ * 
  * @author Oliver Strauﬂ
  */
 public class DefaultContentTypeScanner implements IContentTypeScanner {
+	public static final String ID = "default"; //$NON-NLS-1$
 
 	/**
 	 * {@inheritDoc}
@@ -24,7 +27,7 @@ public class DefaultContentTypeScanner implements IContentTypeScanner {
 	 */
 	@Override
 	public String contentTypeId() {
-		return "default"; //$NON-NLS-1$
+		return ID;
 	}
 
 	/**
@@ -33,8 +36,8 @@ public class DefaultContentTypeScanner implements IContentTypeScanner {
 	 * @see eu.artist.reusevol.wcm.ide.connector.modeling.scanner.IContentTypeScanner#exploreContent(org.eclipse.core.resources.IFile)
 	 */
 	@Override
-	public Entity exploreContent(IFile file) {
-		Entity result = ModelingFactory.eINSTANCE.createEntity();
+	public Artefact exploreContent(IFile file) {
+		Artefact result = ModelingFactory.eINSTANCE.createArtefact();
 		result.setName(file.getName());
 		result.setIdentifier(file.getProjectRelativePath().toPortableString());
 		return result;

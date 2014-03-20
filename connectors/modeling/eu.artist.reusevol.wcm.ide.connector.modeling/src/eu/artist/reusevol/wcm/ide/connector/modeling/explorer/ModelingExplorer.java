@@ -9,9 +9,9 @@
 
 package eu.artist.reusevol.wcm.ide.connector.modeling.explorer;
 
-import eu.artist.reusevol.wcm.ide.connector.modeling.scanner.ContentTypeExplorerManager;
+import eu.artist.reusevol.wcm.ide.connector.modeling.scanner.ContentTypeScannerManager;
 import eu.artist.reusevol.wcm.ide.connector.modeling.utils.ModelingConnectorMessage;
-import eu.artist.reusevol.wcm.model.modeling.Entity;
+import eu.artist.reusevol.wcm.model.modeling.Artefact;
 import eu.artist.reusevol.wcm.model.modeling.MegaModel;
 import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 
@@ -26,6 +26,8 @@ import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IResourceVisitor;
+import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
@@ -39,10 +41,10 @@ import org.eclipse.emf.ecore.resource.Resource;
  */
 public class ModelingExplorer extends AbstractAriadneExplorer {
 
-	private final ContentTypeExplorerManager manager;
+	private final ContentTypeScannerManager manager;
 
 	public ModelingExplorer() {
-		this.manager = new ContentTypeExplorerManager();
+		this.manager = new ContentTypeScannerManager();
 	}
 
 	/**
@@ -118,21 +120,46 @@ public class ModelingExplorer extends AbstractAriadneExplorer {
 		MegaModel wcModel = this.getOrCreateMegaModel(project);
 
 		try {
-			IResource[] resources = project.members();
-			for (IResource resource : resources) {
-				if (resource instanceof IContainer) {
-					continue;
-				}
-				IFile file = (IFile)resource;
-				Entity entity = manager.exploreFile(file);
-				System.out.println("Entity: " + entity); //$NON-NLS-1$
-				wcModel.getElements().add(entity);
-			}
+			ExplorationVisitor visitor = new ExplorationVisitor(wcModel);
+			project.accept(visitor);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 		return wcModel;
+	}
+
+	private class ExplorationVisitor implements IResourceVisitor {
+		private final MegaModel wcModel;
+
+		public ExplorationVisitor(MegaModel model) {
+			this.wcModel = model;
+		}
+
+		@Override
+		public boolean visit(IResource resource) {
+			// Skip folders
+			if (resource instanceof IContainer) {
+				return true;
+			}
+
+			// System.out.println("V : Visiting " + resource.getFullPath()); //$NON-NLS-1$
+			IFile file = (IFile)resource;
+
+			Artefact entity;
+			try {
+				entity = manager.exploreFile(file);
+				if (entity != null) {
+					wcModel.getElements().add(entity);
+					System.out.println("Entity: " + entity); //$NON-NLS-1$
+				}
+
+			} catch (CoreException e) {
+				e.printStackTrace();
+			}
+
+			return true;
+		}
 	}
 
 	/**
@@ -149,6 +176,10 @@ public class ModelingExplorer extends AbstractAriadneExplorer {
 		for (MegaModel aModel : models) {
 			if (project.getName().equals(aModel.getIdentifier())) {
 				model = aModel;
+
+				// Delete previous content since we are doing a full scan.
+				model.getElements().clear();
+
 				break;
 			}
 		}
@@ -160,5 +191,4 @@ public class ModelingExplorer extends AbstractAriadneExplorer {
 		}
 		return model;
 	}
-
 }

@@ -7,7 +7,7 @@
  *******************************************************************************/
 package eu.artist.reusevol.wcm.ide.connector.modeling.scanner;
 
-import eu.artist.reusevol.wcm.model.modeling.Entity;
+import eu.artist.reusevol.wcm.model.modeling.Artefact;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,14 +23,15 @@ import org.eclipse.core.runtime.content.IContentType;
  * 
  * @author Oliver Strauﬂ
  */
-public class ContentTypeExplorerManager {
+public class ContentTypeScannerManager {
 	private final Map<String, IContentTypeScanner> explorers;
 
-	public ContentTypeExplorerManager() {
+	public ContentTypeScannerManager() {
 		this.explorers = new HashMap<String, IContentTypeScanner>();
 
 		register(new DefaultContentTypeScanner());
 		register(new XMLContentTypeScanner());
+		register(new UML2ContentTypeScanner());
 	}
 
 	public void register(IContentTypeScanner explorer) {
@@ -41,7 +42,7 @@ public class ContentTypeExplorerManager {
 		explorers.remove(explorer.contentTypeId());
 	}
 
-	public Entity exploreFile(IFile file) throws CoreException {
+	public Artefact exploreFile(IFile file) throws CoreException {
 		IContentDescription contentDescription = file.getContentDescription();
 
 		if (contentDescription != null) {
@@ -55,8 +56,8 @@ public class ContentTypeExplorerManager {
 				contentType = contentType.getBaseType();
 			}
 		}
-		System.out.println("default.");
+		System.out.println();
 
-		return explorers.get("default").exploreContent(file);
+		return null; // explorers.get(DefaultContentTypeScanner.ID).exploreContent(file);
 	}
 }

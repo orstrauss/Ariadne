@@ -171,7 +171,7 @@ public class MegaModelItemProvider
     newChildDescriptors.add
       (createChildParameter
         (ModelingPackage.Literals.MEGA_MODEL__ELEMENTS,
-         ModelingFactory.eINSTANCE.createEntity()));
+         ModelingFactory.eINSTANCE.createArtefact()));
 
     newChildDescriptors.add
       (createChildParameter

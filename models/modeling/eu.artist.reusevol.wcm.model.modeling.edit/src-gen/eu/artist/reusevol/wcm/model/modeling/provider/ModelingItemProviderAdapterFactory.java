@@ -83,28 +83,28 @@ public class ModelingItemProviderAdapterFactory extends ModelingAdapterFactory i
   }
 
   /**
-   * This keeps track of the one adapter used for all {@link eu.artist.reusevol.wcm.model.modeling.Entity} instances.
+   * This keeps track of the one adapter used for all {@link eu.artist.reusevol.wcm.model.modeling.Artefact} instances.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected EntityItemProvider entityItemProvider;
+  protected ArtefactItemProvider artefactItemProvider;
 
   /**
-   * This creates an adapter for a {@link eu.artist.reusevol.wcm.model.modeling.Entity}.
+   * This creates an adapter for a {@link eu.artist.reusevol.wcm.model.modeling.Artefact}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
   @Override
-  public Adapter createEntityAdapter()
+  public Adapter createArtefactAdapter()
   {
-    if (entityItemProvider == null)
+    if (artefactItemProvider == null)
     {
-      entityItemProvider = new EntityItemProvider(this);
+      artefactItemProvider = new ArtefactItemProvider(this);
     }
 
-    return entityItemProvider;
+    return artefactItemProvider;
   }
 
   /**
@@ -493,7 +493,7 @@ public class ModelingItemProviderAdapterFactory extends ModelingAdapterFactory i
    */
   public void dispose()
   {
-    if (entityItemProvider != null) entityItemProvider.dispose();
+    if (artefactItemProvider != null) artefactItemProvider.dispose();
     if (modelItemProvider != null) modelItemProvider.dispose();
     if (referenceModelItemProvider != null) referenceModelItemProvider.dispose();
     if (metaMetaModelItemProvider != null) metaMetaModelItemProvider.dispose();
