@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
+   <category-def name="fr.obeo.ariadne.model" label="Ariadne Models">
+      <description>
+         This category contains all the data structure manipulated by Ariadne connectors.
+      </description>
+   </category-def>
+
    <feature url="features/fr.obeo.ariadne.model.code.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.model.code.feature" version="1.0.0.qualifier">
       <category name="fr.obeo.ariadne.model"/>
    </feature>
@@ -18,9 +24,43 @@
    <feature url="features/fr.obeo.ariadne.model.tasks.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.model.tasks.feature" version="1.0.0.qualifier">
       <category name="fr.obeo.ariadne.model"/>
    </feature>
-   <category-def name="fr.obeo.ariadne.model" label="Ariadne Models">
+   
+   <category-def name="fr.obeo.ariadne.connectors" label="Ariadne connectors">
       <description>
-         This category contains all the data structure manipulated by Ariadne connectors.
+         This category contains all the Ariadne connectors.
       </description>
    </category-def>
+   <feature url="features/fr.obeo.ariadne.ide.connector.core.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.ide.connector.core.feature" version="1.0.0.qualifier">
+      <category name="fr.obeo.ariadne.connectors"/>
+   </feature>
+   <feature url="features/fr.obeo.ariadne.ide.connector.git.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.ide.connector.git.feature" version="1.0.0.qualifier">
+      <category name="fr.obeo.ariadne.connectors"/>
+   </feature>
+   <feature url="features/fr.obeo.ariadne.ide.connector.java.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.ide.connector.java.feature" version="1.0.0.qualifier">
+      <category name="fr.obeo.ariadne.connectors"/>
+   </feature>
+   <feature url="features/fr.obeo.ariadne.ide.connector.mylyn.build.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.ide.connector.mylyn.build.feature" version="1.0.0.qualifier">
+      <category name="fr.obeo.ariadne.connectors"/>
+   </feature>
+   <feature url="features/fr.obeo.ariadne.ide.connector.mylyn.tasks.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.ide.connector.mylyn.tasks.feature" version="1.0.0.qualifier">
+      <category name="fr.obeo.ariadne.connectors"/>
+   </feature>
+   <feature url="features/fr.obeo.ariadne.ide.connector.pde.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.ide.connector.pde.feature" version="1.0.0.qualifier">
+      <category name="fr.obeo.ariadne.connectors"/>
+   </feature>
+   <feature url="features/fr.obeo.ariadne.ide.connector.pde.feature_1.0.0.qualifier.jar" id="fr.obeo.ariadne.ide.connector.pde.feature" version="1.0.0.qualifier">
+      <category name="fr.obeo.ariadne.connectors"/>
+   </feature>
+   
+   <category-def name="eu.artist.reusevol.ace" label="ARTIST Artefact Context Explorer">
+      <description>
+         This category contains all extensions of the ARTIST Artefact Context Explorer.
+      </description>
+   </category-def>
+   <feature url="features/eu.artist.reusevol.wcm.model.modeling.feature_1.0.0.qualifier.jar" id="eu.artist.reusevol.wcm.model.modeling.feature" version="1.0.0.qualifier">
+      <category name="eu.artist.reusevol.ace"/>
+   </feature>
+   <feature url="features/eu.artist.reusevol.wcm.ide.connector.modeling.feature_1.0.0.qualifier.jar" id="eu.artist.reusevol.wcm.ide.connector.modeling.feature" version="1.0.0.qualifier">
+      <category name="eu.artist.reusevol.ace"/>
+   </feature>
 </site>
