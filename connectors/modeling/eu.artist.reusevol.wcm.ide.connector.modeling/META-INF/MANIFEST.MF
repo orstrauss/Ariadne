@@ -14,10 +14,10 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.team.core,
  org.eclipse.core.filesystem,
  fr.obeo.ariadne.ide.connector.core,
- fr.obeo.ariadne.model.core;bundle-version="1.0.0",
- fr.obeo.ariadne.model.code;bundle-version="1.0.0",
- fr.obeo.ariadne.model.organization;bundle-version="1.0.0",
- fr.obeo.ariadne.model.common;bundle-version="1.0.0",
- eu.artist.reusevol.wcm.model.modeling;bundle-version="1.0.0"
+ fr.obeo.ariadne.model.core,
+ fr.obeo.ariadne.model.code,
+ fr.obeo.ariadne.model.organization,
+ fr.obeo.ariadne.model.common,
+ eu.artist.reusevol.wcm.model.modeling
 Bundle-ActivationPolicy: lazy
 Service-Component: OSGI-INF/component.xml

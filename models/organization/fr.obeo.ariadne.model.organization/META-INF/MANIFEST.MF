@@ -17,7 +17,7 @@ Require-Bundle: org.eclipse.core.runtime,
  fr.obeo.ariadne.model.core;visibility:=reexport,
  fr.obeo.ariadne.model.scm;visibility:=reexport,
  fr.obeo.ariadne.model.code;visibility:=reexport,
- fr.obeo.ariadne.model.tasks,
- fr.obeo.ariadne.model.continuousintegration,
- eu.artist.reusevol.wcm.model.modeling;bundle-version="1.0.0"
+ fr.obeo.ariadne.model.tasks;visibility:=reexport,
+ fr.obeo.ariadne.model.continuousintegration;visibility:=reexport,
+ eu.artist.reusevol.wcm.model.modeling;visibility:=reexport
 Bundle-ActivationPolicy: lazy
