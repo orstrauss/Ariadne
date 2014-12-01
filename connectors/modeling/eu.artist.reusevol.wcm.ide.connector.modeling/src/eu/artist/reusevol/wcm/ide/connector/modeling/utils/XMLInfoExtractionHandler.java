@@ -28,14 +28,19 @@ import org.xml.sax.helpers.XMLReaderFactory;
 public class XMLInfoExtractionHandler extends DefaultHandler {
 	private boolean isRootChecked = false;
 
-	private Map<String, String> prefixes = new HashMap<String, String>();
+	private String rootElementName;
 
-	private String rootElementName = null;
+	private String rootElementUri;
 
-	private String rootElementUri = null;
+	private final Map<String, String> prefixes;
+
+	private final Map<String, String> schemaLocations;
 
 	private XMLInfoExtractionHandler() {
-
+		rootElementName = null;
+		rootElementUri = null;
+		prefixes = new HashMap<String, String>();
+		schemaLocations = new HashMap<String, String>();
 	}
 
 	public static XMLInfoExtractionHandler getInfo(InputStream input) throws SAXException,
@@ -65,11 +70,14 @@ public class XMLInfoExtractionHandler extends DefaultHandler {
 		System.out.println("Local name: " + localName);
 		System.out.println("Qname     : " + qName);
 
-		// for (int i = 0; i < attributes.getLength(); i++) {
-		// System.out.println("  Attribute " + attributes.getQName(i) + "(" + attributes.getType(i)
-		// + ") = " + attributes.getValue(i));
-		// }
-
+		/*
+		 * for (int i = 0; i < attributes.getLength(); i++) { System.out.println("  Attribute " +
+		 * attributes.getQName(i) + "(" + attributes.getType(i) + ") = " + attributes.getValue(i)); String
+		 * lName = attributes.getLocalName(i); if (lName.equalsIgnoreCase("schemaLocation")) { String mapping
+		 * = attributes.getValue(i); String[] entries = mapping.split(" "); for (int j = 0; j <
+		 * mapping.length(); j++) { String key = null; String value = null; if (j % 2 == 0) { key =
+		 * entries[j]; } else { value = entries[j]; schemaLocations.put(key, value); } } } }
+		 */
 		isRootChecked = true;
 	}
 

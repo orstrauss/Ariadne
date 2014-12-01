@@ -10,8 +10,6 @@
  */
 package fr.obeo.ariadne.model.organization;
 
-import eu.artist.reusevol.wcm.model.modeling.MegaModel;
-
 import fr.obeo.ariadne.model.code.Component;
 import fr.obeo.ariadne.model.code.Environment;
 
@@ -37,7 +35,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link fr.obeo.ariadne.model.organization.Project#getDependentProjects <em>Dependent Projects</em>}</li>
  *   <li>{@link fr.obeo.ariadne.model.organization.Project#getRepositories <em>Repositories</em>}</li>
  *   <li>{@link fr.obeo.ariadne.model.organization.Project#getCategory <em>Category</em>}</li>
- *   <li>{@link fr.obeo.ariadne.model.organization.Project#getMegaModels <em>Mega Models</em>}</li>
  * </ul>
  * </p>
  *
@@ -186,21 +183,5 @@ public interface Project extends VersionedElement
    * @generated
    */
   void setCategory(Category value);
-
-  /**
-   * Returns the value of the '<em><b>Mega Models</b></em>' containment reference list.
-   * The list contents are of type {@link eu.artist.reusevol.wcm.model.modeling.MegaModel}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Mega Models</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Mega Models</em>' containment reference list.
-   * @see fr.obeo.ariadne.model.organization.OrganizationPackage#getProject_MegaModels()
-   * @model containment="true"
-   * @generated
-   */
-  EList<MegaModel> getMegaModels();
 
 } // Project

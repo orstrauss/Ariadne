@@ -16,6 +16,7 @@ import eu.artist.reusevol.wcm.model.modeling.MegaModel;
 import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 
 import fr.obeo.ariadne.ide.connector.core.explorer.AbstractAriadneExplorer;
+import fr.obeo.ariadne.model.organization.Organization;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -172,7 +173,8 @@ public class ModelingExplorer extends AbstractAriadneExplorer {
 	private MegaModel getOrCreateMegaModel(IProject project) {
 		MegaModel model = null;
 
-		List<MegaModel> models = this.ariadneProject.getMegaModels();
+		Organization orga = this.ariadneProject.getCategory().getOrganization();
+		List<MegaModel> models = orga.getMegaModels();
 		for (MegaModel aModel : models) {
 			if (project.getName().equals(aModel.getIdentifier())) {
 				model = aModel;
@@ -187,7 +189,8 @@ public class ModelingExplorer extends AbstractAriadneExplorer {
 		if (model == null) {
 			model = ModelingFactory.eINSTANCE.createMegaModel();
 			model.setIdentifier(project.getName());
-			this.ariadneProject.getMegaModels().add(model);
+			model.setName(project.getName());
+			orga.getMegaModels().add(model);
 		}
 		return model;
 	}

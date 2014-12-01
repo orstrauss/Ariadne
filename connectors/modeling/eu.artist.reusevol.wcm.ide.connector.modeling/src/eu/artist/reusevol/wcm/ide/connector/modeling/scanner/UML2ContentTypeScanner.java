@@ -12,12 +12,7 @@ import eu.artist.reusevol.wcm.model.modeling.Artefact;
 import eu.artist.reusevol.wcm.model.modeling.Model;
 import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.eclipse.core.resources.IFile;
-import org.eclipse.core.runtime.CoreException;
-import org.xml.sax.SAXException;
 
 /**
  * A scanner for UML2 models.
@@ -47,19 +42,13 @@ public class UML2ContentTypeScanner implements IContentTypeScanner {
 		Model result = ModelingFactory.eINSTANCE.createModel();
 		try {
 			XMLInfoExtractionHandler handler = XMLInfoExtractionHandler.getInfo(file.getContents());
-			result.setDescription(handler.getPrefixes().get("uml"));
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (SAXException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (CoreException e) {
+			result.setNamespaceUri(handler.getPrefixes().get("uml")); //$NON-NLS-1$
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 		result.setName(file.getName());
-		result.setIdentifier(file.getProjectRelativePath().toPortableString());
+		result.setIdentifier(file.getFullPath().toPortableString());
 		return result;
 	}
 }

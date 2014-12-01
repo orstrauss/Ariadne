@@ -161,13 +161,22 @@ public interface OrganizationPackage extends EPackage
   int ORGANIZATION__ORGANIZATION_DEPENDENCIES = 8;
 
   /**
+   * The feature id for the '<em><b>Mega Models</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ORGANIZATION__MEGA_MODELS = 9;
+
+  /**
    * The number of structural features of the '<em>Organization</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ORGANIZATION_FEATURE_COUNT = 9;
+  int ORGANIZATION_FEATURE_COUNT = 10;
 
   /**
    * The number of operations of the '<em>Organization</em>' class.
@@ -415,22 +424,13 @@ public interface OrganizationPackage extends EPackage
   int PROJECT__CATEGORY = CorePackage.VERSIONED_ELEMENT_FEATURE_COUNT + 7;
 
   /**
-   * The feature id for the '<em><b>Mega Models</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PROJECT__MEGA_MODELS = CorePackage.VERSIONED_ELEMENT_FEATURE_COUNT + 8;
-
-  /**
    * The number of structural features of the '<em>Project</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PROJECT_FEATURE_COUNT = CorePackage.VERSIONED_ELEMENT_FEATURE_COUNT + 9;
+  int PROJECT_FEATURE_COUNT = CorePackage.VERSIONED_ELEMENT_FEATURE_COUNT + 8;
 
   /**
    * The number of operations of the '<em>Project</em>' class.
@@ -789,6 +789,17 @@ public interface OrganizationPackage extends EPackage
   EReference getOrganization_OrganizationDependencies();
 
   /**
+   * Returns the meta object for the containment reference list '{@link fr.obeo.ariadne.model.organization.Organization#getMegaModels <em>Mega Models</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Mega Models</em>'.
+   * @see fr.obeo.ariadne.model.organization.Organization#getMegaModels()
+   * @see #getOrganization()
+   * @generated
+   */
+  EReference getOrganization_MegaModels();
+
+  /**
    * Returns the meta object for class '{@link fr.obeo.ariadne.model.organization.Category <em>Category</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -917,17 +928,6 @@ public interface OrganizationPackage extends EPackage
    * @generated
    */
   EReference getProject_Category();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link fr.obeo.ariadne.model.organization.Project#getMegaModels <em>Mega Models</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Mega Models</em>'.
-   * @see fr.obeo.ariadne.model.organization.Project#getMegaModels()
-   * @see #getProject()
-   * @generated
-   */
-  EReference getProject_MegaModels();
 
   /**
    * Returns the meta object for class '{@link fr.obeo.ariadne.model.organization.OrganizationDependency <em>Dependency</em>}'.
@@ -1143,6 +1143,14 @@ public interface OrganizationPackage extends EPackage
     EReference ORGANIZATION__ORGANIZATION_DEPENDENCIES = eINSTANCE.getOrganization_OrganizationDependencies();
 
     /**
+     * The meta object literal for the '<em><b>Mega Models</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference ORGANIZATION__MEGA_MODELS = eINSTANCE.getOrganization_MegaModels();
+
+    /**
      * The meta object literal for the '{@link fr.obeo.ariadne.model.organization.impl.CategoryImpl <em>Category</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1241,14 +1249,6 @@ public interface OrganizationPackage extends EPackage
      * @generated
      */
     EReference PROJECT__CATEGORY = eINSTANCE.getProject_Category();
-
-    /**
-     * The meta object literal for the '<em><b>Mega Models</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference PROJECT__MEGA_MODELS = eINSTANCE.getProject_MegaModels();
 
     /**
      * The meta object literal for the '{@link fr.obeo.ariadne.model.organization.impl.OrganizationDependencyImpl <em>Dependency</em>}' class.

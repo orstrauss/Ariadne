@@ -42,6 +42,16 @@ public class ContentTypeScannerManager {
 		explorers.remove(explorer.contentTypeId());
 	}
 
+	/**
+	 * Explores the given file by delegating to a suitable explorer. Explorers are selected based on the
+	 * file's content type starting from concrete to general content types. The first matching explorer is
+	 * executed.
+	 * 
+	 * @param file
+	 *            the file to explore
+	 * @return an instance of Artefact as result of the exploration
+	 * @throws CoreException
+	 */
 	public Artefact exploreFile(IFile file) throws CoreException {
 		IContentDescription contentDescription = file.getContentDescription();
 

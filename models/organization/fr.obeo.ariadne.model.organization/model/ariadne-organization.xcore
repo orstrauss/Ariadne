@@ -41,6 +41,7 @@ class Organization {
 	contains TasksRepository[] tasksRepositories
 	contains Property[] properties
 	contains OrganizationDependency[] organizationDependencies
+	contains MegaModel[] megaModels
 }
 
 class Category extends VersionedElement {
@@ -57,7 +58,6 @@ class Project extends VersionedElement {
 	refers Project[] dependentProjects
 	refers Repository[] repositories
 	container Category category opposite projects
-	contains MegaModel[] megaModels
 }
 
 class OrganizationDependency extends VersionedElement {

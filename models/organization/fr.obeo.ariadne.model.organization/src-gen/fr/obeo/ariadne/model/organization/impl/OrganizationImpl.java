@@ -10,6 +10,8 @@
  */
 package fr.obeo.ariadne.model.organization.impl;
 
+import eu.artist.reusevol.wcm.model.modeling.MegaModel;
+
 import fr.obeo.ariadne.model.continuousintegration.BuildServer;
 
 import fr.obeo.ariadne.model.core.Person;
@@ -57,6 +59,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link fr.obeo.ariadne.model.organization.impl.OrganizationImpl#getTasksRepositories <em>Tasks Repositories</em>}</li>
  *   <li>{@link fr.obeo.ariadne.model.organization.impl.OrganizationImpl#getProperties <em>Properties</em>}</li>
  *   <li>{@link fr.obeo.ariadne.model.organization.impl.OrganizationImpl#getOrganizationDependencies <em>Organization Dependencies</em>}</li>
+ *   <li>{@link fr.obeo.ariadne.model.organization.impl.OrganizationImpl#getMegaModels <em>Mega Models</em>}</li>
  * </ul>
  * </p>
  *
@@ -173,6 +176,16 @@ public class OrganizationImpl extends MinimalEObjectImpl.Container implements Or
    * @ordered
    */
   protected EList<OrganizationDependency> organizationDependencies;
+
+  /**
+   * The cached value of the '{@link #getMegaModels() <em>Mega Models</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getMegaModels()
+   * @generated
+   * @ordered
+   */
+  protected EList<MegaModel> megaModels;
 
   /**
    * <!-- begin-user-doc -->
@@ -344,6 +357,20 @@ public class OrganizationImpl extends MinimalEObjectImpl.Container implements Or
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<MegaModel> getMegaModels()
+  {
+    if (megaModels == null)
+    {
+      megaModels = new EObjectContainmentEList<MegaModel>(MegaModel.class, this, OrganizationPackage.ORGANIZATION__MEGA_MODELS);
+    }
+    return megaModels;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
@@ -380,6 +407,8 @@ public class OrganizationImpl extends MinimalEObjectImpl.Container implements Or
         return ((InternalEList<?>)getProperties()).basicRemove(otherEnd, msgs);
       case OrganizationPackage.ORGANIZATION__ORGANIZATION_DEPENDENCIES:
         return ((InternalEList<?>)getOrganizationDependencies()).basicRemove(otherEnd, msgs);
+      case OrganizationPackage.ORGANIZATION__MEGA_MODELS:
+        return ((InternalEList<?>)getMegaModels()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -412,6 +441,8 @@ public class OrganizationImpl extends MinimalEObjectImpl.Container implements Or
         return getProperties();
       case OrganizationPackage.ORGANIZATION__ORGANIZATION_DEPENDENCIES:
         return getOrganizationDependencies();
+      case OrganizationPackage.ORGANIZATION__MEGA_MODELS:
+        return getMegaModels();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -461,6 +492,10 @@ public class OrganizationImpl extends MinimalEObjectImpl.Container implements Or
         getOrganizationDependencies().clear();
         getOrganizationDependencies().addAll((Collection<? extends OrganizationDependency>)newValue);
         return;
+      case OrganizationPackage.ORGANIZATION__MEGA_MODELS:
+        getMegaModels().clear();
+        getMegaModels().addAll((Collection<? extends MegaModel>)newValue);
+        return;
     }
     super.eSet(featureID, newValue);
   }
@@ -502,6 +537,9 @@ public class OrganizationImpl extends MinimalEObjectImpl.Container implements Or
       case OrganizationPackage.ORGANIZATION__ORGANIZATION_DEPENDENCIES:
         getOrganizationDependencies().clear();
         return;
+      case OrganizationPackage.ORGANIZATION__MEGA_MODELS:
+        getMegaModels().clear();
+        return;
     }
     super.eUnset(featureID);
   }
@@ -534,6 +572,8 @@ public class OrganizationImpl extends MinimalEObjectImpl.Container implements Or
         return properties != null && !properties.isEmpty();
       case OrganizationPackage.ORGANIZATION__ORGANIZATION_DEPENDENCIES:
         return organizationDependencies != null && !organizationDependencies.isEmpty();
+      case OrganizationPackage.ORGANIZATION__MEGA_MODELS:
+        return megaModels != null && !megaModels.isEmpty();
     }
     return super.eIsSet(featureID);
   }

@@ -10,8 +10,6 @@
  */
 package fr.obeo.ariadne.model.organization.impl;
 
-import eu.artist.reusevol.wcm.model.modeling.MegaModel;
-
 import fr.obeo.ariadne.model.code.Component;
 import fr.obeo.ariadne.model.code.Environment;
 
@@ -56,7 +54,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link fr.obeo.ariadne.model.organization.impl.ProjectImpl#getDependentProjects <em>Dependent Projects</em>}</li>
  *   <li>{@link fr.obeo.ariadne.model.organization.impl.ProjectImpl#getRepositories <em>Repositories</em>}</li>
  *   <li>{@link fr.obeo.ariadne.model.organization.impl.ProjectImpl#getCategory <em>Category</em>}</li>
- *   <li>{@link fr.obeo.ariadne.model.organization.impl.ProjectImpl#getMegaModels <em>Mega Models</em>}</li>
  * </ul>
  * </p>
  *
@@ -133,16 +130,6 @@ public class ProjectImpl extends VersionedElementImpl implements Project
    * @ordered
    */
   protected EList<Repository> repositories;
-
-  /**
-   * The cached value of the '{@link #getMegaModels() <em>Mega Models</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getMegaModels()
-   * @generated
-   * @ordered
-   */
-  protected EList<MegaModel> megaModels;
 
   /**
    * <!-- begin-user-doc -->
@@ -324,20 +311,6 @@ public class ProjectImpl extends VersionedElementImpl implements Project
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<MegaModel> getMegaModels()
-  {
-    if (megaModels == null)
-    {
-      megaModels = new EObjectContainmentEList<MegaModel>(MegaModel.class, this, OrganizationPackage.PROJECT__MEGA_MODELS);
-    }
-    return megaModels;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -373,8 +346,6 @@ public class ProjectImpl extends VersionedElementImpl implements Project
         return ((InternalEList<?>)getReleases()).basicRemove(otherEnd, msgs);
       case OrganizationPackage.PROJECT__CATEGORY:
         return basicSetCategory(null, msgs);
-      case OrganizationPackage.PROJECT__MEGA_MODELS:
-        return ((InternalEList<?>)getMegaModels()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -422,8 +393,6 @@ public class ProjectImpl extends VersionedElementImpl implements Project
       case OrganizationPackage.PROJECT__CATEGORY:
         if (resolve) return getCategory();
         return basicGetCategory();
-      case OrganizationPackage.PROJECT__MEGA_MODELS:
-        return getMegaModels();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -470,10 +439,6 @@ public class ProjectImpl extends VersionedElementImpl implements Project
       case OrganizationPackage.PROJECT__CATEGORY:
         setCategory((Category)newValue);
         return;
-      case OrganizationPackage.PROJECT__MEGA_MODELS:
-        getMegaModels().clear();
-        getMegaModels().addAll((Collection<? extends MegaModel>)newValue);
-        return;
     }
     super.eSet(featureID, newValue);
   }
@@ -512,9 +477,6 @@ public class ProjectImpl extends VersionedElementImpl implements Project
       case OrganizationPackage.PROJECT__CATEGORY:
         setCategory((Category)null);
         return;
-      case OrganizationPackage.PROJECT__MEGA_MODELS:
-        getMegaModels().clear();
-        return;
     }
     super.eUnset(featureID);
   }
@@ -545,8 +507,6 @@ public class ProjectImpl extends VersionedElementImpl implements Project
         return repositories != null && !repositories.isEmpty();
       case OrganizationPackage.PROJECT__CATEGORY:
         return basicGetCategory() != null;
-      case OrganizationPackage.PROJECT__MEGA_MODELS:
-        return megaModels != null && !megaModels.isEmpty();
     }
     return super.eIsSet(featureID);
   }

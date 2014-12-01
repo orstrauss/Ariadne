@@ -139,10 +139,10 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     isInited = true;
 
     // Initialize simple dependencies
-    ContinuousintegrationPackage.eINSTANCE.eClass();
     TasksPackage.eINSTANCE.eClass();
-    ModelingPackage.eINSTANCE.eClass();
     ScmPackage.eINSTANCE.eClass();
+    ModelingPackage.eINSTANCE.eClass();
+    ContinuousintegrationPackage.eINSTANCE.eClass();
     CodePackage.eINSTANCE.eClass();
 
     // Create package meta-data objects
@@ -265,6 +265,16 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getOrganization_MegaModels()
+  {
+    return (EReference)organizationEClass.getEStructuralFeatures().get(9);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getCategory()
   {
     return categoryEClass;
@@ -378,16 +388,6 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
   public EReference getProject_Category()
   {
     return (EReference)projectEClass.getEStructuralFeatures().get(7);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getProject_MegaModels()
-  {
-    return (EReference)projectEClass.getEStructuralFeatures().get(8);
   }
 
   /**
@@ -530,6 +530,7 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     createEReference(organizationEClass, ORGANIZATION__TASKS_REPOSITORIES);
     createEReference(organizationEClass, ORGANIZATION__PROPERTIES);
     createEReference(organizationEClass, ORGANIZATION__ORGANIZATION_DEPENDENCIES);
+    createEReference(organizationEClass, ORGANIZATION__MEGA_MODELS);
 
     categoryEClass = createEClass(CATEGORY);
     createEReference(categoryEClass, CATEGORY__PROJECTS);
@@ -544,7 +545,6 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     createEReference(projectEClass, PROJECT__DEPENDENT_PROJECTS);
     createEReference(projectEClass, PROJECT__REPOSITORIES);
     createEReference(projectEClass, PROJECT__CATEGORY);
-    createEReference(projectEClass, PROJECT__MEGA_MODELS);
 
     organizationDependencyEClass = createEClass(ORGANIZATION_DEPENDENCY);
     createEAttribute(organizationDependencyEClass, ORGANIZATION_DEPENDENCY__ORGANIZATION_DEPENDENCY_KINDS);
@@ -591,8 +591,8 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     ScmPackage theScmPackage = (ScmPackage)EPackage.Registry.INSTANCE.getEPackage(ScmPackage.eNS_URI);
     ContinuousintegrationPackage theContinuousintegrationPackage = (ContinuousintegrationPackage)EPackage.Registry.INSTANCE.getEPackage(ContinuousintegrationPackage.eNS_URI);
     TasksPackage theTasksPackage = (TasksPackage)EPackage.Registry.INSTANCE.getEPackage(TasksPackage.eNS_URI);
-    CodePackage theCodePackage = (CodePackage)EPackage.Registry.INSTANCE.getEPackage(CodePackage.eNS_URI);
     ModelingPackage theModelingPackage = (ModelingPackage)EPackage.Registry.INSTANCE.getEPackage(ModelingPackage.eNS_URI);
+    CodePackage theCodePackage = (CodePackage)EPackage.Registry.INSTANCE.getEPackage(CodePackage.eNS_URI);
 
     // Create type parameters
 
@@ -615,6 +615,7 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     initEReference(getOrganization_TasksRepositories(), theTasksPackage.getTasksRepository(), null, "tasksRepositories", null, 0, -1, Organization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getOrganization_Properties(), theCorePackage.getProperty(), null, "properties", null, 0, -1, Organization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getOrganization_OrganizationDependencies(), this.getOrganizationDependency(), null, "organizationDependencies", null, 0, -1, Organization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getOrganization_MegaModels(), theModelingPackage.getMegaModel(), null, "megaModels", null, 0, -1, Organization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(categoryEClass, Category.class, "Category", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getCategory_Projects(), this.getProject(), this.getProject_Category(), "projects", null, 0, -1, Category.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -629,7 +630,6 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     initEReference(getProject_DependentProjects(), this.getProject(), null, "dependentProjects", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProject_Repositories(), theScmPackage.getRepository(), null, "repositories", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProject_Category(), this.getCategory(), this.getCategory_Projects(), "category", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getProject_MegaModels(), theModelingPackage.getMegaModel(), null, "megaModels", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(organizationDependencyEClass, OrganizationDependency.class, "OrganizationDependency", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getOrganizationDependency_OrganizationDependencyKinds(), this.getOrganizationDependencyKind(), "organizationDependencyKinds", null, 0, -1, OrganizationDependency.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

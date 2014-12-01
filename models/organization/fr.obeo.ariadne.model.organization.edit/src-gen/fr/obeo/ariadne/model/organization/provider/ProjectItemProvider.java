@@ -11,25 +11,17 @@
 package fr.obeo.ariadne.model.organization.provider;
 
 
-import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 import fr.obeo.ariadne.model.code.CodeFactory;
-
 import fr.obeo.ariadne.model.core.provider.VersionedElementItemProvider;
-
 import fr.obeo.ariadne.model.organization.OrganizationFactory;
 import fr.obeo.ariadne.model.organization.OrganizationPackage;
 import fr.obeo.ariadne.model.organization.Project;
-
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -173,7 +165,6 @@ public class ProjectItemProvider
       childrenFeatures.add(OrganizationPackage.Literals.PROJECT__RUNTIME_ENVIRONMENTS);
       childrenFeatures.add(OrganizationPackage.Literals.PROJECT__SUB_PROJECTS);
       childrenFeatures.add(OrganizationPackage.Literals.PROJECT__RELEASES);
-      childrenFeatures.add(OrganizationPackage.Literals.PROJECT__MEGA_MODELS);
     }
     return childrenFeatures;
   }
@@ -238,7 +229,6 @@ public class ProjectItemProvider
       case OrganizationPackage.PROJECT__RUNTIME_ENVIRONMENTS:
       case OrganizationPackage.PROJECT__SUB_PROJECTS:
       case OrganizationPackage.PROJECT__RELEASES:
-      case OrganizationPackage.PROJECT__MEGA_MODELS:
         fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
         return;
     }
@@ -281,11 +271,6 @@ public class ProjectItemProvider
       (createChildParameter
         (OrganizationPackage.Literals.PROJECT__RELEASES,
          OrganizationFactory.eINSTANCE.createRelease()));
-
-    newChildDescriptors.add
-      (createChildParameter
-        (OrganizationPackage.Literals.PROJECT__MEGA_MODELS,
-         ModelingFactory.eINSTANCE.createMegaModel()));
   }
 
   /**

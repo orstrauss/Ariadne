@@ -11,6 +11,7 @@
 package fr.obeo.ariadne.model.organization.provider;
 
 
+import eu.artist.reusevol.wcm.model.modeling.ModelingFactory;
 import fr.obeo.ariadne.model.continuousintegration.ContinuousintegrationFactory;
 import fr.obeo.ariadne.model.core.CoreFactory;
 import fr.obeo.ariadne.model.organization.Organization;
@@ -147,6 +148,7 @@ public class OrganizationItemProvider
       childrenFeatures.add(OrganizationPackage.Literals.ORGANIZATION__TASKS_REPOSITORIES);
       childrenFeatures.add(OrganizationPackage.Literals.ORGANIZATION__PROPERTIES);
       childrenFeatures.add(OrganizationPackage.Literals.ORGANIZATION__ORGANIZATION_DEPENDENCIES);
+      childrenFeatures.add(OrganizationPackage.Literals.ORGANIZATION__MEGA_MODELS);
     }
     return childrenFeatures;
   }
@@ -217,6 +219,7 @@ public class OrganizationItemProvider
       case OrganizationPackage.ORGANIZATION__TASKS_REPOSITORIES:
       case OrganizationPackage.ORGANIZATION__PROPERTIES:
       case OrganizationPackage.ORGANIZATION__ORGANIZATION_DEPENDENCIES:
+      case OrganizationPackage.ORGANIZATION__MEGA_MODELS:
         fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
         return;
     }
@@ -269,6 +272,11 @@ public class OrganizationItemProvider
       (createChildParameter
         (OrganizationPackage.Literals.ORGANIZATION__ORGANIZATION_DEPENDENCIES,
          OrganizationFactory.eINSTANCE.createOrganizationDependency()));
+
+    newChildDescriptors.add
+      (createChildParameter
+        (OrganizationPackage.Literals.ORGANIZATION__MEGA_MODELS,
+         ModelingFactory.eINSTANCE.createMegaModel()));
   }
 
   /**
