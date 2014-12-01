@@ -139,11 +139,11 @@ public class OrganizationPackageImpl extends EPackageImpl implements Organizatio
     isInited = true;
 
     // Initialize simple dependencies
-    TasksPackage.eINSTANCE.eClass();
-    ScmPackage.eINSTANCE.eClass();
-    ModelingPackage.eINSTANCE.eClass();
-    ContinuousintegrationPackage.eINSTANCE.eClass();
     CodePackage.eINSTANCE.eClass();
+    ContinuousintegrationPackage.eINSTANCE.eClass();
+    TasksPackage.eINSTANCE.eClass();
+    ModelingPackage.eINSTANCE.eClass();
+    ScmPackage.eINSTANCE.eClass();
 
     // Create package meta-data objects
     theOrganizationPackage.createPackageContents();
