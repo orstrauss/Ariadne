@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2014 ARTIST Project.&#xD;&#xA;All rights reserved. This program and the accompanying materials&#xD;&#xA;are made available under the terms of the Eclipse Public License v1.0&#xD;&#xA;which accompanies this distribution, and is available at&#xD;&#xA;http://www.eclipse.org/legal/epl-v10.html&#xD;&#xA;&#xD;&#xA;Contributors:&#xD;&#xA;    Oliver Strauß (Fraunhofer IAO) - Modeling extension&#xD;&#xA;    Stephane Begaudeau (Obeo)      - Initial framework"
+    modelDirectory="/eu.artist.reusevol.wcm.model.modeling/src" editDirectory="/eu.artist.reusevol.wcm.model.modeling.edit/src-gen"
+    editorDirectory="/eu.artist.reusevol.wcm.model.modeling.editor/src-gen" modelPluginID="eu.artist.reusevol.wcm.model.modeling"
+    runtimeJar="true" modelName="Rcm-modeling" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="" booleanFlagsField="eFlags" booleanFlagsReservedBits="8" importerID="org.eclipse.emf.ecore.xcore.importer"
+    containmentProxies="true" complianceLevel="7.0" language="en" usedGenPackages="../../fr.obeo.ariadne.model.core/model/ariadne-core.xcore#/1/core ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"
+    operationReflection="true" importOrganizing="true" decoration="Live">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.xsd.ecore.exporter">
+    <genAnnotations source="selectedPackages">
+      <details key="http://www.eclipse.org/emf/2002/Ecore" value="Ecore.xsd"/>
+    </genAnnotations>
+    <details key="directoryURI" value="."/>
+  </genAnnotations>
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.xsd.ecore.exporter.xmi">
+    <genAnnotations source="selectedPackages">
+      <details key="http://www.eclipse.org/emf/2002/Ecore" value="EcoreXMI.xsd"/>
+    </genAnnotations>
+    <details key="directoryURI" value="."/>
+  </genAnnotations>
+  <foreignModel>rcm-modeling.xcore</foreignModel>
+  <modelPluginVariables>org.eclipse.xtext.xbase.lib</modelPluginVariables>
+  <modelPluginVariables>org.eclipse.emf.ecore.xcore.lib</modelPluginVariables>
+  <genPackages prefix="Modeling" basePackage="eu.artist.reusevol.wcm.model" disposableProviderFactory="true"
+      fileExtensions="wcmmodel" ecorePackage="modeling.ecore#/">
+    <genClasses image="false" ecoreClass="modeling.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeling.ecore#//Element/identifier"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Element/relatedTo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Element/sourceOf"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Element/targetOf"/>
+    </genClasses>
+    <genClasses ecoreClass="modeling.ecore#//Artefact"/>
+    <genClasses ecoreClass="modeling.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeling.ecore#//Model/namespaceUri"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Model/conformsTo"/>
+    </genClasses>
+    <genClasses ecoreClass="modeling.ecore#//ReferenceModel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//ReferenceModel/extends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//ReferenceModel/specifies"/>
+    </genClasses>
+    <genClasses ecoreClass="modeling.ecore#//MetaMetaModel"/>
+    <genClasses ecoreClass="modeling.ecore#//MetaModel"/>
+    <genClasses ecoreClass="modeling.ecore#//TerminalModel"/>
+    <genClasses ecoreClass="modeling.ecore#//WeavingModel"/>
+    <genClasses ecoreClass="modeling.ecore#//TransformationModel"/>
+    <genClasses ecoreClass="modeling.ecore#//MegaModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeling.ecore#//MegaModel/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="modeling.ecore#//Relationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Relationship/linked"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="modeling.ecore#//DirectedRelationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//DirectedRelationship/sources"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//DirectedRelationship/targets"/>
+    </genClasses>
+    <genClasses ecoreClass="modeling.ecore#//Transformation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Transformation/model"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Transformation/sourceReferenceModelbindings"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//Transformation/targetReferenceModelbindings"/>
+    </genClasses>
+    <genClasses ecoreClass="modeling.ecore#//TransformationRecord">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//TransformationRecord/transformation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//TransformationRecord/sourceModelbindings"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeling.ecore#//TransformationRecord/targetModelbindings"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

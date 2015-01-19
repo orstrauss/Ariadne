@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="modeling" nsURI="http://www.artist-project.eu/wcm/modeling"
+    nsPrefix="wcm-modeling">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="editDirectory" value="/eu.artist.reusevol.wcm.model.modeling.edit/src-gen"/>
+    <details key="editorDirectory" value="/eu.artist.reusevol.wcm.model.modeling.editor/src-gen"/>
+    <details key="fileExtensions" value="wcmmodel"/>
+    <details key="copyrightText" value="Copyright (c) 2014 ARTIST Project.&#xD;&#xA;All rights reserved. This program and the accompanying materials&#xD;&#xA;are made available under the terms of the Eclipse Public License v1.0&#xD;&#xA;which accompanies this distribution, and is available at&#xD;&#xA;http://www.eclipse.org/legal/epl-v10.html&#xD;&#xA;&#xD;&#xA;Contributors:&#xD;&#xA;    Oliver Strauß (Fraunhofer IAO) - Modeling extension&#xD;&#xA;    Stephane Begaudeau (Obeo)      - Initial framework"/>
+    <details key="basePackage" value="eu.artist.reusevol.wcm.model"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true" eSuperTypes="../../fr.obeo.ariadne.model.core/model/ariadne-core.xcore#/EPackage/VersionedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" unique="false"
+        eType="ecore:EDataType ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedTo" upperBound="-1"
+        eType="#//Relationship" eOpposite="#//Relationship/linked"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceOf" upperBound="-1"
+        eType="#//DirectedRelationship" eOpposite="#//DirectedRelationship/sources"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetOf" upperBound="-1"
+        eType="#//DirectedRelationship" eOpposite="#//DirectedRelationship/targets"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Artefact" eSuperTypes="#//Element"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Model" eSuperTypes="#//Artefact">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="namespaceUri" unique="false"
+        eType="ecore:EDataType ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conformsTo" eType="#//ReferenceModel"
+        eOpposite="#//ReferenceModel/specifies"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReferenceModel" eSuperTypes="#//Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extends" upperBound="-1"
+        eType="#//ReferenceModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifies" upperBound="-1"
+        eType="#//Model" eOpposite="#//Model/conformsTo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MetaMetaModel" eSuperTypes="#//ReferenceModel"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MetaModel" eSuperTypes="#//ReferenceModel"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TerminalModel" eSuperTypes="#//Model"/>
+  <eClassifiers xsi:type="ecore:EClass" name="WeavingModel" eSuperTypes="#//TerminalModel"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TransformationModel" eSuperTypes="#//TerminalModel"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MegaModel" eSuperTypes="#//TerminalModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//Artefact" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Relationship" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linked" upperBound="-1"
+        eType="#//Element" eOpposite="#//Element/relatedTo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DirectedRelationship" abstract="true"
+      eSuperTypes="#//Relationship">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sources" upperBound="-1"
+        eType="#//Element" eOpposite="#//Element/sourceOf"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targets" upperBound="-1"
+        eType="#//Element" eOpposite="#//Element/targetOf"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transformation" eSuperTypes="#//DirectedRelationship">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="model" eType="#//TransformationModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceReferenceModelbindings"
+        upperBound="-1" eType="#//ReferenceModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetReferenceModelbindings"
+        upperBound="-1" eType="#//ReferenceModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransformationRecord" eSuperTypes="#//DirectedRelationship">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformation" eType="#//Transformation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceModelbindings" upperBound="-1"
+        eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetModelbindings" upperBound="-1"
+        eType="#//Model"/>
+  </eClassifiers>
+</ecore:EPackage>
