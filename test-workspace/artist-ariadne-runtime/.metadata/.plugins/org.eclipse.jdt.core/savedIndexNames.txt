@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+C:\Users\strauss\Lokale_Dateien\local_workspaces\artist-ariadne-runtime\.metadata\.plugins\org.eclipse.jdt.core

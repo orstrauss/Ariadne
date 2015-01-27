@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CloudApplicationModelingProfile="http:///schemas/CloudApplicationModelingProfile/_ASqTsBO2EeOumMaY5VRxoQ/13" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/CloudApplicationModelingProfile/_ASqTsBO2EeOumMaY5VRxoQ/13 ../metamodels-profiles/CloudApplicationModelingProfile.profile.uml#_ASqTsRO2EeOumMaY5VRxoQ">
+  <uml:Model xmi:id="_CB7e4AvUEeOGta4v5vVuew" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_CB7e4QvUEeOGta4v5vVuew">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Component" xmi:id="_mH8q0AvUEeOGta4v5vVuew" name="Petstore">
+      <nestedClassifier xmi:type="uml:Component" xmi:id="_KilmcAvWEeOGta4v5vVuew" name="Petstore UI"/>
+      <nestedClassifier xmi:type="uml:Component" xmi:id="_PLXIYAvWEeOGta4v5vVuew" name="PetStore Controller"/>
+      <nestedClassifier xmi:type="uml:Component" xmi:id="_TDyLcAvWEeOGta4v5vVuew" name="Petstore Datasource"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_mWa5wAvWEeOGta4v5vVuew" name="J2EE"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LE33UAvaEeOGta4v5vVuew" name="frameworks"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Psw3MAvUEeOGta4v5vVuew">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PuNosAvUEeOGta4v5vVuew" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../metamodels-profiles/CloudApplicationModelingProfile.profile.uml#_ASqTsRO2EeOumMaY5VRxoQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../metamodels-profiles/CloudApplicationModelingProfile.profile.uml#_7l0tMAvKEeOGta4v5vVuew"/>
+    </profileApplication>
+  </uml:Model>
+  <CloudApplicationModelingProfile:CloudApplication xmi:id="_INP8MAvVEeOGta4v5vVuew" components="_Lx1n0AvWEeOGta4v5vVuew _Q-2fQAvWEeOGta4v5vVuew _UcMv4AvWEeOGta4v5vVuew" base_Element="_mH8q0AvUEeOGta4v5vVuew" name="Petstore Application">
+    <requiredFrameworks xmi:type="CloudApplicationModelingProfile:J2EE" xmi:id="_37aZEBOuEeOumMaY5VRxoQ"/>
+    <requireServices xmi:type="CloudApplicationModelingProfile:CloudService" xmi:id="_vphekBOyEeOumMaY5VRxoQ"/>
+  </CloudApplicationModelingProfile:CloudApplication>
+  <CloudApplicationModelingProfile:CloudApplicationComponent xmi:id="_Lx1n0AvWEeOGta4v5vVuew" base_Element="_KilmcAvWEeOGta4v5vVuew" name="Petstore UI">
+    <requiredFrameworks xmi:type="CloudApplicationModelingProfile:JSF" xmi:id="_lTMZYBOxEeOumMaY5VRxoQ"/>
+  </CloudApplicationModelingProfile:CloudApplicationComponent>
+  <CloudApplicationModelingProfile:CloudApplicationComponent xmi:id="_Q-2fQAvWEeOGta4v5vVuew" base_Element="_PLXIYAvWEeOGta4v5vVuew" name="Petstore Controller">
+    <requiredFrameworks xmi:type="CloudApplicationModelingProfile:JSF" xmi:id="_2HEmQBOxEeOumMaY5VRxoQ"/>
+  </CloudApplicationModelingProfile:CloudApplicationComponent>
+  <CloudApplicationModelingProfile:CloudApplicationComponent xmi:id="_UcMv4AvWEeOGta4v5vVuew" base_Element="_TDyLcAvWEeOGta4v5vVuew" name="Petstore datasource">
+    <requiredFrameworks xmi:type="CloudApplicationModelingProfile:JPA" xmi:id="_7ZSt0BOxEeOumMaY5VRxoQ"/>
+    <requireServices xmi:type="CloudApplicationModelingProfile:CloudService" xmi:id="_MtVBcBOyEeOumMaY5VRxoQ"/>
+  </CloudApplicationModelingProfile:CloudApplicationComponent>
+</xmi:XMI>

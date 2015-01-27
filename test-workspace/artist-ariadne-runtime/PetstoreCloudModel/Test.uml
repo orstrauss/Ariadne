@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="__weFkAsCEeOJxI3yGkc6zw" name="model">
+  <packageImport xmi:id="_FJmtcAsDEeOJxI3yGkc6zw">
+    <importedPackage xmi:type="uml:Model" href="../CloudModelingLanguage/CloudModelingLibrary.uml#_c73bE_3gEeKQb7onjNL6fQ"/>
+  </packageImport>
+  <packageImport xmi:id="_FJs0EAsDEeOJxI3yGkc6zw">
+    <importedPackage xmi:type="uml:Model" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WNAl7EeO-Gf_thSXy4g"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_JXHPsAsDEeOJxI3yGkc6zw" name="InstanceSpecification1">
+    <classifier xmi:type="uml:ExecutionEnvironment" href="../CloudModelingLanguage/CloudModelingLibrary.uml#_GXlLMAr9EeOJxI3yGkc6zw"/>
+    <slot xmi:id="_N4vn0AsDEeOJxI3yGkc6zw">
+      <definingFeature xmi:type="uml:Property" href="../CloudModelingLanguage/CloudModelingLibrary.uml#_yJ24MAr9EeOJxI3yGkc6zw"/>
+      <value xmi:type="uml:InstanceValue" xmi:id="_BthgwAsGEeOJxI3yGkc6zw" instance="_wV01IAsFEeOJxI3yGkc6zw"/>
+      <value xmi:type="uml:InstanceValue" xmi:id="_Di68IAsGEeOJxI3yGkc6zw" instance="_wnkFYAsFEeOJxI3yGkc6zw"/>
+    </slot>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_wV01IAsFEeOJxI3yGkc6zw" name="InstanceSpecification2">
+    <classifier xmi:type="uml:ExecutionEnvironment" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WSwl7EeO-Gf_thSXy4g"/>
+    <slot xmi:id="_78EfgAsFEeOJxI3yGkc6zw">
+      <definingFeature xmi:type="uml:Property" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WTAl7EeO-Gf_thSXy4g"/>
+      <value xmi:type="uml:InstanceValue" xmi:id="_78KmIAsFEeOJxI3yGkc6zw" name="InstanceValue0" instance="_wnkFYAsFEeOJxI3yGkc6zw">
+        <type xmi:type="uml:ExecutionEnvironment" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WWQl7EeO-Gf_thSXy4g"/>
+      </value>
+    </slot>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_wnkFYAsFEeOJxI3yGkc6zw" name="InstanceSpecification3">
+    <classifier xmi:type="uml:ExecutionEnvironment" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WWQl7EeO-Gf_thSXy4g"/>
+    <slot xmi:id="_774SQAsFEeOJxI3yGkc6zw">
+      <definingFeature xmi:type="uml:Property" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WWgl7EeO-Gf_thSXy4g"/>
+      <value xmi:type="uml:InstanceValue" xmi:id="_77-Y4AsFEeOJxI3yGkc6zw" name="InstanceValue0" instance="_wV01IAsFEeOJxI3yGkc6zw">
+        <type xmi:type="uml:ExecutionEnvironment" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WSwl7EeO-Gf_thSXy4g"/>
+      </value>
+    </slot>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_77TqgAsFEeOJxI3yGkc6zw" name="InstanceSpecification0">
+    <eAnnotations xmi:id="_77l-YAsFEeOJxI3yGkc6zw" source="InstanceEnd" references="_wnkFYAsFEeOJxI3yGkc6zw _wV01IAsFEeOJxI3yGkc6zw"/>
+    <classifier xmi:type="uml:Association" href="../CloudOnPremiseIntegration/WebDeployment.uml#_5q2WYAl7EeO-Gf_thSXy4g"/>
+  </packagedElement>
+</uml:Model>

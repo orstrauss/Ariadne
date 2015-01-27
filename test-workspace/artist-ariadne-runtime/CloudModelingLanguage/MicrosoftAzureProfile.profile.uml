@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Performance="http:///schemas/Performance/_AdY5EAlaEeO-nImMzyisdw/6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/Performance/_AdY5EAlaEeO-nImMzyisdw/6 PerformanceProfile.profile.uml#_AdY5EQlaEeO-nImMzyisdw">
+  <uml:Profile xmi:id="_R-Ib8A_9EeOYBPpMrBwl5w" name="Profile" metaclassReference="_a5C2kA__EeOYBPpMrBwl5w" metamodelReference="_R-Ib8Q_9EeOYBPpMrBwl5w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fFNm8Q_9EeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_DNop0BACEeOYBPpMrBwl5w" name="Profile" nsURI="http:///schemas/Profile/_DNnbsBACEeOYBPpMrBwl5w/1" nsPrefix="Profile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DOBEUBACEeOYBPpMrBwl5w" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOBEURACEeOYBPpMrBwl5w" key="Version" value="0.0.2"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOBEUhACEeOYBPpMrBwl5w" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOBEUxACEeOYBPpMrBwl5w" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOBEVBACEeOYBPpMrBwl5w" key="Date" value="2013-08-28"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DOBEVRACEeOYBPpMrBwl5w" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop0RACEeOYBPpMrBwl5w" name="MicrosoftAzure">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop0hACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cxDhEA__EeOYBPpMrBwl5w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_DNop0xACEeOYBPpMrBwl5w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop1RACEeOYBPpMrBwl5w" name="InstanceType" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop1hACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vauK4A__EeOYBPpMrBwl5w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_DNop1xACEeOYBPpMrBwl5w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_DNop2RACEeOYBPpMrBwl5w" name="operatingSystem" ordered="false" lowerBound="1" eType="_DNop2xACEeOYBPpMrBwl5w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_DNop2xACEeOYBPpMrBwl5w" name="OperatingSystemType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop3BACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_OM_IwBABEeOYBPpMrBwl5w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_DNop3RACEeOYBPpMrBwl5w" name="WindowsServer"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_DNop3hACEeOYBPpMrBwl5w" name="WindowsServerWithSQL" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_DNop3xACEeOYBPpMrBwl5w" name="WindowsServerWithBizTalk" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_DNop4BACEeOYBPpMrBwl5w" name="Linux" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop4RACEeOYBPpMrBwl5w" name="A0ExtraSmall" eSuperTypes="_DNop1RACEeOYBPpMrBwl5w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop4hACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4r73kA__EeOYBPpMrBwl5w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop5BACEeOYBPpMrBwl5w" name="A1Small" eSuperTypes="_DNop1RACEeOYBPpMrBwl5w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop5RACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IaQxoBAAEeOYBPpMrBwl5w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop5xACEeOYBPpMrBwl5w" name="A2Medium" eSuperTypes="_DNop1RACEeOYBPpMrBwl5w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop6BACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IoYtMBAAEeOYBPpMrBwl5w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop6hACEeOYBPpMrBwl5w" name="A3Large" eSuperTypes="_DNop1RACEeOYBPpMrBwl5w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop6xACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_I06tUBAAEeOYBPpMrBwl5w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop7RACEeOYBPpMrBwl5w" name="A4ExtraLarge" eSuperTypes="_DNop1RACEeOYBPpMrBwl5w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop7hACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_OdlmABAAEeOYBPpMrBwl5w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop8BACEeOYBPpMrBwl5w" name="A6" eSuperTypes="_DNop1RACEeOYBPpMrBwl5w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop8RACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_uW3rwBAAEeOYBPpMrBwl5w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_DNop8xACEeOYBPpMrBwl5w" name="A7" eSuperTypes="_DNop1RACEeOYBPpMrBwl5w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNop9BACEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ukc0wBAAEeOYBPpMrBwl5w"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_fFXX8A_9EeOYBPpMrBwl5w" name="Profile" nsURI="http:///schemas/Profile/_fFNm8A_9EeOYBPpMrBwl5w/0" nsPrefix="Profile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fFgh4A_9EeOYBPpMrBwl5w" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fFgh4Q_9EeOYBPpMrBwl5w" key="Version" value="0.0.1"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fFgh4g_9EeOYBPpMrBwl5w" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fFgh4w_9EeOYBPpMrBwl5w" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fFgh5A_9EeOYBPpMrBwl5w" key="Date" value="2013-08-28"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fFgh5Q_9EeOYBPpMrBwl5w" key="Author" value=""/>
+        </eAnnotations>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_a5C2kA__EeOYBPpMrBwl5w" alias="InstanceSpecification">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </elementImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_R-Ib8Q_9EeOYBPpMrBwl5w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_R-Ib8g_9EeOYBPpMrBwl5w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_cxDhEA__EeOYBPpMrBwl5w" name="MicrosoftAzure">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gE-I4A__EeOYBPpMrBwl5w" name="base_InstanceSpecification" association="_gFNZcA__EeOYBPpMrBwl5w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_gFNZcA__EeOYBPpMrBwl5w" name="Extension_MicrosoftAzure_InstanceSpecification" memberEnd="_gFNZcQ__EeOYBPpMrBwl5w _gE-I4A__EeOYBPpMrBwl5w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_gFNZcQ__EeOYBPpMrBwl5w" name="extension_MicrosoftAzure" type="_cxDhEA__EeOYBPpMrBwl5w" aggregation="composite" association="_gFNZcA__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_vauK4A__EeOYBPpMrBwl5w" name="InstanceType" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yQVGEA__EeOYBPpMrBwl5w" name="base_InstanceSpecification" association="_yQh6YA__EeOYBPpMrBwl5w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8NZhQBABEeOYBPpMrBwl5w" name="operatingSystem" visibility="public" type="_OM_IwBABEeOYBPpMrBwl5w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8iyicBABEeOYBPpMrBwl5w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8i8TcBABEeOYBPpMrBwl5w" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_8jS4wBABEeOYBPpMrBwl5w">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_yQh6YA__EeOYBPpMrBwl5w" name="Extension_InstanceType_InstanceSpecification" memberEnd="_yQh6YQ__EeOYBPpMrBwl5w _yQVGEA__EeOYBPpMrBwl5w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_yQh6YQ__EeOYBPpMrBwl5w" name="extension_InstanceType" type="_vauK4A__EeOYBPpMrBwl5w" aggregation="composite" association="_yQh6YA__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4r73kA__EeOYBPpMrBwl5w" name="A0ExtraSmall">
+      <generalization xmi:type="uml:Generalization" xmi:id="_25vEsBAAEeOYBPpMrBwl5w" general="_vauK4A__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_IaQxoBAAEeOYBPpMrBwl5w" name="A1Small">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3n_44BAAEeOYBPpMrBwl5w" general="_vauK4A__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_IoYtMBAAEeOYBPpMrBwl5w" name="A2Medium">
+      <generalization xmi:type="uml:Generalization" xmi:id="_4UP64BAAEeOYBPpMrBwl5w" general="_vauK4A__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_I06tUBAAEeOYBPpMrBwl5w" name="A3Large">
+      <generalization xmi:type="uml:Generalization" xmi:id="_49BLEBAAEeOYBPpMrBwl5w" general="_vauK4A__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_OdlmABAAEeOYBPpMrBwl5w" name="A4ExtraLarge">
+      <generalization xmi:type="uml:Generalization" xmi:id="_54FsMBAAEeOYBPpMrBwl5w" general="_vauK4A__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_uW3rwBAAEeOYBPpMrBwl5w" name="A6">
+      <generalization xmi:type="uml:Generalization" xmi:id="_6kjJkBAAEeOYBPpMrBwl5w" general="_vauK4A__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ukc0wBAAEeOYBPpMrBwl5w" name="A7">
+      <generalization xmi:type="uml:Generalization" xmi:id="_76PxMBAAEeOYBPpMrBwl5w" general="_vauK4A__EeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OM_IwBABEeOYBPpMrBwl5w" name="OperatingSystemType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SbODwBABEeOYBPpMrBwl5w" name="WindowsServer"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_t1RlIBABEeOYBPpMrBwl5w" name="WindowsServerWithSQL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xVHwIBABEeOYBPpMrBwl5w" name="WindowsServerWithBizTalk"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0sJ9YBABEeOYBPpMrBwl5w" name="Linux"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZrFHQBACEeOYBPpMrBwl5w" name="SQLDatabase">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dnZL0BACEeOYBPpMrBwl5w" name="base_InstanceSpecification" association="_dnocYBACEeOYBPpMrBwl5w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_dnocYBACEeOYBPpMrBwl5w" name="Extension_SQLDatabase_InstanceSpecification" memberEnd="_dnpDcBACEeOYBPpMrBwl5w _dnZL0BACEeOYBPpMrBwl5w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_dnpDcBACEeOYBPpMrBwl5w" name="extension_SQLDatabase" type="_ZrFHQBACEeOYBPpMrBwl5w" aggregation="composite" association="_dnocYBACEeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_3Bu4MBACEeOYBPpMrBwl5w" name="MediaService">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_97-tgBACEeOYBPpMrBwl5w" name="base_InstanceSpecification" association="_98N-EBACEeOYBPpMrBwl5w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_6FXoUBACEeOYBPpMrBwl5w" name="SQLReporting">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__e8VEBACEeOYBPpMrBwl5w" name="base_InstanceSpecification" association="__fLloBACEeOYBPpMrBwl5w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_98N-EBACEeOYBPpMrBwl5w" name="Extension_MediaService_InstanceSpecification" memberEnd="_98N-ERACEeOYBPpMrBwl5w _97-tgBACEeOYBPpMrBwl5w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_98N-ERACEeOYBPpMrBwl5w" name="extension_MediaService" type="_3Bu4MBACEeOYBPpMrBwl5w" aggregation="composite" association="_98N-EBACEeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="__fLloBACEeOYBPpMrBwl5w" name="Extension_SQLReporting_InstanceSpecification" memberEnd="__fLloRACEeOYBPpMrBwl5w __e8VEBACEeOYBPpMrBwl5w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="__fLloRACEeOYBPpMrBwl5w" name="extension_SQLReporting" type="_6FXoUBACEeOYBPpMrBwl5w" aggregation="composite" association="__fLloBACEeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_BXBRABADEeOYBPpMrBwl5w" name="HDInsight">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DAE5gBADEeOYBPpMrBwl5w" name="base_InstanceSpecification" association="_DAUxIBADEeOYBPpMrBwl5w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_DAUxIBADEeOYBPpMrBwl5w" name="Extension_HDInsight_InstanceSpecification" memberEnd="_DAUxIRADEeOYBPpMrBwl5w _DAE5gBADEeOYBPpMrBwl5w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_DAUxIRADEeOYBPpMrBwl5w" name="extension_HDInsight" type="_BXBRABADEeOYBPpMrBwl5w" aggregation="composite" association="_DAUxIBADEeOYBPpMrBwl5w"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_fdW50BAAEeOYBPpMrBwl5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fd4eQBAAEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="PerformanceProfile.profile.uml#_AdY5EQlaEeO-nImMzyisdw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="PerformanceProfile.profile.uml#_ilF9kATNEeOYqpWHmlUzvA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_feI88BAAEeOYBPpMrBwl5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_felB0BAAEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="PricingProfile.profile.uml#_Dv2ZsQjpEeOpWq22bueY-w"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="PricingProfile.profile.uml#_lwPrEP5jEeKpsuoNdqwiLw"/>
+    </profileApplication>
+  </uml:Profile>
+  <Performance:GeneralPurpose xmi:id="_k_58YBAAEeOYBPpMrBwl5w" base_Stereotype="_4r73kA__EeOYBPpMrBwl5w"/>
+  <Performance:GeneralPurpose xmi:id="_nwkGIBAAEeOYBPpMrBwl5w" base_Stereotype="_IaQxoBAAEeOYBPpMrBwl5w"/>
+  <Performance:GeneralPurpose xmi:id="_o5qcMBAAEeOYBPpMrBwl5w" base_Stereotype="_IoYtMBAAEeOYBPpMrBwl5w"/>
+  <Performance:GeneralPurpose xmi:id="_qlGqUBAAEeOYBPpMrBwl5w" base_Stereotype="_I06tUBAAEeOYBPpMrBwl5w"/>
+  <Performance:GeneralPurpose xmi:id="_sJAGABAAEeOYBPpMrBwl5w" base_Stereotype="_OdlmABAAEeOYBPpMrBwl5w"/>
+  <Performance:MemoryOptimized xmi:id="_yCqoEBAAEeOYBPpMrBwl5w" base_Stereotype="_uW3rwBAAEeOYBPpMrBwl5w"/>
+  <Performance:MemoryOptimized xmi:id="_zxI8EBAAEeOYBPpMrBwl5w" base_Stereotype="_ukc0wBAAEeOYBPpMrBwl5w"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ariadne-organization:Organization xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ariadne-organization="http://www.obeo.fr/dsl/Ariadne/Organization" xmlns:wcm-modeling="http://www.artist-project.eu/wcm/modeling" name="ARTIST Project" description="ARTIST Project">
+  <categories name="MDA Artefacts" description="MDA Artefacts">
+    <projects name="ARTIST Modelling" description="ARTIST Modelling"/>
+  </categories>
+  <megaModels name="PetstoreCloudModel" identifier="PetstoreCloudModel">
+    <elements xsi:type="wcm-modeling:Model" name="objectify_library.uml" identifier="/PetstoreCloudModel/objectify_library.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="objectify.profile.uml" identifier="/PetstoreCloudModel/objectify.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="Test.uml" identifier="/PetstoreCloudModel/Test.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="GoogleAppEngineDeployment.uml" identifier="/PetstoreCloudModel/GoogleAppEngineDeployment.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="AmazonAWSDeployment.uml" identifier="/PetstoreCloudModel/AmazonAWSDeployment.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements name=".project" identifier="/PetstoreCloudModel/.project"/>
+  </megaModels>
+</ariadne-organization:Organization>

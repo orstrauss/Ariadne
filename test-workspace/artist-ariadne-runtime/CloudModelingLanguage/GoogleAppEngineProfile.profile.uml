@@ -1,0 +1,1638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Performance="http:///schemas/Performance/_RTJEkBAFEeOYBPpMrBwl5w/8" xmlns:Pricing="http:///schemas/Pricing/_Dv2ZsAjpEeOpWq22bueY-w/69" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/Performance/_RTJEkBAFEeOYBPpMrBwl5w/8 PerformanceProfile.profile.uml#_RTJroBAFEeOYBPpMrBwl5w http:///schemas/Pricing/_Dv2ZsAjpEeOpWq22bueY-w/69 PricingProfile.profile.uml#_Dv2ZsQjpEeOpWq22bueY-w">
+  <uml:Profile xmi:id="_8pyKYAQQEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" metaclassReference="_LldfgAQREeOYP5GGYb_HuQ _Hgl_4AjHEeOpWq22bueY-w" metamodelReference="_8pyKYQQQEeOYP5GGYb_HuQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QfE50QQREeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_MEI_kQtkEeO-f7KEdUwVpg" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_MEI_kAtkEeO-f7KEdUwVpg/16" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MFLhYAtkEeO-f7KEdUwVpg" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MFLhYQtkEeO-f7KEdUwVpg" key="Version" value="0.0.17"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MFLhYgtkEeO-f7KEdUwVpg" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MFLhYwtkEeO-f7KEdUwVpg" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MFLhZAtkEeO-f7KEdUwVpg" key="Date" value="2013-08-22"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MFLhZQtkEeO-f7KEdUwVpg" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_kgtkEeO-f7KEdUwVpg" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_kwtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_lAtkEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_lgtkEeO-f7KEdUwVpg" name="usage" ordered="false" lowerBound="1" eType="_MEI_mgtkEeO-f7KEdUwVpg"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_mAtkEeO-f7KEdUwVpg" name="runtimeEnvironment" ordered="false" lowerBound="1" eType="_MEI_nwtkEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MEI_mgtkEeO-f7KEdUwVpg" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_mwtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_nAtkEeO-f7KEdUwVpg" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_nQtkEeO-f7KEdUwVpg" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_ngtkEeO-f7KEdUwVpg" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MEI_nwtkEeO-f7KEdUwVpg" name="RuntimeEnvironmentType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_oAtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rzKdQAjLEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_oQtkEeO-f7KEdUwVpg" name="Java"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_ogtkEeO-f7KEdUwVpg" name="Python" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_owtkEeO-f7KEdUwVpg" name="Go" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_pAtkEeO-f7KEdUwVpg" name="PHP" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_pQtkEeO-f7KEdUwVpg" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_pgtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_pwtkEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_qQtkEeO-f7KEdUwVpg" name="Search" eSuperTypes="_MEI_pQtkEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_qgtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_rAtkEeO-f7KEdUwVpg" name="Email" eSuperTypes="_MEI_pQtkEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_rQtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_rwtkEeO-f7KEdUwVpg" name="Users" eSuperTypes="_MEI_pQtkEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_sAtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_sgtkEeO-f7KEdUwVpg" name="TaskQueue" eSuperTypes="_MEI_pQtkEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_swtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MEI_tQtkEeO-f7KEdUwVpg" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_tgtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_twtkEeO-f7KEdUwVpg" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_uAtkEeO-f7KEdUwVpg" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_uQtkEeO-f7KEdUwVpg" name="AppEngineDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_ugtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_uwtkEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MEI_vQtkEeO-f7KEdUwVpg" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_vgtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_vwtkEeO-f7KEdUwVpg" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_wAtkEeO-f7KEdUwVpg" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_wQtkEeO-f7KEdUwVpg" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_wgtkEeO-f7KEdUwVpg" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MEI_wwtkEeO-f7KEdUwVpg" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_xAtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_xQtkEeO-f7KEdUwVpg" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_xgtkEeO-f7KEdUwVpg" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_xwtkEeO-f7KEdUwVpg" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_yAtkEeO-f7KEdUwVpg" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_yQtkEeO-f7KEdUwVpg" name="B8" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_ygtkEeO-f7KEdUwVpg" name="CloudConfiguration">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_ywtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tMXBoAjHEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_zAtkEeO-f7KEdUwVpg" name="frontendInstanceClass" ordered="false" eType="_MEI_2AtkEeO-f7KEdUwVpg" containment="true"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_zgtkEeO-f7KEdUwVpg" name="applicationIdentifier" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_0AtkEeO-f7KEdUwVpg" name="applicationTitle" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_0gtkEeO-f7KEdUwVpg" name="maxIdleInstance" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_1AtkEeO-f7KEdUwVpg" name="minPendingLatency" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_1gtkEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_2AtkEeO-f7KEdUwVpg" name="FrontendInstance" eSuperTypes="_MEI_3QtkEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_2QtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PYE4gAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_2gtkEeO-f7KEdUwVpg" name="instanceClass" ordered="false" lowerBound="1" eType="_MEI_vQtkEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_3QtkEeO-f7KEdUwVpg" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_3gtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3VUDEAjREeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_3wtkEeO-f7KEdUwVpg" name="instanceCategory" ordered="false" lowerBound="1" eType="_MEI_tQtkEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_4QtkEeO-f7KEdUwVpg" name="GoogleCloudSQL">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_4gtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gm48oAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_4wtkEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_5QtkEeO-f7KEdUwVpg" name="GoogleCloudStorage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_5gtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vHwlEAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_5wtkEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_6QtkEeO-f7KEdUwVpg" name="DatastoreAccess">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_6gtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Rdh7YAjNEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_6wtkEeO-f7KEdUwVpg" name="access" ordered="false" lowerBound="1" eType="_MEI_7wtkEeO-f7KEdUwVpg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEI_7QtkEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MEI_7wtkEeO-f7KEdUwVpg" name="DatastoreAccessType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_8AtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fQgjEAjNEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_8QtkEeO-f7KEdUwVpg" name="JavaDataObjects"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_8gtkEeO-f7KEdUwVpg" name="JavaPersistenceAPI" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_8wtkEeO-f7KEdUwVpg" name="Objectify" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_9AtkEeO-f7KEdUwVpg" name="Twig" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEI_9QtkEeO-f7KEdUwVpg" name="Slim3" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEI_9gtkEeO-f7KEdUwVpg" name="BackendInstance" eSuperTypes="_MEI_3QtkEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEI_9wtkEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pBWYwAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MEI_-AtkEeO-f7KEdUwVpg" name="instanceClass" ordered="false" lowerBound="1" eType="_MEI_wwtkEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_59VyQQtjEeO-f7KEdUwVpg" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_59VyQAtjEeO-f7KEdUwVpg/15" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5-iFEAtjEeO-f7KEdUwVpg" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5-iFEQtjEeO-f7KEdUwVpg" key="Version" value="0.0.16"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5-iFEgtjEeO-f7KEdUwVpg" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5-iFEwtjEeO-f7KEdUwVpg" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5-iFFAtjEeO-f7KEdUwVpg" key="Date" value="2013-08-22"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5-iFFQtjEeO-f7KEdUwVpg" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyQgtjEeO-f7KEdUwVpg" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyQwtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VyRAtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VyRgtjEeO-f7KEdUwVpg" name="usage" ordered="false" lowerBound="1" eType="_59VySgtjEeO-f7KEdUwVpg"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VySAtjEeO-f7KEdUwVpg" name="runtimeEnvironment" ordered="false" lowerBound="1" eType="_59VyTwtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_59VySgtjEeO-f7KEdUwVpg" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VySwtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyTAtjEeO-f7KEdUwVpg" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyTQtjEeO-f7KEdUwVpg" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyTgtjEeO-f7KEdUwVpg" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_59VyTwtjEeO-f7KEdUwVpg" name="RuntimeEnvironmentType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyUAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rzKdQAjLEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyUQtjEeO-f7KEdUwVpg" name="Java"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyUgtjEeO-f7KEdUwVpg" name="Python" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyUwtjEeO-f7KEdUwVpg" name="Go" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyVAtjEeO-f7KEdUwVpg" name="PHP" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyVQtjEeO-f7KEdUwVpg" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyVgtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VyVwtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyWQtjEeO-f7KEdUwVpg" name="Search" eSuperTypes="_59VyVQtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyWgtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyXAtjEeO-f7KEdUwVpg" name="Email" eSuperTypes="_59VyVQtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyXQtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyXwtjEeO-f7KEdUwVpg" name="Users" eSuperTypes="_59VyVQtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyYAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyYgtjEeO-f7KEdUwVpg" name="TaskQueue" eSuperTypes="_59VyVQtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyYwtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_59VyZQtjEeO-f7KEdUwVpg" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyZgtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyZwtjEeO-f7KEdUwVpg" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyaAtjEeO-f7KEdUwVpg" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyaQtjEeO-f7KEdUwVpg" name="AppEngineDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyagtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VyawtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_59VybQtjEeO-f7KEdUwVpg" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VybgtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VybwtjEeO-f7KEdUwVpg" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VycAtjEeO-f7KEdUwVpg" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VycQtjEeO-f7KEdUwVpg" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VycgtjEeO-f7KEdUwVpg" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_59VycwtjEeO-f7KEdUwVpg" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VydAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VydQtjEeO-f7KEdUwVpg" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VydgtjEeO-f7KEdUwVpg" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VydwtjEeO-f7KEdUwVpg" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyeAtjEeO-f7KEdUwVpg" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyeQtjEeO-f7KEdUwVpg" name="B8" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyegtjEeO-f7KEdUwVpg" name="CloudConfiguration">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyewtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tMXBoAjHEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VyfAtjEeO-f7KEdUwVpg" name="base_DeploymentSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//DeploymentSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VyfgtjEeO-f7KEdUwVpg" name="frontendInstanceClass" ordered="false" eType="_59VyigtjEeO-f7KEdUwVpg" containment="true"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VygAtjEeO-f7KEdUwVpg" name="applicationIdentifier" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VyggtjEeO-f7KEdUwVpg" name="applicationTitle" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VyhAtjEeO-f7KEdUwVpg" name="maxIdleInstance" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VyhgtjEeO-f7KEdUwVpg" name="minPendingLatency" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VyiAtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyigtjEeO-f7KEdUwVpg" name="FrontendInstance" eSuperTypes="_59VyjwtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyiwtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PYE4gAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VyjAtjEeO-f7KEdUwVpg" name="instanceClass" ordered="false" lowerBound="1" eType="_59VybQtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyjwtjEeO-f7KEdUwVpg" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VykAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3VUDEAjREeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VykQtjEeO-f7KEdUwVpg" name="instanceCategory" ordered="false" lowerBound="1" eType="_59VyZQtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VykwtjEeO-f7KEdUwVpg" name="GoogleCloudSQL">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VylAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gm48oAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VylQtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VylwtjEeO-f7KEdUwVpg" name="GoogleCloudStorage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VymAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vHwlEAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VymQtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VymwtjEeO-f7KEdUwVpg" name="DatastoreAccess">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VynAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Rdh7YAjNEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VynQtjEeO-f7KEdUwVpg" name="access" ordered="false" lowerBound="1" eType="_59VyoQtjEeO-f7KEdUwVpg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59VynwtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_59VyoQtjEeO-f7KEdUwVpg" name="DatastoreAccessType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyogtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fQgjEAjNEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VyowtjEeO-f7KEdUwVpg" name="JavaDataObjects"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VypAtjEeO-f7KEdUwVpg" name="JavaPersistenceAPI" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VypQtjEeO-f7KEdUwVpg" name="Objectify" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VypgtjEeO-f7KEdUwVpg" name="Twig" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_59VypwtjEeO-f7KEdUwVpg" name="Slim3" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_59VyqAtjEeO-f7KEdUwVpg" name="BackendInstance" eSuperTypes="_59VyjwtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59VyqQtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pBWYwAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_59VyqgtjEeO-f7KEdUwVpg" name="instanceClass" ordered="false" lowerBound="1" eType="_59VycwtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_0tawwQtjEeO-f7KEdUwVpg" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_0tawwAtjEeO-f7KEdUwVpg/14" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0umcgAtjEeO-f7KEdUwVpg" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0umcgQtjEeO-f7KEdUwVpg" key="Version" value="0.0.15"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0umcggtjEeO-f7KEdUwVpg" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0umcgwtjEeO-f7KEdUwVpg" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0umchAtjEeO-f7KEdUwVpg" key="Date" value="2013-08-22"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0umchQtjEeO-f7KEdUwVpg" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0tawwgtjEeO-f7KEdUwVpg" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0tawwwtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0tawxAtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0tawxgtjEeO-f7KEdUwVpg" name="usage" ordered="false" lowerBound="1" eType="_0tawygtjEeO-f7KEdUwVpg"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0tawyAtjEeO-f7KEdUwVpg" name="runtimeEnvironment" ordered="false" lowerBound="1" eType="_0tawzwtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_0tawygtjEeO-f7KEdUwVpg" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0tawywtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0tawzAtjEeO-f7KEdUwVpg" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0tawzQtjEeO-f7KEdUwVpg" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0tawzgtjEeO-f7KEdUwVpg" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_0tawzwtjEeO-f7KEdUwVpg" name="RuntimeEnvironmentType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw0AtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rzKdQAjLEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw0QtjEeO-f7KEdUwVpg" name="Java"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw0gtjEeO-f7KEdUwVpg" name="Python" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw0wtjEeO-f7KEdUwVpg" name="Go" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw1AtjEeO-f7KEdUwVpg" name="PHP" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taw1QtjEeO-f7KEdUwVpg" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw1gtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taw1wtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taw2QtjEeO-f7KEdUwVpg" name="Search" eSuperTypes="_0taw1QtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw2gtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taw3AtjEeO-f7KEdUwVpg" name="Email" eSuperTypes="_0taw1QtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw3QtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taw3wtjEeO-f7KEdUwVpg" name="Users" eSuperTypes="_0taw1QtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw4AtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taw4gtjEeO-f7KEdUwVpg" name="TaskQueue" eSuperTypes="_0taw1QtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw4wtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_0taw5QtjEeO-f7KEdUwVpg" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw5gtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw5wtjEeO-f7KEdUwVpg" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw6AtjEeO-f7KEdUwVpg" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taw6QtjEeO-f7KEdUwVpg" name="AppEngineDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw6gtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taw6wtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_0taw7QtjEeO-f7KEdUwVpg" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw7gtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw7wtjEeO-f7KEdUwVpg" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw8AtjEeO-f7KEdUwVpg" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw8QtjEeO-f7KEdUwVpg" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw8gtjEeO-f7KEdUwVpg" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_0taw8wtjEeO-f7KEdUwVpg" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw9AtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw9QtjEeO-f7KEdUwVpg" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw9gtjEeO-f7KEdUwVpg" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw9wtjEeO-f7KEdUwVpg" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw-AtjEeO-f7KEdUwVpg" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taw-QtjEeO-f7KEdUwVpg" name="B8" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taw-gtjEeO-f7KEdUwVpg" name="CloudConfiguration">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taw-wtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tMXBoAjHEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taw_AtjEeO-f7KEdUwVpg" name="base_DeploymentSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//DeploymentSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taw_gtjEeO-f7KEdUwVpg" name="frontendInstanceClass" ordered="false" eType="_0taxCgtjEeO-f7KEdUwVpg" containment="true"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxAAtjEeO-f7KEdUwVpg" name="applicationIdentifier" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxAgtjEeO-f7KEdUwVpg" name="applicationTitle" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxBAtjEeO-f7KEdUwVpg" name="maxIdleInstance" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxBgtjEeO-f7KEdUwVpg" name="minPendingLatency" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taxCAtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taxCgtjEeO-f7KEdUwVpg" name="FrontendInstance" eSuperTypes="_0taxDwtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taxCwtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PYE4gAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxDAtjEeO-f7KEdUwVpg" name="instanceClass" ordered="false" lowerBound="1" eType="_0taw7QtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taxDwtjEeO-f7KEdUwVpg" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taxEAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3VUDEAjREeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxEQtjEeO-f7KEdUwVpg" name="instanceCategory" ordered="false" lowerBound="1" eType="_0taw5QtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taxEwtjEeO-f7KEdUwVpg" name="GoogleCloudSQL">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taxFAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gm48oAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taxFQtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taxFwtjEeO-f7KEdUwVpg" name="GoogleCloudStorage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taxGAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vHwlEAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taxGQtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taxGwtjEeO-f7KEdUwVpg" name="DatastoreAccess">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taxHAtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Rdh7YAjNEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxHQtjEeO-f7KEdUwVpg" name="access" ordered="false" lowerBound="1" eType="_0taxIQtjEeO-f7KEdUwVpg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0taxHwtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_0taxIQtjEeO-f7KEdUwVpg" name="DatastoreAccessType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taxIgtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fQgjEAjNEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taxIwtjEeO-f7KEdUwVpg" name="JavaDataObjects"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taxJAtjEeO-f7KEdUwVpg" name="JavaPersistenceAPI" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taxJQtjEeO-f7KEdUwVpg" name="Objectify" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taxJgtjEeO-f7KEdUwVpg" name="Twig" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_0taxJwtjEeO-f7KEdUwVpg" name="Slim3" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_0taxKAtjEeO-f7KEdUwVpg" name="BackendInstance" eSuperTypes="_0taxDwtjEeO-f7KEdUwVpg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0taxKQtjEeO-f7KEdUwVpg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pBWYwAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0taxKgtjEeO-f7KEdUwVpg" name="instanceClass" ordered="false" lowerBound="1" eType="_0taw8wtjEeO-f7KEdUwVpg"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_MObIgQjpEeOpWq22bueY-w" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_MObIgAjpEeOpWq22bueY-w/13" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MPUgYQjpEeOpWq22bueY-w" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPUgYgjpEeOpWq22bueY-w" key="Version" value="0.0.14"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPUgYwjpEeOpWq22bueY-w" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPUgZAjpEeOpWq22bueY-w" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPUgZQjpEeOpWq22bueY-w" key="Date" value="2013-08-19"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPUgZgjpEeOpWq22bueY-w" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObIggjpEeOpWq22bueY-w" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIgwjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObIhAjpEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIhgjpEeOpWq22bueY-w" name="usage" ordered="false" lowerBound="1" eType="_MObIigjpEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIiAjpEeOpWq22bueY-w" name="runtimeEnvironment" ordered="false" lowerBound="1" eType="_MObIjwjpEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MObIigjpEeOpWq22bueY-w" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIiwjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIjAjpEeOpWq22bueY-w" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIjQjpEeOpWq22bueY-w" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIjgjpEeOpWq22bueY-w" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MObIjwjpEeOpWq22bueY-w" name="RuntimeEnvironmentType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIkAjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rzKdQAjLEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIkQjpEeOpWq22bueY-w" name="Java"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIkgjpEeOpWq22bueY-w" name="Python" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIkwjpEeOpWq22bueY-w" name="Go" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIlAjpEeOpWq22bueY-w" name="PHP" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObIlQjpEeOpWq22bueY-w" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIlgjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObIlwjpEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObImQjpEeOpWq22bueY-w" name="Search" eSuperTypes="_MObIlQjpEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObImgjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObInAjpEeOpWq22bueY-w" name="Email" eSuperTypes="_MObIlQjpEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObInQjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObInwjpEeOpWq22bueY-w" name="Users" eSuperTypes="_MObIlQjpEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIoAjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObIogjpEeOpWq22bueY-w" name="TaskQueue" eSuperTypes="_MObIlQjpEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIowjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MObIpQjpEeOpWq22bueY-w" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIpgjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIpwjpEeOpWq22bueY-w" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIqAjpEeOpWq22bueY-w" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObIqQjpEeOpWq22bueY-w" name="AppEngineDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIqgjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObIqwjpEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MObIrQjpEeOpWq22bueY-w" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIrgjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIrwjpEeOpWq22bueY-w" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIsAjpEeOpWq22bueY-w" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIsQjpEeOpWq22bueY-w" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIsgjpEeOpWq22bueY-w" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MObIswjpEeOpWq22bueY-w" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObItAjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObItQjpEeOpWq22bueY-w" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObItgjpEeOpWq22bueY-w" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObItwjpEeOpWq22bueY-w" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIuAjpEeOpWq22bueY-w" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObIuQjpEeOpWq22bueY-w" name="B8" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObIugjpEeOpWq22bueY-w" name="CloudConfiguration">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIuwjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tMXBoAjHEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObIvAjpEeOpWq22bueY-w" name="base_DeploymentSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//DeploymentSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObIvgjpEeOpWq22bueY-w" name="frontendInstanceClass" ordered="false" eType="_MObIyAjpEeOpWq22bueY-w" containment="true"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIwAjpEeOpWq22bueY-w" name="applicationIdentifier" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIwgjpEeOpWq22bueY-w" name="applicationTitle" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIxAjpEeOpWq22bueY-w" name="maxIdleInstance" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIxgjpEeOpWq22bueY-w" name="minPendingLatency" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObIyAjpEeOpWq22bueY-w" name="FrontendInstance" eSuperTypes="_MObIzQjpEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIyQjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PYE4gAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIygjpEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_MObIrQjpEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObIzQjpEeOpWq22bueY-w" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObIzgjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3VUDEAjREeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObIzwjpEeOpWq22bueY-w" name="instanceCategory" ordered="false" lowerBound="1" eType="_MObIpQjpEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObI0QjpEeOpWq22bueY-w" name="GoogleCloudSQL">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObI0gjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gm48oAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObI0wjpEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObI1QjpEeOpWq22bueY-w" name="GoogleCloudStorage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObI1gjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vHwlEAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObI1wjpEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObI2QjpEeOpWq22bueY-w" name="DatastoreAccess">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObI2gjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Rdh7YAjNEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObI2wjpEeOpWq22bueY-w" name="access" ordered="false" lowerBound="1" eType="_MObI3wjpEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MObI3QjpEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_MObI3wjpEeOpWq22bueY-w" name="DatastoreAccessType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObI4AjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fQgjEAjNEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObI4QjpEeOpWq22bueY-w" name="JavaDataObjects"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObI4gjpEeOpWq22bueY-w" name="JavaPersistenceAPI" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObI4wjpEeOpWq22bueY-w" name="Objectify" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObI5AjpEeOpWq22bueY-w" name="Twig" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MObI5QjpEeOpWq22bueY-w" name="Slim3" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_MObI5gjpEeOpWq22bueY-w" name="BackendInstance" eSuperTypes="_MObIzQjpEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MObI5wjpEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pBWYwAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MObI6AjpEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_MObIswjpEeOpWq22bueY-w"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_SjwXEQjiEeOpWq22bueY-w" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_SjwXEAjiEeOpWq22bueY-w/12" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Sk8p4AjiEeOpWq22bueY-w" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sk8p4QjiEeOpWq22bueY-w" key="Version" value="0.0.13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sk8p4gjiEeOpWq22bueY-w" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sk8p4wjiEeOpWq22bueY-w" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sk8p5AjiEeOpWq22bueY-w" key="Date" value="2013-08-19"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sk8p5QjiEeOpWq22bueY-w" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXEgjiEeOpWq22bueY-w" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXEwjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXFAjiEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXFgjiEeOpWq22bueY-w" name="usage" ordered="false" lowerBound="1" eType="_SjwXGgjiEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXGAjiEeOpWq22bueY-w" name="runtimeEnvironment" ordered="false" lowerBound="1" eType="_SjwXHwjiEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SjwXGgjiEeOpWq22bueY-w" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXGwjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXHAjiEeOpWq22bueY-w" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXHQjiEeOpWq22bueY-w" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXHgjiEeOpWq22bueY-w" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SjwXHwjiEeOpWq22bueY-w" name="RuntimeEnvironmentType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXIAjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rzKdQAjLEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXIQjiEeOpWq22bueY-w" name="Java"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXIgjiEeOpWq22bueY-w" name="Python" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXIwjiEeOpWq22bueY-w" name="Go" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXJAjiEeOpWq22bueY-w" name="PHP" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXJQjiEeOpWq22bueY-w" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXJgjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXJwjiEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXKQjiEeOpWq22bueY-w" name="Search" eSuperTypes="_SjwXJQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXKgjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXLAjiEeOpWq22bueY-w" name="Email" eSuperTypes="_SjwXJQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXLQjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXLwjiEeOpWq22bueY-w" name="Users" eSuperTypes="_SjwXJQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXMAjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXMgjiEeOpWq22bueY-w" name="TaskQueue" eSuperTypes="_SjwXJQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXMwjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SjwXNQjiEeOpWq22bueY-w" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXNgjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXNwjiEeOpWq22bueY-w" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXOAjiEeOpWq22bueY-w" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXOQjiEeOpWq22bueY-w" name="InstanceType_dep">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXOgjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXOwjiEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXPQjiEeOpWq22bueY-w" name="instanceCategory" ordered="false" lowerBound="1" eType="_SjwXNQjiEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXPwjiEeOpWq22bueY-w" name="AppEngineDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXQAjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXQQjiEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXQwjiEeOpWq22bueY-w" name="FrontendInstance_dep" eSuperTypes="_SjwXOQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXRAjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXRQjiEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_SjwXSAjiEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SjwXSAjiEeOpWq22bueY-w" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXSQjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXSgjiEeOpWq22bueY-w" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXSwjiEeOpWq22bueY-w" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXTAjiEeOpWq22bueY-w" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXTQjiEeOpWq22bueY-w" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXTgjiEeOpWq22bueY-w" name="BackendInstance_dep" eSuperTypes="_SjwXOQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXTwjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXUAjiEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_SjwXUwjiEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SjwXUwjiEeOpWq22bueY-w" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXVAjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXVQjiEeOpWq22bueY-w" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXVgjiEeOpWq22bueY-w" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXVwjiEeOpWq22bueY-w" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXWAjiEeOpWq22bueY-w" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXWQjiEeOpWq22bueY-w" name="B8" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXWgjiEeOpWq22bueY-w" name="CloudConfiguration">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXWwjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tMXBoAjHEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXXAjiEeOpWq22bueY-w" name="base_DeploymentSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//DeploymentSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXXgjiEeOpWq22bueY-w" name="frontendInstanceClass" ordered="false" eType="_SjwXaAjiEeOpWq22bueY-w" containment="true"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXYAjiEeOpWq22bueY-w" name="applicationIdentifier" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXYgjiEeOpWq22bueY-w" name="applicationTitle" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXZAjiEeOpWq22bueY-w" name="maxIdleInstance" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXZgjiEeOpWq22bueY-w" name="minPendingLatency" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXaAjiEeOpWq22bueY-w" name="FrontendInstance" eSuperTypes="_SjwXbQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXaQjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PYE4gAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXagjiEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_SjwXSAjiEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXbQjiEeOpWq22bueY-w" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXbgjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3VUDEAjREeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXbwjiEeOpWq22bueY-w" name="instanceCategory" ordered="false" lowerBound="1" eType="_SjwXNQjiEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXcQjiEeOpWq22bueY-w" name="GoogleCloudSQL">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXcgjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gm48oAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXcwjiEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXdQjiEeOpWq22bueY-w" name="GoogleCloudStorage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXdgjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vHwlEAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXdwjiEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXeQjiEeOpWq22bueY-w" name="DatastoreAccess">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXegjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Rdh7YAjNEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXewjiEeOpWq22bueY-w" name="access" ordered="false" lowerBound="1" eType="_SjwXfwjiEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SjwXfQjiEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_SjwXfwjiEeOpWq22bueY-w" name="DatastoreAccessType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXgAjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fQgjEAjNEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXgQjiEeOpWq22bueY-w" name="JavaDataObjects"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXggjiEeOpWq22bueY-w" name="JavaPersistenceAPI" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXgwjiEeOpWq22bueY-w" name="Objectify" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXhAjiEeOpWq22bueY-w" name="Twig" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_SjwXhQjiEeOpWq22bueY-w" name="Slim3" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_SjwXhgjiEeOpWq22bueY-w" name="BackendInstance" eSuperTypes="_SjwXbQjiEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjwXhwjiEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pBWYwAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SjwXiAjiEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_SjwXUwjiEeOpWq22bueY-w"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_KIKEwAjXEeOpWq22bueY-w" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_KHt_4AjXEeOpWq22bueY-w/11" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJWXkAjXEeOpWq22bueY-w" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJWXkQjXEeOpWq22bueY-w" key="Version" value="0.0.12"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJWXkgjXEeOpWq22bueY-w" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJWXkwjXEeOpWq22bueY-w" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJWXlAjXEeOpWq22bueY-w" key="Date" value="2013-08-19"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJWXlQjXEeOpWq22bueY-w" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKEwQjXEeOpWq22bueY-w" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKEwgjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKEwwjXEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKExQjXEeOpWq22bueY-w" name="usage" ordered="false" lowerBound="1" eType="_KIKEyQjXEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKExwjXEeOpWq22bueY-w" name="runtimeEnvironment" ordered="false" lowerBound="1" eType="_KIKEzgjXEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KIKEyQjXEeOpWq22bueY-w" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKEygjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKEywjXEeOpWq22bueY-w" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKEzAjXEeOpWq22bueY-w" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKEzQjXEeOpWq22bueY-w" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KIKEzgjXEeOpWq22bueY-w" name="RuntimeEnvironmentType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKEzwjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rzKdQAjLEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE0AjXEeOpWq22bueY-w" name="Java"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE0QjXEeOpWq22bueY-w" name="Python" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE0gjXEeOpWq22bueY-w" name="Go" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE0wjXEeOpWq22bueY-w" name="PHP" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE1AjXEeOpWq22bueY-w" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE1QjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKE1gjXEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE2AjXEeOpWq22bueY-w" name="Search" eSuperTypes="_KIKE1AjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE2QjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE2wjXEeOpWq22bueY-w" name="Email" eSuperTypes="_KIKE1AjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE3AjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE3gjXEeOpWq22bueY-w" name="Users" eSuperTypes="_KIKE1AjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE3wjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE4QjXEeOpWq22bueY-w" name="TaskQueue" eSuperTypes="_KIKE1AjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE4gjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KIKE5AjXEeOpWq22bueY-w" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE5QjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE5gjXEeOpWq22bueY-w" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE5wjXEeOpWq22bueY-w" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE6AjXEeOpWq22bueY-w" name="InstanceType_dep">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE6QjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKE6gjXEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKE7AjXEeOpWq22bueY-w" name="instanceCategory" ordered="false" lowerBound="1" eType="_KIKE5AjXEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE7gjXEeOpWq22bueY-w" name="AppEngineDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE7wjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKE8AjXEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE8gjXEeOpWq22bueY-w" name="FrontendInstance_dep" eSuperTypes="_KIKE6AjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE8wjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKE9AjXEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_KIKE9wjXEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KIKE9wjXEeOpWq22bueY-w" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE-AjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE-QjXEeOpWq22bueY-w" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE-gjXEeOpWq22bueY-w" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE-wjXEeOpWq22bueY-w" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKE_AjXEeOpWq22bueY-w" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKE_QjXEeOpWq22bueY-w" name="BackendInstance_dep" eSuperTypes="_KIKE6AjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKE_gjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKE_wjXEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_KIKFAgjXEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KIKFAgjXEeOpWq22bueY-w" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFAwjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFBAjXEeOpWq22bueY-w" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFBQjXEeOpWq22bueY-w" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFBgjXEeOpWq22bueY-w" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFBwjXEeOpWq22bueY-w" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFCAjXEeOpWq22bueY-w" name="B8" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKFCQjXEeOpWq22bueY-w" name="CloudConfiguration">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFCgjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tMXBoAjHEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKFCwjXEeOpWq22bueY-w" name="base_DeploymentSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//DeploymentSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKFDQjXEeOpWq22bueY-w" name="frontendInstanceClass" ordered="false" lowerBound="1" eType="_KIKFFwjXEeOpWq22bueY-w" containment="true"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFDwjXEeOpWq22bueY-w" name="applicationIdentifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFEQjXEeOpWq22bueY-w" name="applicationTitle" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFEwjXEeOpWq22bueY-w" name="maxIdleInstance" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFFQjXEeOpWq22bueY-w" name="minPendingLatency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKFFwjXEeOpWq22bueY-w" name="FrontendInstance" eSuperTypes="_KIKFHAjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFGAjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PYE4gAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFGQjXEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_KIKE9wjXEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKFHAjXEeOpWq22bueY-w" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFHQjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3VUDEAjREeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFHgjXEeOpWq22bueY-w" name="instanceCategory" ordered="false" lowerBound="1" eType="_KIKE5AjXEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKFIAjXEeOpWq22bueY-w" name="GoogleCloudSQL">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFIQjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gm48oAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKFIgjXEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKFJAjXEeOpWq22bueY-w" name="GoogleCloudStorage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFJQjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vHwlEAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKFJgjXEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKFKAjXEeOpWq22bueY-w" name="DatastoreAccess">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFKQjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Rdh7YAjNEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFKgjXEeOpWq22bueY-w" name="access" ordered="false" lowerBound="1" eType="_KIKFLgjXEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KIKFLAjXEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KIKFLgjXEeOpWq22bueY-w" name="DatastoreAccessType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFLwjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fQgjEAjNEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFMAjXEeOpWq22bueY-w" name="JavaDataObjects"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFMQjXEeOpWq22bueY-w" name="JavaPersistenceAPI" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFMgjXEeOpWq22bueY-w" name="Objectify" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFMwjXEeOpWq22bueY-w" name="Twig" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_KIKFNAjXEeOpWq22bueY-w" name="Slim3" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_KIKFNQjXEeOpWq22bueY-w" name="BackendInstance" eSuperTypes="_KIKFHAjXEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KIKFNgjXEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pBWYwAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KIKFNwjXEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_KIKFAgjXEeOpWq22bueY-w"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_PI_zUQjVEeOpWq22bueY-w" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_PI_zUAjVEeOpWq22bueY-w/10" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PKVQEAjVEeOpWq22bueY-w" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PKVQEQjVEeOpWq22bueY-w" key="Version" value="0.0.11"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PKVQEgjVEeOpWq22bueY-w" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PKVQEwjVEeOpWq22bueY-w" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PKVQFAjVEeOpWq22bueY-w" key="Date" value="2013-08-19"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PKVQFQjVEeOpWq22bueY-w" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zUgjVEeOpWq22bueY-w" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zUwjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_zVAjVEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zVgjVEeOpWq22bueY-w" name="usage" ordered="false" lowerBound="1" eType="_PI_zWgjVEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zWAjVEeOpWq22bueY-w" name="runtimeEnvironment" ordered="false" lowerBound="1" eType="_PI_zXwjVEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_PI_zWgjVEeOpWq22bueY-w" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zWwjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zXAjVEeOpWq22bueY-w" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zXQjVEeOpWq22bueY-w" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zXgjVEeOpWq22bueY-w" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_PI_zXwjVEeOpWq22bueY-w" name="RuntimeEnvironmentType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zYAjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rzKdQAjLEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zYQjVEeOpWq22bueY-w" name="Java"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zYgjVEeOpWq22bueY-w" name="Python" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zYwjVEeOpWq22bueY-w" name="Go" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zZAjVEeOpWq22bueY-w" name="PHP" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zZQjVEeOpWq22bueY-w" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zZgjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_zZwjVEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zaQjVEeOpWq22bueY-w" name="Search" eSuperTypes="_PI_zZQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zagjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zbAjVEeOpWq22bueY-w" name="Email" eSuperTypes="_PI_zZQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zbQjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zbwjVEeOpWq22bueY-w" name="Users" eSuperTypes="_PI_zZQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zcAjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zcgjVEeOpWq22bueY-w" name="TaskQueue" eSuperTypes="_PI_zZQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zcwjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_PI_zdQjVEeOpWq22bueY-w" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zdgjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zdwjVEeOpWq22bueY-w" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zeAjVEeOpWq22bueY-w" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zeQjVEeOpWq22bueY-w" name="InstanceType_dep">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zegjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_zewjVEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zfQjVEeOpWq22bueY-w" name="instanceCategory" ordered="false" lowerBound="1" eType="_PI_zdQjVEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zfwjVEeOpWq22bueY-w" name="AppEngineDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zgAjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_zgQjVEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zgwjVEeOpWq22bueY-w" name="FrontendInstance_dep" eSuperTypes="_PI_zeQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zhAjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zhQjVEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_PI_ziAjVEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_PI_ziAjVEeOpWq22bueY-w" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_ziQjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zigjVEeOpWq22bueY-w" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_ziwjVEeOpWq22bueY-w" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zjAjVEeOpWq22bueY-w" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zjQjVEeOpWq22bueY-w" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zjgjVEeOpWq22bueY-w" name="BackendInstance_dep" eSuperTypes="_PI_zeQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zjwjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zkAjVEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_PI_zkwjVEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_PI_zkwjVEeOpWq22bueY-w" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zlAjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zlQjVEeOpWq22bueY-w" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zlgjVEeOpWq22bueY-w" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zlwjVEeOpWq22bueY-w" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zmAjVEeOpWq22bueY-w" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zmQjVEeOpWq22bueY-w" name="B8" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zmgjVEeOpWq22bueY-w" name="CloudConfiguration">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zmwjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tMXBoAjHEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_znAjVEeOpWq22bueY-w" name="base_DeploymentSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//DeploymentSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_zngjVEeOpWq22bueY-w" name="frontendInstanceClass" ordered="false" lowerBound="1" eType="_PI_zqAjVEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zoAjVEeOpWq22bueY-w" name="applicationIdentifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zogjVEeOpWq22bueY-w" name="applicationTitle" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zpAjVEeOpWq22bueY-w" name="maxIdleInstance" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zpgjVEeOpWq22bueY-w" name="minPendingLatency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zqAjVEeOpWq22bueY-w" name="FrontendInstance" eSuperTypes="_PI_zrQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zqQjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PYE4gAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zqgjVEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_PI_ziAjVEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zrQjVEeOpWq22bueY-w" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zrgjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3VUDEAjREeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zrwjVEeOpWq22bueY-w" name="instanceCategory" ordered="false" lowerBound="1" eType="_PI_zdQjVEeOpWq22bueY-w"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zsQjVEeOpWq22bueY-w" name="GoogleCloudSQL">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zsgjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gm48oAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_zswjVEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_ztQjVEeOpWq22bueY-w" name="GoogleCloudStorage">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_ztgjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vHwlEAjMEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_ztwjVEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zuQjVEeOpWq22bueY-w" name="DatastoreAccess">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zugjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Rdh7YAjNEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zuwjVEeOpWq22bueY-w" name="access" ordered="false" lowerBound="1" eType="_PI_zvwjVEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PI_zvQjVEeOpWq22bueY-w" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_PI_zvwjVEeOpWq22bueY-w" name="DatastoreAccessType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zwAjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fQgjEAjNEeOpWq22bueY-w"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zwQjVEeOpWq22bueY-w" name="JavaDataObjects"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zwgjVEeOpWq22bueY-w" name="JavaPersistenceAPI" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zwwjVEeOpWq22bueY-w" name="Objectify" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zxAjVEeOpWq22bueY-w" name="Twig" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_PI_zxQjVEeOpWq22bueY-w" name="Slim3" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_PI_zxgjVEeOpWq22bueY-w" name="BackendInstance" eSuperTypes="_PI_zrQjVEeOpWq22bueY-w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PI_zxwjVEeOpWq22bueY-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pBWYwAjSEeOpWq22bueY-w"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PI_zyAjVEeOpWq22bueY-w" name="instanceClass" ordered="false" lowerBound="1" eType="_PI_zkwjVEeOpWq22bueY-w"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_fv7McAS7EeOYqpWHmlUzvA" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_fv6lYAS7EeOYqpWHmlUzvA/9" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fwjekAS7EeOYqpWHmlUzvA" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fwjekQS7EeOYqpWHmlUzvA" key="Version" value="0.0.10"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fwjekgS7EeOYqpWHmlUzvA" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fwjekwS7EeOYqpWHmlUzvA" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fwjelAS7EeOYqpWHmlUzvA" key="Date" value="2013-08-14"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fwjelQS7EeOYqpWHmlUzvA" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7McQS7EeOYqpWHmlUzvA" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7McgS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_fv7McwS7EeOYqpWHmlUzvA" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_fv7MdQS7EeOYqpWHmlUzvA" name="usage" ordered="false" lowerBound="1" eType="_fv7MdwS7EeOYqpWHmlUzvA"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_fv7MdwS7EeOYqpWHmlUzvA" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MeAS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MeQS7EeOYqpWHmlUzvA" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MegS7EeOYqpWHmlUzvA" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MewS7EeOYqpWHmlUzvA" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MfAS7EeOYqpWHmlUzvA" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MfQS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_fv7MfgS7EeOYqpWHmlUzvA" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MgAS7EeOYqpWHmlUzvA" name="Search" eSuperTypes="_fv7MfAS7EeOYqpWHmlUzvA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MgQS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MgwS7EeOYqpWHmlUzvA" name="Email" eSuperTypes="_fv7MfAS7EeOYqpWHmlUzvA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MhAS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MhgS7EeOYqpWHmlUzvA" name="Users" eSuperTypes="_fv7MfAS7EeOYqpWHmlUzvA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MhwS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MiQS7EeOYqpWHmlUzvA" name="TaskQueue" eSuperTypes="_fv7MfAS7EeOYqpWHmlUzvA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MigS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_fv7MjAS7EeOYqpWHmlUzvA" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MjQS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MjgS7EeOYqpWHmlUzvA" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MjwS7EeOYqpWHmlUzvA" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MkAS7EeOYqpWHmlUzvA" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MkQS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_fv7MkgS7EeOYqpWHmlUzvA" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_fv7MlAS7EeOYqpWHmlUzvA" name="instanceCategory" ordered="false" lowerBound="1" eType="_fv7MjAS7EeOYqpWHmlUzvA"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MlgS7EeOYqpWHmlUzvA" name="HighReplicationDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MlwS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_fv7MmAS7EeOYqpWHmlUzvA" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MmgS7EeOYqpWHmlUzvA" name="FrontendInstance" eSuperTypes="_fv7MkAS7EeOYqpWHmlUzvA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MmwS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_fv7MnAS7EeOYqpWHmlUzvA" name="class" ordered="false" lowerBound="1" eType="_fv7MnwS7EeOYqpWHmlUzvA"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_fv7MnwS7EeOYqpWHmlUzvA" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MoAS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MoQS7EeOYqpWHmlUzvA" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MogS7EeOYqpWHmlUzvA" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MowS7EeOYqpWHmlUzvA" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MpAS7EeOYqpWHmlUzvA" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_fv7MpQS7EeOYqpWHmlUzvA" name="BackendInstance" eSuperTypes="_fv7MkAS7EeOYqpWHmlUzvA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MpgS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_fv7MpwS7EeOYqpWHmlUzvA" name="class" ordered="false" lowerBound="1" eType="_fv7MqgS7EeOYqpWHmlUzvA"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_fv7MqgS7EeOYqpWHmlUzvA" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fv7MqwS7EeOYqpWHmlUzvA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MrAS7EeOYqpWHmlUzvA" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MrQS7EeOYqpWHmlUzvA" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MrgS7EeOYqpWHmlUzvA" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MrwS7EeOYqpWHmlUzvA" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_fv7MsAS7EeOYqpWHmlUzvA" name="B8" value="4"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_QhEI8AQ0EeOqEMggsflucg" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_QhCTwAQ0EeOqEMggsflucg/8" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qhp-0AQ0EeOqEMggsflucg" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qhp-0QQ0EeOqEMggsflucg" key="Version" value="0.0.9"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qhp-0gQ0EeOqEMggsflucg" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qhp-0wQ0EeOqEMggsflucg" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qhp-1AQ0EeOqEMggsflucg" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qhp-1QQ0EeOqEMggsflucg" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEI8QQ0EeOqEMggsflucg" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEI8gQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QhEI8wQ0EeOqEMggsflucg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QhEI9QQ0EeOqEMggsflucg" name="usage" ordered="false" lowerBound="1" eType="_QhEI9wQ0EeOqEMggsflucg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QhEI9wQ0EeOqEMggsflucg" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEI-AQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEI-QQ0EeOqEMggsflucg" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEI-gQ0EeOqEMggsflucg" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEI-wQ0EeOqEMggsflucg" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEI_AQ0EeOqEMggsflucg" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEI_QQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QhEI_gQ0EeOqEMggsflucg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEJAAQ0EeOqEMggsflucg" name="Search" eSuperTypes="_QhEI_AQ0EeOqEMggsflucg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwAAQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEwAgQ0EeOqEMggsflucg" name="Email" eSuperTypes="_QhEI_AQ0EeOqEMggsflucg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwAwQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEwBQQ0EeOqEMggsflucg" name="Users" eSuperTypes="_QhEI_AQ0EeOqEMggsflucg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwBgQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEwCAQ0EeOqEMggsflucg" name="TaskQueue" eSuperTypes="_QhEI_AQ0EeOqEMggsflucg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwCQQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QhEwCwQ0EeOqEMggsflucg" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwDAQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwDQQ0EeOqEMggsflucg" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwDgQ0EeOqEMggsflucg" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEwDwQ0EeOqEMggsflucg" name="InstanceType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwEAQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QhEwEQQ0EeOqEMggsflucg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QhEwEwQ0EeOqEMggsflucg" name="instanceCategory" ordered="false" lowerBound="1" eType="_QhEwCwQ0EeOqEMggsflucg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEwFQQ0EeOqEMggsflucg" name="HighReplicationDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwFgQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QhEwFwQ0EeOqEMggsflucg" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEwGQQ0EeOqEMggsflucg" name="FrontendInstance" eSuperTypes="_QhEwDwQ0EeOqEMggsflucg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwGgQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QhEwGwQ0EeOqEMggsflucg" name="class" ordered="false" lowerBound="1" eType="_QhEwHgQ0EeOqEMggsflucg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QhEwHgQ0EeOqEMggsflucg" name="FrontendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwHwQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwIAQ0EeOqEMggsflucg" name="F1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwIQQ0EeOqEMggsflucg" name="F2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwIgQ0EeOqEMggsflucg" name="F4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwIwQ0EeOqEMggsflucg" name="F4_1G" value="3"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QhEwJAQ0EeOqEMggsflucg" name="BackendInstance" eSuperTypes="_QhEwDwQ0EeOqEMggsflucg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwJQQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QhEwJgQ0EeOqEMggsflucg" name="class" ordered="false" lowerBound="1" eType="_QhEwKQQ0EeOqEMggsflucg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QhEwKQQ0EeOqEMggsflucg" name="BackendClassType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhEwKgQ0EeOqEMggsflucg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwKwQ0EeOqEMggsflucg" name="B1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwLAQ0EeOqEMggsflucg" name="B2" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwLQQ0EeOqEMggsflucg" name="B4" value="2"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwLgQ0EeOqEMggsflucg" name="B4_1G" value="3"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_QhEwLwQ0EeOqEMggsflucg" name="B8" value="4"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_dE1pAQQoEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_dE1pAAQoEeOYP5GGYb_HuQ/7" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dFaQwAQoEeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dFaQwQQoEeOYP5GGYb_HuQ" key="Version" value="0.0.8"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dFaQwgQoEeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dFaQwwQoEeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dFaQxAQoEeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dFaQxQQoEeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pAgQoEeOYP5GGYb_HuQ" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pAwQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dE1pBAQoEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_dE1pBgQoEeOYP5GGYb_HuQ" name="usage" ordered="false" lowerBound="1" eType="_dE1pCAQoEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_dE1pCAQoEeOYP5GGYb_HuQ" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pCQQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_dE1pCgQoEeOYP5GGYb_HuQ" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_dE1pCwQoEeOYP5GGYb_HuQ" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_dE1pDAQoEeOYP5GGYb_HuQ" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pDQQoEeOYP5GGYb_HuQ" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pDgQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dE1pDwQoEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pEQQoEeOYP5GGYb_HuQ" name="Search" eSuperTypes="_dE1pDQQoEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pEgQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pFAQoEeOYP5GGYb_HuQ" name="Email" eSuperTypes="_dE1pDQQoEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pFQQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pFwQoEeOYP5GGYb_HuQ" name="Users" eSuperTypes="_dE1pDQQoEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pGAQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pGgQoEeOYP5GGYb_HuQ" name="TaskQueue" eSuperTypes="_dE1pDQQoEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pGwQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_dE1pHQQoEeOYP5GGYb_HuQ" name="InstanceCategoryType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pHgQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_dE1pHwQoEeOYP5GGYb_HuQ" name="OnDemand"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_dE1pIAQoEeOYP5GGYb_HuQ" name="Reserved" value="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pIQQoEeOYP5GGYb_HuQ" name="FrontendInstance">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pIgQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dE1pIwQoEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_dE1pJQQoEeOYP5GGYb_HuQ" name="instanceCategory" ordered="false" lowerBound="1" eType="_dE1pHQQoEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_dE1pJwQoEeOYP5GGYb_HuQ" name="HighReplicationDatastore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dE1pKAQoEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_W0g6cAQoEeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dE1pKQQoEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_S485QQQnEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_S485QAQnEeOYP5GGYb_HuQ/6" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S5RpYAQnEeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S5RpYQQnEeOYP5GGYb_HuQ" key="Version" value="0.0.7"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S5RpYgQnEeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S5RpYwQnEeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S5RpZAQnEeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S5RpZQQnEeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_S485QgQnEeOYP5GGYb_HuQ" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S485QwQnEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_S485RAQnEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_S485RgQnEeOYP5GGYb_HuQ" name="usage" ordered="false" lowerBound="1" eType="_S485SAQnEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_S485SAQnEeOYP5GGYb_HuQ" name="UsageType">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S485SQQnEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2Q1pUAQmEeOYP5GGYb_HuQ"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_S485SgQnEeOYP5GGYb_HuQ" name="Free"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_S485SwQnEeOYP5GGYb_HuQ" name="Paid" value="1"/>
+          <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_S485TAQnEeOYP5GGYb_HuQ" name="Premier" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_S485TQQnEeOYP5GGYb_HuQ" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S485TgQnEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_S485TwQnEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_S485UQQnEeOYP5GGYb_HuQ" name="Search" eSuperTypes="_S485TQQnEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S485UgQnEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_S485VAQnEeOYP5GGYb_HuQ" name="Email" eSuperTypes="_S485TQQnEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S485VQQnEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_S485VwQnEeOYP5GGYb_HuQ" name="Users" eSuperTypes="_S485TQQnEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S485WAQnEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_S485WgQnEeOYP5GGYb_HuQ" name="TaskQueue" eSuperTypes="_S485TQQnEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S485WwQnEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="__gBdEQQjEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/__gBdEAQjEeOYP5GGYb_HuQ/5" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gU_EAQjEeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gU_EQQjEeOYP5GGYb_HuQ" key="Version" value="0.0.6"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gU_EgQjEeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gU_EwQjEeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gU_FAQjEeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gU_FQQjEeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__gBdEgQjEeOYP5GGYb_HuQ" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gBdEwQjEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__gBdFAQjEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__gBdFgQjEeOYP5GGYb_HuQ" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gBdFwQjEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__gBdGAQjEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__gBdGgQjEeOYP5GGYb_HuQ" name="Search" eSuperTypes="__gBdFgQjEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gBdGwQjEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__gBdHQQjEeOYP5GGYb_HuQ" name="Email" eSuperTypes="__gBdFgQjEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gBdHgQjEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__gBdIAQjEeOYP5GGYb_HuQ" name="Users" eSuperTypes="__gBdFgQjEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gBdIQQjEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__gBdIwQjEeOYP5GGYb_HuQ" name="TaskQueue" eSuperTypes="__gBdFgQjEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gBdJAQjEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="__lUCMAQiEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/__lTbIAQiEeOYP5GGYb_HuQ/4" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__l4C4AQiEeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__l4C4QQiEeOYP5GGYb_HuQ" key="Version" value="0.0.5"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__l4C4gQiEeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__l4C4wQiEeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__l4C5AQiEeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__l4C5QQiEeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__lUCMQQiEeOYP5GGYb_HuQ" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__lUCMgQiEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__lUCMwQiEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__lUCNQQiEeOYP5GGYb_HuQ" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__lUCNgQiEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__lUCNwQiEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__lUCOQQiEeOYP5GGYb_HuQ" name="Search" eSuperTypes="__lUCNQQiEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__lUCOgQiEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__lUCPAQiEeOYP5GGYb_HuQ" name="Email" eSuperTypes="__lUCNQQiEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__lUCPQQiEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__lUCPwQiEeOYP5GGYb_HuQ" name="Users" eSuperTypes="__lUCNQQiEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__lUCQAQiEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="__lUCQgQiEeOYP5GGYb_HuQ" name="TaskQueue" eSuperTypes="__lUCNQQiEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__lUCQwQiEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_FKABgQQdEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_FKABgAQdEeOYP5GGYb_HuQ/3" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FKTjgAQdEeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FKTjgQQdEeOYP5GGYb_HuQ" key="Version" value="0.0.4"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FKTjggQdEeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FKTjgwQdEeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FKTjhAQdEeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FKTjhQQdEeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_FKABggQdEeOYP5GGYb_HuQ" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FKABgwQdEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_FKABhAQdEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_FKABhgQdEeOYP5GGYb_HuQ" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FKABhwQdEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_FKABiAQdEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_FKABigQdEeOYP5GGYb_HuQ" name="Search" eSuperTypes="_FKABhgQdEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FKABiwQdEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_FKABjQQdEeOYP5GGYb_HuQ" name="Email" eSuperTypes="_FKABhgQdEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FKABjgQdEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_FKABkAQdEeOYP5GGYb_HuQ" name="Users" eSuperTypes="_FKABhgQdEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FKABkQQdEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_FKABkwQdEeOYP5GGYb_HuQ" name="TaskQueue" eSuperTypes="_FKABhgQdEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FKABlAQdEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_m_QFsAQSEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_m_PeoAQSEeOYP5GGYb_HuQ/2" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m_kOwAQSEeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m_kOwQQSEeOYP5GGYb_HuQ" key="Version" value="0.0.3"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m_kOwgQSEeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m_kOwwQSEeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m_kOxAQSEeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m_kOxQQSEeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_m_QFsQQSEeOYP5GGYb_HuQ" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m_QFsgQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_m_QFswQSEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_m_QFtQQSEeOYP5GGYb_HuQ" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m_QFtgQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_m_QFtwQSEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_m_QFuQQSEeOYP5GGYb_HuQ" name="Search" eSuperTypes="_m_QFtQQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m_QFugQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_m_QFvAQSEeOYP5GGYb_HuQ" name="Email" eSuperTypes="_m_QFtQQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m_QFvQQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_m_QFvwQSEeOYP5GGYb_HuQ" name="Users" eSuperTypes="_m_QFtQQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m_QFwAQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_m_QFwgQSEeOYP5GGYb_HuQ" name="TaskQueue" eSuperTypes="_m_QFtQQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m_QFwwQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_icTe8AQSEeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_icS34AQSEeOYP5GGYb_HuQ/1" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ico2IAQSEeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ico2IQQSEeOYP5GGYb_HuQ" key="Version" value="0.0.2"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ico2IgQSEeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ico2IwQSEeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ico2JAQSEeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ico2JQQSEeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_icTe8QQSEeOYP5GGYb_HuQ" name="GoogleAppEngine">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_icTe8gQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xJ_Q0AQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_icTe8wQSEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_icTe9QQSEeOYP5GGYb_HuQ" name="Service" abstract="true">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_icTe9gQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__mn5gAQREeOYP5GGYb_HuQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_icTe9wQSEeOYP5GGYb_HuQ" name="base_InstanceSpecification" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//InstanceSpecification"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_icTe-QQSEeOYP5GGYb_HuQ" name="Search" eSuperTypes="_icTe9QQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_icTe-gQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FecBcAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_icTe_AQSEeOYP5GGYb_HuQ" name="Email" eSuperTypes="_icTe9QQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_icTe_QQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MTB6sAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_icTe_wQSEeOYP5GGYb_HuQ" name="Users" eSuperTypes="_icTe9QQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_icTfAAQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_PnKk8AQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_icTfAgQSEeOYP5GGYb_HuQ" name="TaskQueue" eSuperTypes="_icTe9QQSEeOYP5GGYb_HuQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_icTfAwQSEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SJ7coAQSEeOYP5GGYb_HuQ"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_QfRHEAQREeOYP5GGYb_HuQ" name="GoogleAppEngineProfile" nsURI="http:///schemas/GoogleAppEngineProfile/_QfE50AQREeOYP5GGYb_HuQ/0" nsPrefix="GoogleAppEngineProfile">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QfVYgAQREeOYP5GGYb_HuQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QfVYgQQREeOYP5GGYb_HuQ" key="Version" value="0.0.1"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QfVYggQREeOYP5GGYb_HuQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QfVYgwQREeOYP5GGYb_HuQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QfVYhAQREeOYP5GGYb_HuQ" key="Date" value="2013-08-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QfVYhQQREeOYP5GGYb_HuQ" key="Author" value=""/>
+        </eAnnotations>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_LldfgAQREeOYP5GGYb_HuQ" alias="InstanceSpecification">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_Hgl_4AjHEeOpWq22bueY-w" alias="DeploymentSpecification">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#DeploymentSpecification"/>
+    </elementImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_8pyKYQQQEeOYP5GGYb_HuQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_8pyKYgQQEeOYP5GGYb_HuQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_xJ_Q0AQREeOYP5GGYb_HuQ" name="GoogleAppEngine">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0KgbgAQREeOYP5GGYb_HuQ" name="base_InstanceSpecification" association="_0KsBsAQREeOYP5GGYb_HuQ">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NSdK0AQnEeOYP5GGYb_HuQ" name="usage" visibility="public" type="_2Q1pUAQmEeOYP5GGYb_HuQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NxsrkAQnEeOYP5GGYb_HuQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nx1OcAQnEeOYP5GGYb_HuQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_NyIwcAQnEeOYP5GGYb_HuQ">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EFJacAjMEeOpWq22bueY-w" name="runtimeEnvironment" type="_rzKdQAjLEeOpWq22bueY-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_0KsBsAQREeOYP5GGYb_HuQ" name="Extension_GoogleAppEngine_InstanceSpecification" memberEnd="_0KsBsQQREeOYP5GGYb_HuQ _0KgbgAQREeOYP5GGYb_HuQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_0KsBsQQREeOYP5GGYb_HuQ" name="extension_GoogleAppEngine" type="_xJ_Q0AQREeOYP5GGYb_HuQ" aggregation="composite" association="_0KsBsAQREeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="__mn5gAQREeOYP5GGYb_HuQ" name="Service" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CVdeUAQSEeOYP5GGYb_HuQ" name="base_InstanceSpecification" association="_CVsH0AQSEeOYP5GGYb_HuQ">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_CVsH0AQSEeOYP5GGYb_HuQ" name="Extension_Service_InstanceSpecification" memberEnd="_CVsH0QQSEeOYP5GGYb_HuQ _CVdeUAQSEeOYP5GGYb_HuQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CVsH0QQSEeOYP5GGYb_HuQ" name="extension_Service" type="__mn5gAQREeOYP5GGYb_HuQ" aggregation="composite" association="_CVsH0AQSEeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_FecBcAQSEeOYP5GGYb_HuQ" name="Search">
+      <generalization xmi:type="uml:Generalization" xmi:id="_azBZYAQSEeOYP5GGYb_HuQ" general="__mn5gAQREeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_MTB6sAQSEeOYP5GGYb_HuQ" name="Email">
+      <generalization xmi:type="uml:Generalization" xmi:id="_bOnwQAQSEeOYP5GGYb_HuQ" general="__mn5gAQREeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_PnKk8AQSEeOYP5GGYb_HuQ" name="Users">
+      <generalization xmi:type="uml:Generalization" xmi:id="_blOSYAQSEeOYP5GGYb_HuQ" general="__mn5gAQREeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_SJ7coAQSEeOYP5GGYb_HuQ" name="TaskQueue">
+      <generalization xmi:type="uml:Generalization" xmi:id="_cGZFwAQSEeOYP5GGYb_HuQ" general="__mn5gAQREeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Q1pUAQmEeOYP5GGYb_HuQ" name="UsageType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_F_7YYAQnEeOYP5GGYb_HuQ" name="Free"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ht0dkAQnEeOYP5GGYb_HuQ" name="Paid"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JrMJMAQnEeOYP5GGYb_HuQ" name="Premier"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vY_yUAQnEeOYP5GGYb_HuQ" name="InstanceCategoryType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xn_ZcAQnEeOYP5GGYb_HuQ" name="OnDemand"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_z8-64AQnEeOYP5GGYb_HuQ" name="Reserved"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_W0g6cAQoEeOYP5GGYb_HuQ" name="AppEngineDatastore">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_asvJMAQoEeOYP5GGYb_HuQ" name="base_InstanceSpecification" association="_as-ZwAQoEeOYP5GGYb_HuQ">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_as-ZwAQoEeOYP5GGYb_HuQ" name="Extension_AppEngineDatastore_InstanceSpecification" memberEnd="_as-ZwQQoEeOYP5GGYb_HuQ _asvJMAQoEeOYP5GGYb_HuQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_as-ZwQQoEeOYP5GGYb_HuQ" name="extension_AppEngineDatastore" type="_W0g6cAQoEeOYP5GGYb_HuQ" aggregation="composite" association="_as-ZwAQoEeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_zcRTIAQqEeOYP5GGYb_HuQ" name="FrontendClassType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6ek4QAQqEeOYP5GGYb_HuQ" name="F1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8SMK8AQqEeOYP5GGYb_HuQ" name="F2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_-S6FgAQqEeOYP5GGYb_HuQ" name="F4"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Aws9oAQrEeOYP5GGYb_HuQ" name="F4_1G"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4ctHIAQqEeOYP5GGYb_HuQ" name="BackendClassType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_FeXmoAQrEeOYP5GGYb_HuQ" name="B1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_HcXkYAQrEeOYP5GGYb_HuQ" name="B2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Jfy0sAQrEeOYP5GGYb_HuQ" name="B4"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_O5A8IAQrEeOYP5GGYb_HuQ" name="B4_1G"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Rr7IoAQrEeOYP5GGYb_HuQ" name="B8"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_tMXBoAjHEeOpWq22bueY-w" name="CloudConfiguration">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tosh4AjTEeOpWq22bueY-w" name="frontendInstanceClass" visibility="public" type="_PYE4gAjSEeOpWq22bueY-w" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t7b3sAjTEeOpWq22bueY-w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t7losAjTEeOpWq22bueY-w" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_t74joAjTEeOpWq22bueY-w">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__CthsAjTEeOpWq22bueY-w" name="applicationIdentifier">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PqPMQAjiEeOpWq22bueY-w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PqiHMAjiEeOpWq22bueY-w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_P4H_oAjUEeOpWq22bueY-w" name="applicationTitle">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PGPHUAjiEeOpWq22bueY-w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PGiCQAjiEeOpWq22bueY-w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WzBVMAjUEeOpWq22bueY-w" name="maxIdleInstance">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NK5cAAjiEeOpWq22bueY-w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NLDNAAjiEeOpWq22bueY-w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_p9N5MAjUEeOpWq22bueY-w" name="minPendingLatency">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MiuowAjiEeOpWq22bueY-w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mi4ZwAjiEeOpWq22bueY-w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yd2h4AtjEeO-f7KEdUwVpg" name="base_InstanceSpecification" association="_yd_r0AtjEeO-f7KEdUwVpg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rzKdQAjLEeOpWq22bueY-w" name="RuntimeEnvironmentType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6UvQUAjLEeOpWq22bueY-w" name="Java"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7kr1QAjLEeOpWq22bueY-w" name="Python"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_-H9qUAjLEeOpWq22bueY-w" name="Go"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="___rZ4AjLEeOpWq22bueY-w" name="PHP"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_gm48oAjMEeOpWq22bueY-w" name="GoogleCloudSQL">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_s5vOUAjMEeOpWq22bueY-w" name="base_InstanceSpecification" association="_s5930AjMEeOpWq22bueY-w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_s5930AjMEeOpWq22bueY-w" name="Extension_GoogleCloudSQL_InstanceSpecification" memberEnd="_s5930QjMEeOpWq22bueY-w _s5vOUAjMEeOpWq22bueY-w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_s5930QjMEeOpWq22bueY-w" name="extension_GoogleCloudSQL" type="_gm48oAjMEeOpWq22bueY-w" aggregation="composite" association="_s5930AjMEeOpWq22bueY-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_vHwlEAjMEeOpWq22bueY-w" name="GoogleCloudStorage">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_07MjUAjMEeOpWq22bueY-w" name="base_InstanceSpecification" association="_07feQAjMEeOpWq22bueY-w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_07feQAjMEeOpWq22bueY-w" name="Extension_GoogleCloudStorage_InstanceSpecification" memberEnd="_07feQQjMEeOpWq22bueY-w _07MjUAjMEeOpWq22bueY-w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_07feQQjMEeOpWq22bueY-w" name="extension_GoogleCloudStorage" type="_vHwlEAjMEeOpWq22bueY-w" aggregation="composite" association="_07feQAjMEeOpWq22bueY-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Rdh7YAjNEeOpWq22bueY-w" name="DatastoreAccess">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0MWq4AjNEeOpWq22bueY-w" name="access" visibility="public" type="_fQgjEAjNEeOpWq22bueY-w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0hfNYAjNEeOpWq22bueY-w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0hoXUAjNEeOpWq22bueY-w" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0h7SQAjNEeOpWq22bueY-w">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7kkOkAjNEeOpWq22bueY-w" name="base_InstanceSpecification" association="_7kkOkQjNEeOpWq22bueY-w">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InstanceSpecification"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fQgjEAjNEeOpWq22bueY-w" name="DatastoreAccessType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_i5Vq8AjNEeOpWq22bueY-w" name="JavaDataObjects"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nrz7cAjNEeOpWq22bueY-w" name="JavaPersistenceAPI"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sRMLIAjNEeOpWq22bueY-w" name="Objectify"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_umjgAAjNEeOpWq22bueY-w" name="Twig"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wWlTMAjNEeOpWq22bueY-w" name="Slim3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_7kkOkQjNEeOpWq22bueY-w" name="Extension_DatastoreAccess_InstanceSpecification" memberEnd="_7kkOkgjNEeOpWq22bueY-w _7kkOkAjNEeOpWq22bueY-w">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_7kkOkgjNEeOpWq22bueY-w" name="extension_DatastoreAccess" type="_Rdh7YAjNEeOpWq22bueY-w" aggregation="composite" association="_7kkOkQjNEeOpWq22bueY-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3VUDEAjREeOpWq22bueY-w" name="InstanceType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AUUlcAjSEeOpWq22bueY-w" name="instanceCategory" type="_vY_yUAQnEeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PYE4gAjSEeOpWq22bueY-w" name="FrontendInstance">
+      <generalization xmi:type="uml:Generalization" xmi:id="_zuc0oAjSEeOpWq22bueY-w" general="_3VUDEAjREeOpWq22bueY-w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TXOOoAjSEeOpWq22bueY-w" name="instanceClass" type="_zcRTIAQqEeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pBWYwAjSEeOpWq22bueY-w" name="BackendInstance">
+      <generalization xmi:type="uml:Generalization" xmi:id="_AKO_4AjTEeOpWq22bueY-w" general="_3VUDEAjREeOpWq22bueY-w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_u9m70AjSEeOpWq22bueY-w" name="instanceClass" type="_4ctHIAQqEeOYP5GGYb_HuQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_yd_r0AtjEeO-f7KEdUwVpg" name="Extension_CloudConfiguration_InstanceSpecification" memberEnd="_yd_r0QtjEeO-f7KEdUwVpg _yd2h4AtjEeO-f7KEdUwVpg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_yd_r0QtjEeO-f7KEdUwVpg" name="extension_CloudConfiguration" type="_tMXBoAjHEeOpWq22bueY-w" aggregation="composite" association="_yd_r0AtjEeO-f7KEdUwVpg"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_MuRPwAQTEeOYP5GGYb_HuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MulY0AQTEeOYP5GGYb_HuQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="PricingProfile.profile.uml#_Dv2ZsQjpEeOpWq22bueY-w"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="PricingProfile.profile.uml#_lwPrEP5jEeKpsuoNdqwiLw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_FJEe8BAGEeOYBPpMrBwl5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FJadMBAGEeOYBPpMrBwl5w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="PerformanceProfile.profile.uml#_RTJroBAFEeOYBPpMrBwl5w"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="PerformanceProfile.profile.uml#_ilF9kATNEeOYqpWHmlUzvA"/>
+    </profileApplication>
+  </uml:Profile>
+  <Pricing:CostPlan xmi:id="_WRUTUAQTEeOYP5GGYb_HuQ" base_Element="_FecBcAQSEeOYP5GGYb_HuQ">
+    <costComponent xmi:type="Pricing:CompoundCosts" xmi:id="_1hnXYAQcEeOYP5GGYb_HuQ" description="Costs for Search" currency="USD">
+      <costComponent xmi:type="Pricing:RunningCosts" xmi:id="_NL40UAQdEeOYP5GGYb_HuQ" description="Total Storage (Documents and Indexes)" value="0.18" currency="USD">
+        <metric xmi:type="Pricing:Metric" xmi:id="_TRsU8AQdEeOYP5GGYb_HuQ" unit="GB">
+          <factor xmi:type="Pricing:Factor" xmi:id="_MQJ9IAQjEeOYP5GGYb_HuQ" unit="Month"/>
+        </metric>
+      </costComponent>
+      <costComponent xmi:type="Pricing:RunningCosts" xmi:id="_YStJAAQjEeOYP5GGYb_HuQ" description="Simple Queries" value="0.13" currency="USD">
+        <metric xmi:type="Pricing:Metric" xmi:id="_IpfjAAQkEeOYP5GGYb_HuQ" unit="Query" value="10000.0"/>
+      </costComponent>
+      <costComponent xmi:type="Pricing:RunningCosts" xmi:id="_W3hvAAQkEeOYP5GGYb_HuQ" description="Complex Queries" value="0.6" currency="USD">
+        <metric xmi:type="Pricing:Metric" xmi:id="_aBNcwAQkEeOYP5GGYb_HuQ" unit="Query" value="10000.0"/>
+      </costComponent>
+      <costComponent xmi:type="Pricing:RunningCosts" xmi:id="_g1SYoAQkEeOYP5GGYb_HuQ" description="Adding Documents to Indexes" value="2.0" currency="USD">
+        <metric xmi:type="Pricing:Metric" xmi:id="_l0ongAQkEeOYP5GGYb_HuQ" unit="GB"/>
+      </costComponent>
+      <costComponent xmi:type="Pricing:RunningCosts" xmi:id="_n5-jYAQkEeOYP5GGYb_HuQ" description="Other API calls (billed as operations)" value="0.1" currency="USD">
+        <metric xmi:type="Pricing:Metric" xmi:id="_vzL7UAQkEeOYP5GGYb_HuQ" unit="Operation" value="10000.0"/>
+      </costComponent>
+    </costComponent>
+  </Pricing:CostPlan>
+  <Pricing:CostPlan xmi:id="_N73jwAjTEeOpWq22bueY-w" base_Element="_PYE4gAjSEeOpWq22bueY-w">
+    <costComponent xmi:type="Pricing:ContextualRunningCosts" xmi:id="_4oMkcAQ1EeOqEMggsflucg" description="F1 instance on-demand costs" value="0.08" currency="USD" andCombinedElements="_6ek4QAQqEeOYP5GGYb_HuQ _xn_ZcAQnEeOYP5GGYb_HuQ">
+      <metric xmi:type="Pricing:Metric" xmi:id="_8MbqwAQ2EeOqEMggsflucg" unit="Hour"/>
+    </costComponent>
+    <costComponent xmi:type="Pricing:ContextualRunningCosts" xmi:id="_acb7AAQ2EeOqEMggsflucg" description="F1 instance reserved costs" value="0.05" currency="USD">
+      <metric xmi:type="Pricing:Metric" xmi:id="_Anm1kAQ3EeOqEMggsflucg" unit="Hour"/>
+    </costComponent>
+    <costComponent xmi:type="Pricing:ContextualRunningCosts" xmi:id="_1D3soAQ2EeOqEMggsflucg" description="F2 instance costs" value="0.16" currency="USD">
+      <metric xmi:type="Pricing:Metric" xmi:id="_CssSwAQ3EeOqEMggsflucg" unit="Hour"/>
+    </costComponent>
+    <costComponent xmi:type="Pricing:ContextualRunningCosts" xmi:id="_FaYBAAQ3EeOqEMggsflucg" description="F4 instance costs" value="0.32" currency="USD">
+      <metric xmi:type="Pricing:Metric" xmi:id="_LF1H8AQ3EeOqEMggsflucg" unit="Hour"/>
+    </costComponent>
+    <costComponent xmi:type="Pricing:ContextualRunningCosts" xmi:id="_SwHTEAQ3EeOqEMggsflucg" description="F4_1G instance costs" value="0.48" currency="USD">
+      <metric xmi:type="Pricing:Metric" xmi:id="_Z8bIwAQ3EeOqEMggsflucg" unit="Hour"/>
+    </costComponent>
+    <freeQuota xmi:type="Pricing:ContextualFreeQuota" xmi:id="_lHCAAAQ3EeOqEMggsflucg" value="28.0">
+      <metric xmi:type="Pricing:Metric" xmi:id="_zpRhcAQ3EeOqEMggsflucg" unit="Hour"/>
+    </freeQuota>
+  </Pricing:CostPlan>
+  <Performance:GeneralPurpose xmi:id="_ePJLgBAGEeOYBPpMrBwl5w" base_Element="_6ek4QAQqEeOYP5GGYb_HuQ"/>
+</xmi:XMI>

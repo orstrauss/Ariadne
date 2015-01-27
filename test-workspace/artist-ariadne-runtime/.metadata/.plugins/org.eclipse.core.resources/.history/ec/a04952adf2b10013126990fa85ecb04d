@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ariadne-organization:Organization xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ariadne-code="http://www.obeo.fr/dsl/Ariadne/Code" xmlns:ariadne-organization="http://www.obeo.fr/dsl/Ariadne/Organization" name="Fraunhofer IAO" description="Test">
+  <categories name="Test" description="Test">
+    <projects name="dummy-project" description="Test" repositories="//@repositories.0">
+      <components identifier="dummy-project">
+        <classpathEntries inputFolder="/dummy-project/src" outputFolder="/dummy-project/build/classes">
+          <typesContainers name=""/>
+          <typesContainers name="de"/>
+          <typesContainers name="de.fhg"/>
+          <typesContainers name="de.fhg.iao"/>
+          <typesContainers name="de.fhg.iao.dbtest">
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingServiceImpl" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingServiceImpl">
+              <version/>
+              <fields name="dao" description="" qualifiedName="DnMappingDao dao" visibility="PACKAGE">
+                <version/>
+              </fields>
+              <operations name="register" description="" qualifiedName="public void register(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingDao" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingDao" kind="INTERFACE">
+              <version/>
+              <operations name="save" description="" qualifiedName="public void save(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMapping" description="" qualifiedName="de.fhg.iao.dbtest.DnMapping">
+              <version/>
+              <fields name="serialVersionUID" description="" qualifiedName="private static final long serialVersionUID" visibility="PRIVATE" static="true" final="true">
+                <version/>
+              </fields>
+              <fields name="id" description="" qualifiedName="private int id" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <fields name="dn" description="" qualifiedName="private String dn" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <fields name="userId" description="" qualifiedName="private String userId" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <fields name="description" description="" qualifiedName="private String description" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <operations name="getId" description="" qualifiedName="public int getId()">
+                <version/>
+              </operations>
+              <operations name="getDn" description="" qualifiedName="public String getDn()">
+                <version/>
+              </operations>
+              <operations name="getUserId" description="" qualifiedName="public String getUserId()">
+                <version/>
+              </operations>
+              <operations name="getDescription" description="" qualifiedName="public String getDescription()">
+                <version/>
+              </operations>
+              <operations name="setDn" description="" qualifiedName="public void setDn(String dn)">
+                <version/>
+                <parameters name="dn" qualifiedName="String dn" final="true"/>
+              </operations>
+              <operations name="setUserId" description="" qualifiedName="public void setUserId(String userId)">
+                <version/>
+                <parameters name="userId" qualifiedName="String userId" final="true"/>
+              </operations>
+              <operations name="setDescription" description="" qualifiedName="public void setDescription(String description)">
+                <version/>
+                <parameters name="description" qualifiedName="String description" final="true"/>
+              </operations>
+              <operations name="equals" description="" qualifiedName="public boolean equals(java.lang.Object o)">
+                <version/>
+                <parameters name="o" qualifiedName="java.lang.Object o" final="true"/>
+              </operations>
+              <operations name="canEqual" description="" qualifiedName="public boolean canEqual(java.lang.Object other)">
+                <version/>
+                <parameters name="other" qualifiedName="java.lang.Object other" final="true"/>
+              </operations>
+              <operations name="hashCode" description="" qualifiedName="public int hashCode()">
+                <version/>
+              </operations>
+              <operations name="toString" description="" qualifiedName="public java.lang.String toString()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingService" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingService" kind="INTERFACE">
+              <version/>
+              <operations name="register" description="" qualifiedName="public void register(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingDaoImpl" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingDaoImpl">
+              <version/>
+              <fields name="em" description="" qualifiedName="private EntityManager em" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <operations name="save" description="" qualifiedName="public void save(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+          </typesContainers>
+        </classpathEntries>
+        <classpathEntries inputFolder="/dummy-project/test" outputFolder="/dummy-project/build/classes">
+          <typesContainers name=""/>
+          <typesContainers name="de"/>
+          <typesContainers name="de.fhg"/>
+          <typesContainers name="de.fhg.iao"/>
+          <typesContainers name="de.fhg.iao.dbtest">
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingServiceTest" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingServiceTest">
+              <version/>
+              <fields name="service" description="" qualifiedName="DnMappingService service" visibility="PACKAGE">
+                <version/>
+              </fields>
+              <operations name="testRegisterMapping" description="" qualifiedName="public void testRegisterMapping()">
+                <version/>
+              </operations>
+            </types>
+          </typesContainers>
+        </classpathEntries>
+        <classpathEntries inputFolder="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7" outputFolder="/dummy-project/build/classes"/>
+        <classpathEntries inputFolder="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=dummy-project&amp;ivyXmlPath=ivy.xml&amp;confs=*&amp;ivySettingsPath=%24%7Bworkspace_loc%3Adummy-project%2Fivysettings.xml%7D&amp;loadSettingsOnDemand=false&amp;propertyFiles=" outputFolder="/dummy-project/build/classes"/>
+      </components>
+    </projects>
+  </categories>
+  <persons name="strauss" email="oliver.strauss@iao.fraunhofer.de"/>
+  <persons name="Oliver Strau&#xdf;" email="oliver.strauss@iao.fraunhofer.de"/>
+  <persons name="Gerrit Code Review" email="gerrit@rigel"/>
+  <persons name="gkousiou" email="gkousiou@mail.ntua.gr"/>
+  <persons name="106800" email="106800@PRTBC007.tri.lan"/>
+  <persons name="gechevarria" email="gorka.echevarria@tecnalia.com"/>
+  <persons name="Alex Bergmayr" email="bergmayr@big.tuwien.ac.at"/>
+  <persons name="JavierGrobles" email="grobles.javier@gmail.com"/>
+  <persons name="Nunzio1980" email="nunzioandrea.galante@gmail.com"/>
+  <persons name="Jes&#xfa;s Gorro&#xf1;ogoitia" email="jesus.gorronogoitia@atos.net"/>
+  <persons name="Andreas Menychtas" email="amenychtas@gmail.com"/>
+  <persons name="jesus-gorronogoitia" email="jesus.gorronogoitia@atos.net"/>
+  <repositories name="ARTIST-Modeling.git">
+    <commits id="fec73d93d5bfa8113c058df5726526305983f04f" commitTime="1395223410" name="fec73d93d5bfa8113c058df5726526305983f04f" shortMessage="created two pngs for deliverable" fullMessage="created two pngs for deliverable" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.1">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/BenchMarkProfileDiagram.PNG"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/SecurityProfileDiagram.PNG"/>
+    </commits>
+    <commits id="3825ba7e6c5575f90e28a094cc483ce082e67762" commitTime="1395165188" name="3825ba7e6c5575f90e28a094cc483ce082e67762" shortMessage="Updated performance profile enumerations and results" fullMessage="Updated performance profile enumerations and results" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.2">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfileDiagram.PNG"/>
+    </commits>
+    <commits id="65cee41f62ca36f17ad5dd0171d383cbf9bdb783" commitTime="1395148465" name="65cee41f62ca36f17ad5dd0171d383cbf9bdb783" shortMessage="Small additions in availability to support 1-1 provider" fullMessage="Small additions in availability to support 1-1 provider" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.3">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/NewDiagram.PNG"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/model.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/model.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/model.profile.uml"/>
+    </commits>
+    <commits id="b908d2392ed1d3448c92c144acf2ca491a1582ba" commitTime="1394458109" name="b908d2392ed1d3448c92c144acf2ca491a1582ba" shortMessage="CloudML@Artist v9.0 with last version of benchmark profile" fullMessage="CloudML@Artist v9.0 with last version of benchmark profile" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.4">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.png"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.png"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.png"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/availability.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/availability.profile.png"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.png"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.png"/>
+    </commits>
+    <commits id="207a0cbb298978dfe1f1078e37c0ac85b2b56d7c" commitTime="1394457683" name="207a0cbb298978dfe1f1078e37c0ac85b2b56d7c" shortMessage="CloudML@Artist v9.0 with last version of benchmark profile" fullMessage="CloudML@Artist v9.0 with last version of benchmark profile" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.5">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.png"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/availability.PNG"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/Availability/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/cdml.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/cdml.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/cdml.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/amazonec2.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/amazonec2.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/amazonec2.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/benchmark.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/benchmark.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/benchmark.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/billing.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/billing.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/billing.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/cdml.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/cdml.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/cdml.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/core.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/core.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/core.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/cost.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/cost.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/cost.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/googleappengine.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/googleappengine.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/googleappengine.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/security.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/security.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv7.0/security.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/libraries/cdml.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/libraries/cdml.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/libraries/cdml.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/amazonec2.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/amazonec2.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/amazonec2.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/core.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/core.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/core.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/googleappengine.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/googleappengine.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/googleappengine.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/model_examples/petstore_on_amazon.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/model_examples/petstore_on_amazon.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/model_examples/petstore_on_amazon.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/cost.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/cost.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/cost.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/performance.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/performance.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/performance.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/security.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/security.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/previous versions/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/security.profile.uml" resourceChangeKind="RENAMED"/>
+    </commits>
+    <commits id="6a79456090cef4d333a0d5ee9e72d31a5a47ea25" commitTime="1394457390" name="6a79456090cef4d333a0d5ee9e72d31a5a47ea25" shortMessage="CloudMl@Artist v9.0" fullMessage="CloudMl@Artist v9.0" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.6">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/.project" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.png" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/availability.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.uml" resourceChangeKind="DELETED"/>
+    </commits>
+    <commits id="00ed06105768746f3fdc4b52a231f34a6886f187" commitTime="1394457309" name="00ed06105768746f3fdc4b52a231f34a6886f187" shortMessage="CloudMl@Artist v9.0" fullMessage="CloudMl@Artist v9.0" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.7">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.png"/>
+    </commits>
+    <commits id="140c2cccda8356715ef8552e7b8b98e411b848a7" commitTime="1394457223" name="140c2cccda8356715ef8552e7b8b98e411b848a7" shortMessage="Cloudml@Artist v9.0" fullMessage="Cloudml@Artist v9.0" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.8">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/BenchmarkProfile.profile.uml"/>
+    </commits>
+    <commits id="a4a8d554a2f43cc28dd3722ee69f60785f3ec4cc" commitTime="1394456326" name="a4a8d554a2f43cc28dd3722ee69f60785f3ec4cc" shortMessage="CloudML@Artists v9.0" fullMessage="CloudML@Artists v9.0" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.9">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/.project" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="fefcd353e25ab1fe2e13cffd9e1ce399b8f287e8" commitTime="1394095691" name="fefcd353e25ab1fe2e13cffd9e1ce399b8f287e8" shortMessage="CloudMl@Artist v9.0 including availability profile" fullMessage="CloudMl@Artist v9.0 including availability profile" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.10">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/.project" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/model.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/libraries/cdml.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/amazonec2.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/core.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/main_profiles/googleappengine.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/model_examples/petstore_on_amazon.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/availability.PNG" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/cost.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/model.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/performance.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml_refactored@artistv9.0/supporting_profiles/security.profile.uml"/>
+    </commits>
+    <commits id="4b738fb9a5c9ed69fbf5cbd74279f0e441be8ca9" commitTime="1394044085" name="4b738fb9a5c9ed69fbf5cbd74279f0e441be8ca9" shortMessage="Added availability profile" fullMessage="Added availability profileIncludes availability measurements and availability SLA definitions" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.11">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/NewDiagram.PNG"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/model.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/model.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/Availability/model.profile.uml"/>
+    </commits>
+    <commits id="445df7851deb3cf5620bbd49af327a038c9e70a5" commitTime="1394032915" name="445df7851deb3cf5620bbd49af327a038c9e70a5" shortMessage="CloudMl@Artist v8.0 with AmazonEC2 and GAE profiles separately. Includes cost and performance profiles" fullMessage="CloudMl@Artist v8.0 with AmazonEC2 and GAE profiles separately.Includes cost and performance profiles" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.12">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/libraries/cdml.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/libraries/cdml.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/libraries/cdml.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/amazonec2.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/amazonec2.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/amazonec2.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/core.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/core.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/core.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/googleappengine.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/googleappengine.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/main_profiles/googleappengine.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/model_examples/petstore_on_amazon.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/model_examples/petstore_on_amazon.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/model_examples/petstore_on_amazon.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/cost.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/cost.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/cost.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/performance.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/performance.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/performance.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/security.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/security.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv8.0/supporting_profiles/security.profile.uml"/>
+    </commits>
+    <commits id="e6350205371c421a7c0ba38dbab64aa9b0f65904" commitTime="1393859061" name="e6350205371c421a7c0ba38dbab64aa9b0f65904" shortMessage="CloudMl@Artist v7.0 with AmazonEC2 and GAE profiles separately" fullMessage="CloudMl@Artist v7.0 with AmazonEC2 and GAE profiles separately" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.13">
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/cdml.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/cdml.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/cdml.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/amazonec2.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/amazonec2.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/amazonec2.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/benchmark.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/benchmark.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/benchmark.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/billing.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/billing.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/billing.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/cdml.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/cdml.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/cdml.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/core.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/core.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/core.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/cost.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/cost.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/cost.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/googleappengine.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/googleappengine.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/googleappengine.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/security.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/security.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/CloudMl@Artist/eu.artist.migration.tes.cloudml@artistv7.0/security.profile.uml" resourceChangeKind="COPIED"/>
+    </commits>
+    <commits id="cb77763449260d71c8dac2b9837d8c551b0055e6" commitTime="1393254196" name="cb77763449260d71c8dac2b9837d8c551b0055e6" shortMessage="CloudMl@Artist v6.0" fullMessage="CloudMl@Artist v6.0" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.14">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/.project" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0_model_examples/petstore_on_gae.uml"/>
+    </commits>
+    <commits id="c6a811339bd9b40118af47a581698a5958e06e69" commitTime="1393246523" name="c6a811339bd9b40118af47a581698a5958e06e69" shortMessage="CloudMl@Artist v6.0" fullMessage="CloudMl@Artist v6.0" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.15">
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/.project" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/model.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/model.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/model.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/.project" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/benchmark.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/benchmark.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/benchmark.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/billing.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/billing.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/billing.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cdml.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cdml.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cdml.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/core.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/core.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/core.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cost.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cost.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cost.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/security.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/security.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/security.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/.project" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/model.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/model.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/model.uml" resourceChangeKind="DELETED"/>
+    </commits>
+    <commits id="552fef0439bffba79e0c76da2627c039aeff7ffa" commitTime="1393242508" name="552fef0439bffba79e0c76da2627c039aeff7ffa" shortMessage="CloudMl@Artist v5.0" fullMessage="CloudMl@Artist v5.0" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.16">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/benchmark.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/benchmark.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/benchmark.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/billing.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/billing.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/billing.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cdml.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cdml.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cdml.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/core.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/core.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/core.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cost.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cost.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/cost.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/security.profile.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/security.profile.notation" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0/security.profile.uml" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/model.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/benchmark.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/billing.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/cdml.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/cdml.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/cdml.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/core.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/cost.profile.uml" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.di" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.notation" resourceChangeKind="COPIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv6.0/security.profile.uml" resourceChangeKind="COPIED"/>
+    </commits>
+    <commits id="ffaaa07ab9fc3161b70e6dd14c296f888032b33d" commitTime="1392904785" name="ffaaa07ab9fc3161b70e6dd14c296f888032b33d" shortMessage="CloudMl@Artist v5.0 + Petstore on GAE Example" fullMessage="CloudMl@Artist v5.0 + Petstore on GAE Example" author="//@persons.4" committer="//@persons.4" parents="//@repositories.0/@commits.17">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/.project" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/model.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/model.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artistv5.0_model_examples/model.uml"/>
+    </commits>
+    <commits id="4051fd9954ea394958b9cdb2a92925a12dc925b9" commitTime="1392820677" name="4051fd9954ea394958b9cdb2a92925a12dc925b9" shortMessage="CloudMl@Artist v5.0" fullMessage="CloudMl@Artist v5.0" author="//@persons.5" committer="//@persons.5" parents="//@repositories.0/@commits.18">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="92a4b989be16cecd29fd4c2a5820da9a61903817" commitTime="1392810131" name="92a4b989be16cecd29fd4c2a5820da9a61903817" shortMessage="CloudMl@Artist v4.0" fullMessage="CloudMl@Artist v4.0" author="//@persons.5" committer="//@persons.5" parents="//@repositories.0/@commits.19">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="5c24fea17a30749b2e3d7ee829e02a9ce7708e1b" commitTime="1392736445" name="5c24fea17a30749b2e3d7ee829e02a9ce7708e1b" shortMessage="CloudML@Artist v4.0" fullMessage="CloudML@Artist v4.0" author="//@persons.5" committer="//@persons.5" parents="//@repositories.0/@commits.20">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="5dca38b2b6a01cd5232ba122ee9c842bb264b9f8" commitTime="1392735665" name="5dca38b2b6a01cd5232ba122ee9c842bb264b9f8" shortMessage="Version 4.0" fullMessage="Version 4.0" author="//@persons.5" committer="//@persons.5" parents="//@repositories.0/@commits.21">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="4d6d7ec890d1127e7dbae9170e96385a95895fe9" commitTime="1392624914" name="4d6d7ec890d1127e7dbae9170e96385a95895fe9" shortMessage="CloudML@Artist v3.0" fullMessage="CloudML@Artist v3.0" author="//@persons.5" committer="//@persons.5" parents="//@repositories.0/@commits.22">
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/model.di" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/model.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/amazonec2_model/model.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/.project" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/billing.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/iaas.profile.di" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/iaas.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/iaas.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/paas.profile.notation" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/paas.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/security.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="d914e30ebdaee8c6236b455d9a2f004855078b53" commitTime="1391417139" name="d914e30ebdaee8c6236b455d9a2f004855078b53" shortMessage="Cloudml@Artist version 1.0" fullMessage="Cloudml@Artist version 1.0" author="//@persons.5" committer="//@persons.5" parents="//@repositories.0/@commits.23">
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/.project"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/.settings/org.eclipse.papyrus.infra.gmfdiag.preferences.prefs"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/benchmark.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/benchmark.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/benchmark.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/billing.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/billing.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/billing.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/core.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/cost.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/cost.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/cost.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/iaas.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/iaas.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/iaas.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/paas.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/paas.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/paas.profile.uml"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/security.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/security.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/eu.artist.migration.tes.cloudml@artist/security.profile.uml"/>
+    </commits>
+    <commits id="df55c6e2ccc9c98b26f2fe1e9d5bc15cf2e74e9b" commitTime="1386950791" name="df55c6e2ccc9c98b26f2fe1e9d5bc15cf2e74e9b" shortMessage="Adds Ecore-based metamodels for GAE deployment" fullMessage="Adds Ecore-based metamodels for GAE deployment" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.24">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/.project"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/.settings/org.eclipse.core.resources.prefs"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/example-model/ExampleBackendsConfiguration.xmi"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/example-model/ExampleIndexesConfiguration.xmi"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/example-model/PetstoreApplicationConfiguration.xmi"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/metamodel/GAEApplicationDeployment.ecore"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/metamodel/GAEApplicationDeployment.ecorediag"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/metamodel/GAEBackendDeployment.ecore"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/metamodel/GAEBackendDeployment.ecorediag"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/metamodel/GAEIndexesConfiguration.ecore"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/metamodel/GAEIndexesConfiguration.ecorediag"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/xsd/appengine-web.xsd"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/xsd/backends.xsd"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage_v1/Deployment/GAEDeploymentAnalysis/xsd/datastore-indexes.xsd"/>
+    </commits>
+    <commits id="7e8110f151c90014b1f0c3cc621c7e73e7068e39" commitTime="1379317729" name="7e8110f151c90014b1f0c3cc621c7e73e7068e39" shortMessage="Updated profile." fullMessage="Updated profile." author="//@persons.7" committer="//@persons.7" parents="//@repositories.0/@commits.25">
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="b21af11dd7e3e9552f47d26ac75149c33ea317f1" commitTime="1379087681" name="b21af11dd7e3e9552f47d26ac75149c33ea317f1" shortMessage="xml examples of benchmark tests for YCSB (DBs) and dwarfs" fullMessage="xml examples of benchmark tests for YCSB (DBs) and dwarfs" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.26">
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG_vICCS - v3_DWARF_EXAMPLE.xml"/>
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG_vICCS - v3_YCSB_EXAMPLE.xml"/>
+    </commits>
+    <commits id="b8bd722c021018da0682ac2e6063377198fb38cc" commitTime="1378984258" name="b8bd722c021018da0682ac2e6063377198fb38cc" shortMessage="Updated profile." fullMessage="Updated profile." author="//@persons.7" committer="//@persons.7" parents="//@repositories.0/@commits.27">
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/.gitignore"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="e8f7dbd09b4a5d2fe09a9f55f93e7eb7eab4a1e4" commitTime="1378979260" name="e8f7dbd09b4a5d2fe09a9f55f93e7eb7eab4a1e4" shortMessage="Update Benchmarks_vENG_vICCS - v3.xsd" fullMessage="Update Benchmarks_vENG_vICCS - v3.xsd" author="//@persons.8" committer="//@persons.8" parents="//@repositories.0/@commits.28">
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG_vICCS - v3.xsd" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="863ae58b0c990f2bd390df999f2cc8dbd2a3ee01" commitTime="1378896757" name="863ae58b0c990f2bd390df999f2cc8dbd2a3ee01" shortMessage="deleted old versions of benchmarks.xsd" fullMessage="deleted old versions of benchmarks.xsd" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.29">
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks.xsd" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG.xsd" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG_vICCS.xsd" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Cloud Provider Metamodel/DwarfsTOBECOPIEDINBECNHMARKS_ENG.xsd" resourceChangeKind="DELETED"/>
+    </commits>
+    <commits id="97d410cb26e45ac52566a7b19085b1dd3ac9cd24" commitTime="1378895976" name="97d410cb26e45ac52566a7b19085b1dd3ac9cd24" shortMessage="updated benchmarks_v3, cost, scalability and s3 cost example" fullMessage="updated benchmarks_v3, cost, scalability and s3 cost example" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.30">
+      <resourceChanges path="Cloud Provider Metamodel/ARTIST_schema_leftovers.xsd" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG_vICCS - v3.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG_vICCS.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/Cost.xsd" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/Cost_S3_standard_US_standard.xml"/>
+      <resourceChanges path="Cloud Provider Metamodel/DwarfsTOBECOPIEDINBECNHMARKS_ENG.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/ScalabilityType.xsd" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="9aecea3f3c2a8aa2c4603999626e12032b1e8710" commitTime="1378416039" name="9aecea3f3c2a8aa2c4603999626e12032b1e8710" shortMessage="Completion of XSD PaaS model Minor improvements in PaaS profile" fullMessage="Completion of XSD PaaS modelMinor improvements in PaaS profile" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.31">
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.PNG" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/PaaSModelTypes.xsd" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="4a9b2be6f371f24cff1dfa7129429e028275fdca" commitTime="1378400549" name="4a9b2be6f371f24cff1dfa7129429e028275fdca" shortMessage="XSD for PaaS model" fullMessage="XSD for PaaS model" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.32">
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.PNG" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/PaaSModelTypes.xsd"/>
+    </commits>
+    <commits id="8a1f75eae4c4ce29509a685b3d87cd235ae03f5d" commitTime="1378297219" name="8a1f75eae4c4ce29509a685b3d87cd235ae03f5d" shortMessage="Model exported in graphical format PNG" fullMessage="Model exported in graphical format PNG" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.33">
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.PNG"/>
+    </commits>
+    <commits id="40733e5616dd9b743cd859b9665ea0b5f7d30357" commitTime="1378293668" name="40733e5616dd9b743cd859b9665ea0b5f7d30357" shortMessage="PaaS Model contributions to CloudML@ARTIST" fullMessage="PaaS Model contributions to CloudML@ARTIST" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.34">
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.profile.di"/>
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.profile.notation"/>
+      <resourceChanges path="Cloud Provider Metamodel/contributions/Atos/CloudML_ARTIST_PAASModel.profile.uml"/>
+    </commits>
+    <commits id="3278f3ccfbf9c43ad903ef03e898f049d0c8c948" commitTime="1378204379" name="3278f3ccfbf9c43ad903ef03e898f049d0c8c948" shortMessage="Tecnalia's contribution on Amazon profile" fullMessage="Tecnalia's contribution on Amazon profile" author="//@persons.5" committer="//@persons.5" parents="//@repositories.0/@commits.35">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Tecnalia/metamodels-profiles/AmazonAWSProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Tecnalia/metamodels-profiles/AmazonAWSProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Tecnalia/metamodels-profiles/AmazonAWSProfile.profile.uml"/>
+    </commits>
+    <commits id="e547ab55a7cd683f5657af43ade4595201605dcc" commitTime="1378116778" name="e547ab55a7cd683f5657af43ade4595201605dcc" shortMessage="Improvements in Application-scope cloud modeling language and Perstore model" fullMessage="Improvements in Application-scope cloud modeling language and Perstoremodel" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.36">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/models/PetstoreModel.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/models/PetstoreModel.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="f9beede5fee6eab0d39c5ce5d72fc0c8dcafc99d" commitTime="1377770971" name="f9beede5fee6eab0d39c5ce5d72fc0c8dcafc99d" shortMessage="fixing errors in profile" fullMessage="fixing errors in profile" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.37">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/models/PetstoreModel.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="6ccc29d377ea771ce21370ccd58536b9f9416c74" commitTime="1377769601" name="6ccc29d377ea771ce21370ccd58536b9f9416c74" shortMessage="Merge branch 'master' of https://github.com/artist-project/ARTIST-Modeling" fullMessage="Merge branch 'master' of https://github.com/artist-project/ARTIST-Modeling" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.38 //@repositories.0/@commits.39"/>
+    <commits id="c457aae6ee1909d1e71984aec590bfdaea3d0183" commitTime="1377769543" name="c457aae6ee1909d1e71984aec590bfdaea3d0183" shortMessage="Atos contributions to Application-oriented CloudModelling Language" fullMessage="Atos contributions to Application-oriented CloudModelling Language" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.46">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/Cloud_Modeling_Language_Application_Provider_Perspective.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/Cloud_Modeling_Language_Provider_Perspective.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/cloud_modeling_language_conceptual.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/cloud_modeling_language_conceptual.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/metamodels-profiles/cloud_modeling_language_conceptual.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/models/PetstoreModel.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/models/PetstoreModel.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/contributions/Atos/models/PetstoreModel.uml"/>
+    </commits>
+    <commits id="54078773d638cece5f4527a314ae38ef48fa2eff" commitTime="1377767544" name="54078773d638cece5f4527a314ae38ef48fa2eff" shortMessage="Merge remote-tracking branch 'origin/master'" fullMessage="Merge remote-tracking branch 'origin/master'" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.40 //@repositories.0/@commits.41"/>
+    <commits id="85602a34931f69fa18baaa2ff5640c85f626f864" commitTime="1377767494" name="85602a34931f69fa18baaa2ff5640c85f626f864" shortMessage="Adds new profiles, update of CML" fullMessage="Adds new profiles, update of CML" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.43">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/AmazonAWSProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/AmazonAWSProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/MicrosoftAzureProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/MicrosoftAzureProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/MicrosoftAzureProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PerformanceProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PerformanceProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ServiceLevelProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ServiceLevelProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/UtilProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/UtilProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/UtilProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/Test.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/Test.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/Test.uml"/>
+    </commits>
+    <commits id="a0aeb335598d0454470500820aaae47073526b5c" commitTime="1377704248" name="a0aeb335598d0454470500820aaae47073526b5c" shortMessage="Rename Benchmarks_vENG to Benchmarks_vENG.xsd" fullMessage="Rename Benchmarks_vENG to Benchmarks_vENG.xsd" author="//@persons.8" committer="//@persons.8" parents="//@repositories.0/@commits.42">
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG.xsd" resourceChangeKind="RENAMED"/>
+    </commits>
+    <commits id="1dff09b39c9d84e1c20da87c6d77bbf6ffc2d735" commitTime="1377704158" name="1dff09b39c9d84e1c20da87c6d77bbf6ffc2d735" shortMessage="Create Benchmarks_vENG" fullMessage="Create Benchmarks_vENG" author="//@persons.8" committer="//@persons.8" parents="//@repositories.0/@commits.43">
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks_vENG"/>
+    </commits>
+    <commits id="6b8a57dc2fc0b95544e0c6899f955c4e58e96bc5" commitTime="1377506969" name="6b8a57dc2fc0b95544e0c6899f955c4e58e96bc5" shortMessage="Adds objectify profile and library" fullMessage="Adds objectify profile and library" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.44">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/GoogleAppEngineDeployment.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/GoogleAppEngineDeployment.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/objectify.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/objectify_library.uml"/>
+    </commits>
+    <commits id="eecbf254151b4d67182f260190e6cb5d95764785" commitTime="1377202990" name="eecbf254151b4d67182f260190e6cb5d95764785" shortMessage="Merge remote-tracking branch 'origin/master'" fullMessage="Merge remote-tracking branch 'origin/master'" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.45 //@repositories.0/@commits.46"/>
+    <commits id="4be988895daf8e78c3da7ab0c90a4b18c6dc9d8c" commitTime="1377202948" name="4be988895daf8e78c3da7ab0c90a4b18c6dc9d8c" shortMessage="Updates models, adds conceptual overview in terms of package view" fullMessage="Updates models, adds conceptual overview in terms of package view" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.49">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.di" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ConceptualOverview.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ConceptualOverview.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ConceptualOverview.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/CloudModelingLibrary.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.di" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/GoogleAppEngineDeployment.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/GoogleAppEngineDeployment.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="177e50b0e868d2823a8e3f5255afd50ea0e416ea" commitTime="1377165879" name="177e50b0e868d2823a8e3f5255afd50ea0e416ea" shortMessage="Added Eclipse project configuration files" fullMessage="Added Eclipse project configuration files" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.47">
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/.classpath"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/.project"/>
+    </commits>
+    <commits id="76f4c810467c1a6b94f52b112e2d5219574da7eb" commitTime="1377159788" name="76f4c810467c1a6b94f52b112e2d5219574da7eb" shortMessage="Fixing bugs" fullMessage="Fixing bugs" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.48">
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/plugin.xml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="44a26f43a3be550d1d3a7aaadccebce5a0cbc53b" commitTime="1377084782" name="44a26f43a3be550d1d3a7aaadccebce5a0cbc53b" shortMessage="Fixing issue that prevents profile to be found. Added model and icons folder to runtime classpath" fullMessage="Fixing issue that prevents profile to be found. Added model and iconsfolder to runtime classpath" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.49">
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/META-INF/MANIFEST.MF" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/build.properties" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/plugin.xml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="30aaf544836832e3787cd50cf4c956aac0b3ba92" commitTime="1377075546" name="30aaf544836832e3787cd50cf4c956aac0b3ba92" shortMessage="Merge remote-tracking branch 'origin/master'" fullMessage="Merge remote-tracking branch 'origin/master'" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.50 //@repositories.0/@commits.51"/>
+    <commits id="e3ae273724ac8fc89733bb90aa8e615d0dee0906" commitTime="1377075189" name="e3ae273724ac8fc89733bb90aa8e615d0dee0906" shortMessage="Updates Amazon Deployment" fullMessage="Updates Amazon Deployment" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.52">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="bd8ecf5243d9cde4b983e82ab71d4ba470972320" commitTime="1377068125" name="bd8ecf5243d9cde4b983e82ab71d4ba470972320" shortMessage="Plugin that registers UML profiles with Papyrus RCP profile included." fullMessage="Plugin that registers UML profiles with PapyrusRCP profile included." author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.52">
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/.settings/org.eclipse.jdt.core.prefs"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/META-INF/MANIFEST.MF"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/build.properties"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/icons/rcp.jpg"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/plugin.xml"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.di"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.notation"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/profiles/rcp.profile.uml"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/src/eu/artist/modeling/register/profiles/Activator.java"/>
+      <resourceChanges path="Domain Specific Profiles/eu.artist.modeling.register.profiles/src/eu/artist/modeling/register/profiles/StartUp.java"/>
+    </commits>
+    <commits id="85d28a3faf3edb459110d015962829d33db36342" commitTime="1377013887" name="85d28a3faf3edb459110d015962829d33db36342" shortMessage="Adds new Project addressing the integration of the CloudModelingLibrary with potential existing libraries" fullMessage="Adds new Project addressing the integration of the CloudModelingLibrary with potential existing libraries" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.53">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/AmazonAWSProfile.profile.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.uml" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/.project"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/CloudModelingLibrary.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/CloudModelingLibrary.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/CloudModelingLibrary.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/WebDeployment.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/WebDeployment.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudOnPremiseIntegration/WebDeployment.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="6ad843b0cf327f13f19ca6f9e8b48336ae0df6b4" commitTime="1376983429" name="6ad843b0cf327f13f19ca6f9e8b48336ae0df6b4" shortMessage="Adds updated version of CloudModelingLibrary, Profiles for Cloud Provider (Amazon, GAE), Profiles for Pricing and Performace" fullMessage="Adds updated version of CloudModelingLibrary, Profiles for Cloud Provider (Amazon, GAE), Profiles for Pricing and Performace" author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.54">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/AmazonAWS.profile.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/AmazonAWS.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/Cloud Modeling Language.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/Cloud Modeling Language_part1.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/Cloud Modeling Language_part2.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudEnvironmentProfile.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudEnvironmentProfile.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/.project" resourceChangeKind="RENAMED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/AmazonAWSProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/AmazonAWSProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/AmazonAWSProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/CloudModelingLibrary.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/GoogleAppEngineProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PerformanceProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PerformanceProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PerformanceProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PricingProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PricingProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/PricingProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ServiceLevelProfile.profile.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ServiceLevelProfile.profile.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudModelingLanguage/ServiceLevelProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/GoogleAppEngine.profile.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/GoogleAppEngine.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/.project"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/AmazonAWSDeployment.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/GoogleAppEngineDeployment.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/GoogleAppEngineDeployment.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/PetstoreCloudModel/GoogleAppEngineDeployment.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/objectify_profile.profile.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_class.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified.uml" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_class.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_component.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_deployment.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_deployment_concrete_GAE.PNG" resourceChangeKind="DELETED"/>
+    </commits>
+    <commits id="0e8ee9a9b1b6e23aaf162be3f223758cf2abddbc" commitTime="1374777483" name="0e8ee9a9b1b6e23aaf162be3f223758cf2abddbc" shortMessage="broken down schema and updated" fullMessage="broken down schema and updated" author="//@persons.3" committer="//@persons.3" parents="//@repositories.0/@commits.55">
+      <resourceChanges path="Cloud Provider Metamodel/ARTIST_schemaBACKUP_OLD.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/ARTIST_schema_leftovers.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/ApplicationType.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/AvailabilityType.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/Benchmarks.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/Cost.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/DB.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/Database.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/Distribution.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/FootprintType.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/HardwareDetails.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/ScalabilityType.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/Security.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/ServiceBus.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/SupportingServices.xsd"/>
+      <resourceChanges path="Cloud Provider Metamodel/ToolType.xsd"/>
+    </commits>
+    <commits id="1f1a017313e2d2849c69ae338df2109981a966cc" commitTime="1374772310" name="1f1a017313e2d2849c69ae338df2109981a966cc" shortMessage="test change in readme" fullMessage="test change in readme" author="//@persons.10" committer="//@persons.10" parents="//@repositories.0/@commits.56">
+      <resourceChanges path="Cloud Provider Metamodel/readme.md" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="4f0870e8594b423bb82586941290a865f51e6f9f" commitTime="1374737223" name="4f0870e8594b423bb82586941290a865f51e6f9f" shortMessage="Improvements in model" fullMessage="Improvements in model" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.57">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Application_Provider_Perspective.PNG" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Provider_Perspective.PNG" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="4bee0066c81f241b61a634b1eb46a622719af9f2" commitTime="1374735969" name="4bee0066c81f241b61a634b1eb46a622719af9f2" shortMessage="Improvements in the model" fullMessage="Improvements in the model" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.58">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Application_Provider_Perspective.PNG" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="ccfdfc5f319f19f7ad28d2f6efd5062d3136de0d" commitTime="1374659180" name="ccfdfc5f319f19f7ad28d2f6efd5062d3136de0d" shortMessage="Added application provider perspective model" fullMessage="Added application provider perspective model" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.59">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Application_Provider_Perspective.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Conceptual.PNG" resourceChangeKind="DELETED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Provider_Perspective.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.di" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="990ea024541fe882fc01423c372becf17a1e7f87" commitTime="1374654615" name="990ea024541fe882fc01423c372becf17a1e7f87" shortMessage="Improvements in model" fullMessage="Improvements in model" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.60">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.notation" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="48eed904cf46f84875ada658a3369ec6240a8799" commitTime="1374654559" name="48eed904cf46f84875ada658a3369ec6240a8799" shortMessage="Improvement in model" fullMessage="Improvement in model" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.61">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Conceptual.PNG" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.notation" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.uml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="bb24b05a408e5cf3c419e16b8c3619abf76548ca" commitTime="1374569402" name="bb24b05a408e5cf3c419e16b8c3619abf76548ca" shortMessage="First version of CloudML@ARTIST (Cloud Modeling Language): Provider perspective" fullMessage="First version of CloudML@ARTIST (Cloud Modeling Language): Providerperspective" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.62">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/Cloud_Modeling_Language_Conceptual.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.di"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.notation"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/contributions/Atos/cloud_modeling_language_conceptual.uml"/>
+    </commits>
+    <commits id="2aed485e4a3698557f47c9aa81f6a428bc9e5aee" commitTime="1373541078" name="2aed485e4a3698557f47c9aa81f6a428bc9e5aee" shortMessage="Adds models and profiles discussed in WP9-TG9.1 sykpe session on July 11." fullMessage="Adds models and profiles discussed in WP9-TG9.1 sykpe session on July 11." author="//@persons.6" committer="//@persons.6" parents="//@repositories.0/@commits.63">
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/.project"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/AmazonAWS.profile.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/AmazonAWS.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/Cloud Modeling Language.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/Cloud Modeling Language_part1.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/Cloud Modeling Language_part2.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudEnvironmentProfile.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/CloudEnvironmentProfile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/GoogleAppEngine.profile.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/GoogleAppEngine.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/objectify_profile.profile.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_class.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified.uml"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_class.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_component.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_deployment.PNG"/>
+      <resourceChanges path="Application Provider Metamodel/CloudModelingLanguage/petstore1.3.1_02_datamodel_slice_objectified_deployment_concrete_GAE.PNG"/>
+    </commits>
+    <commits id="3ceaa07463fc9512b2d8166c91316cc5841632aa" commitTime="1372773312" name="3ceaa07463fc9512b2d8166c91316cc5841632aa" shortMessage="Initial ARTIST-Modeling folder structure" fullMessage="Initial ARTIST-Modeling folder structure" author="//@persons.9" committer="//@persons.9" parents="//@repositories.0/@commits.64">
+      <resourceChanges path="Application Provider Metamodel/readme.md"/>
+      <resourceChanges path="Cloud Provider Metamodel/readme.md"/>
+      <resourceChanges path="Domain Specific Profiles/readme.md"/>
+    </commits>
+    <commits id="a0abd3de190c2c65240a62b963ce8b6794e16ba5" commitTime="1367836066" name="a0abd3de190c2c65240a62b963ce8b6794e16ba5" shortMessage="Initial commit" fullMessage="Initial commit" author="//@persons.11" committer="//@persons.11">
+      <resourceChanges path=".gitignore"/>
+      <resourceChanges path="README.md"/>
+    </commits>
+  </repositories>
+</ariadne-organization:Organization>

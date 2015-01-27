@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ariadne-organization:Organization xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ariadne-code="http://www.obeo.fr/dsl/Ariadne/Code" xmlns:ariadne-organization="http://www.obeo.fr/dsl/Ariadne/Organization" name="Fraunhofer IAO" description="Test">
+  <categories name="Test" description="Test">
+    <projects name="dummy-project" description="Test" repositories="//@repositories.0">
+      <components identifier="dummy-project">
+        <classpathEntries inputFolder="/dummy-project/src" outputFolder="/dummy-project/build/classes">
+          <typesContainers name=""/>
+          <typesContainers name="de"/>
+          <typesContainers name="de.fhg"/>
+          <typesContainers name="de.fhg.iao"/>
+          <typesContainers name="de.fhg.iao.dbtest">
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingServiceImpl" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingServiceImpl">
+              <version/>
+              <fields name="dao" description="" qualifiedName="DnMappingDao dao" visibility="PACKAGE">
+                <version/>
+              </fields>
+              <operations name="register" description="" qualifiedName="public void register(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingDao" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingDao" kind="INTERFACE">
+              <version/>
+              <operations name="save" description="" qualifiedName="public void save(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMapping" description="" qualifiedName="de.fhg.iao.dbtest.DnMapping">
+              <version/>
+              <fields name="serialVersionUID" description="" qualifiedName="private static final long serialVersionUID" visibility="PRIVATE" static="true" final="true">
+                <version/>
+              </fields>
+              <fields name="id" description="" qualifiedName="private int id" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <fields name="dn" description="" qualifiedName="private String dn" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <fields name="userId" description="" qualifiedName="private String userId" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <fields name="description" description="" qualifiedName="private String description" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <operations name="getId" description="" qualifiedName="public int getId()">
+                <version/>
+              </operations>
+              <operations name="getDn" description="" qualifiedName="public String getDn()">
+                <version/>
+              </operations>
+              <operations name="getUserId" description="" qualifiedName="public String getUserId()">
+                <version/>
+              </operations>
+              <operations name="getDescription" description="" qualifiedName="public String getDescription()">
+                <version/>
+              </operations>
+              <operations name="setDn" description="" qualifiedName="public void setDn(String dn)">
+                <version/>
+                <parameters name="dn" qualifiedName="String dn" final="true"/>
+              </operations>
+              <operations name="setUserId" description="" qualifiedName="public void setUserId(String userId)">
+                <version/>
+                <parameters name="userId" qualifiedName="String userId" final="true"/>
+              </operations>
+              <operations name="setDescription" description="" qualifiedName="public void setDescription(String description)">
+                <version/>
+                <parameters name="description" qualifiedName="String description" final="true"/>
+              </operations>
+              <operations name="equals" description="" qualifiedName="public boolean equals(java.lang.Object o)">
+                <version/>
+                <parameters name="o" qualifiedName="java.lang.Object o" final="true"/>
+              </operations>
+              <operations name="canEqual" description="" qualifiedName="public boolean canEqual(java.lang.Object other)">
+                <version/>
+                <parameters name="other" qualifiedName="java.lang.Object other" final="true"/>
+              </operations>
+              <operations name="hashCode" description="" qualifiedName="public int hashCode()">
+                <version/>
+              </operations>
+              <operations name="toString" description="" qualifiedName="public java.lang.String toString()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingService" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingService" kind="INTERFACE">
+              <version/>
+              <operations name="register" description="" qualifiedName="public void register(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingDaoImpl" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingDaoImpl">
+              <version/>
+              <fields name="em" description="" qualifiedName="private EntityManager em" visibility="PRIVATE">
+                <version/>
+              </fields>
+              <operations name="save" description="" qualifiedName="public void save(DnMapping mapping)">
+                <version/>
+                <parameters name="mapping" qualifiedName="DnMapping mapping"/>
+              </operations>
+              <operations name="findAllMappings" description="" qualifiedName="public List&lt;DnMapping> findAllMappings()">
+                <version/>
+              </operations>
+            </types>
+          </typesContainers>
+        </classpathEntries>
+        <classpathEntries inputFolder="/dummy-project/test" outputFolder="/dummy-project/build/classes">
+          <typesContainers name=""/>
+          <typesContainers name="de"/>
+          <typesContainers name="de.fhg"/>
+          <typesContainers name="de.fhg.iao"/>
+          <typesContainers name="de.fhg.iao.dbtest">
+            <types xsi:type="ariadne-code:Classifier" name="DnMappingServiceTest" description="" qualifiedName="de.fhg.iao.dbtest.DnMappingServiceTest">
+              <version/>
+              <fields name="service" description="" qualifiedName="DnMappingService service" visibility="PACKAGE">
+                <version/>
+              </fields>
+              <operations name="testRegisterMapping" description="" qualifiedName="public void testRegisterMapping()">
+                <version/>
+              </operations>
+            </types>
+          </typesContainers>
+        </classpathEntries>
+        <classpathEntries inputFolder="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7" outputFolder="/dummy-project/build/classes"/>
+        <classpathEntries inputFolder="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=dummy-project&amp;ivyXmlPath=ivy.xml&amp;confs=*&amp;ivySettingsPath=%24%7Bworkspace_loc%3Adummy-project%2Fivysettings.xml%7D&amp;loadSettingsOnDemand=false&amp;propertyFiles=" outputFolder="/dummy-project/build/classes"/>
+      </components>
+      <megaModels identifier="dummy-project">
+        <elements name=".classpath" identifier=".classpath"/>
+        <elements name=".gitignore" identifier=".gitignore"/>
+        <elements name=".pmd" identifier=".pmd"/>
+        <elements name=".project" identifier=".project"/>
+        <elements name="build-ivy.xml" identifier="build-ivy.xml"/>
+        <elements name="build.xml" identifier="build.xml"/>
+        <elements name="ivy.xml" identifier="ivy.xml"/>
+        <elements name="ivysettings.xml" identifier="ivysettings.xml"/>
+        <elements name="testdb.properties" identifier="testdb.properties"/>
+        <elements name="testdb.script" description="" identifier="testdb.script"/>
+        <elements name=".classpath" identifier=".classpath"/>
+        <elements name=".gitignore" identifier=".gitignore"/>
+        <elements name=".pmd" identifier=".pmd"/>
+        <elements name=".project" identifier=".project"/>
+        <elements name="build-ivy.xml" identifier="build-ivy.xml"/>
+        <elements name="build.xml" identifier="build.xml"/>
+        <elements name="ivy.xml" identifier="ivy.xml"/>
+        <elements name="ivysettings.xml" identifier="ivysettings.xml"/>
+        <elements name="testdb.properties" identifier="testdb.properties"/>
+        <elements name="testdb.script" identifier="testdb.script"/>
+        <elements name=".classpath" identifier=".classpath"/>
+        <elements name=".gitignore" identifier=".gitignore"/>
+        <elements name=".pmd" identifier=".pmd"/>
+        <elements name=".project" identifier=".project"/>
+        <elements name="build-ivy.xml" identifier="build-ivy.xml"/>
+        <elements name="build.xml" identifier="build.xml"/>
+        <elements name="ivy.xml" identifier="ivy.xml"/>
+        <elements name="ivysettings.xml" identifier="ivysettings.xml"/>
+        <elements name="testdb.properties" identifier="testdb.properties"/>
+        <elements name="testdb.script" identifier="testdb.script"/>
+        <elements name=".classpath" identifier=".classpath"/>
+        <elements name=".gitignore" identifier=".gitignore"/>
+        <elements name=".pmd" identifier=".pmd"/>
+        <elements name=".project" identifier=".project"/>
+        <elements name="build-ivy.xml" identifier="build-ivy.xml"/>
+        <elements name="build.xml" identifier="build.xml"/>
+        <elements name="ivy.xml" identifier="ivy.xml"/>
+        <elements name="ivysettings.xml" identifier="ivysettings.xml"/>
+        <elements name="testdb.properties" identifier="testdb.properties"/>
+        <elements name="testdb.script" identifier="testdb.script"/>
+        <elements name=".classpath" identifier=".classpath"/>
+        <elements name=".gitignore" identifier=".gitignore"/>
+        <elements name=".pmd" identifier=".pmd"/>
+        <elements name=".project" identifier=".project"/>
+        <elements name="build-ivy.xml" identifier="build-ivy.xml"/>
+        <elements name="build.xml" identifier="build.xml"/>
+        <elements name="ivy.xml" identifier="ivy.xml"/>
+        <elements name="ivysettings.xml" identifier="ivysettings.xml"/>
+        <elements name="testdb.properties" identifier="testdb.properties"/>
+        <elements name="testdb.script" identifier="testdb.script"/>
+        <elements name=".classpath" identifier=".classpath"/>
+        <elements name=".gitignore" identifier=".gitignore"/>
+        <elements name=".pmd" identifier=".pmd"/>
+        <elements name=".project" identifier=".project"/>
+        <elements name="build-ivy.xml" identifier="build-ivy.xml"/>
+        <elements name="build.xml" identifier="build.xml"/>
+        <elements name="ivy.xml" identifier="ivy.xml"/>
+        <elements name="ivysettings.xml" identifier="ivysettings.xml"/>
+        <elements name="testdb.properties" identifier="testdb.properties"/>
+        <elements name="testdb.script" identifier="testdb.script"/>
+      </megaModels>
+    </projects>
+  </categories>
+  <persons name="strauss" email="oliver.strauss@iao.fraunhofer.de"/>
+  <persons name="Oliver Strau&#xdf;" email="oliver.strauss@iao.fraunhofer.de"/>
+  <persons name="Gerrit Code Review" email="gerrit@rigel"/>
+  <repositories name="dummy-project">
+    <commits id="d06949650e48180068c544fe7f297c6abeac1b2c" commitTime="1363599969" name="d06949650e48180068c544fe7f297c6abeac1b2c" shortMessage="Commented tests. refs #21, closes #21" fullMessage="Commented tests.refs #21, closes #21Change-Id: Ie7193294a8f2ff4545408a1f3707bd5178d491b5" author="//@persons.0" committer="//@persons.0" parents="//@repositories.0/@commits.1">
+      <resourceChanges path="test/de/fhg/iao/dbtest/DnMappingServiceTest.java" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="cff5350d89dabb6578593540f2a8864419052263" commitTime="1363554958" name="cff5350d89dabb6578593540f2a8864419052263" shortMessage="Task 20: Test for identical descriptions  http://137.251.34.161/redmine/issues/show/20 Refs #20, fixes #20, closes #20" fullMessage="Task 20: Test for identical descriptions http://137.251.34.161/redmine/issues/show/20Refs #20, fixes #20, closes #20Change-Id: I6fd0a63a8483fbc0325182841facc67dbfdbfe01" author="//@persons.0" committer="//@persons.0" parents="//@repositories.0/@commits.2">
+      <resourceChanges path="test/de/fhg/iao/dbtest/DnMappingServiceTest.java" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="d5cd693bb0a0eaf1bad7c2bc881cf0e4d227569c" commitTime="1363550039" name="d5cd693bb0a0eaf1bad7c2bc881cf0e4d227569c" shortMessage="NEU - task 19: Switch to junit xml reports.  http://137.251.34.161/redmine/issues/show/19" fullMessage="NEU - task 19: Switch to junit xml reports. http://137.251.34.161/redmine/issues/show/19closes 19Change-Id: I94c9202867cd00728e9d83c7e02869f6918e227d" author="//@persons.0" committer="//@persons.0" parents="//@repositories.0/@commits.3">
+      <resourceChanges path=".gitignore" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="build.xml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="f0bee3a6b168a2183cbb1881e55226ed448696be" commitTime="1363548676" name="f0bee3a6b168a2183cbb1881e55226ed448696be" shortMessage="Task 18: Add test for user id.  http://137.251.34.161/redmine/issues/show/18" fullMessage="Task 18: Add test for user id. http://137.251.34.161/redmine/issues/show/18Fixes 18Change-Id: Ic203b347157cac0f2110e5d7430a511d21837c53" author="//@persons.0" committer="//@persons.0" parents="//@repositories.0/@commits.4">
+      <resourceChanges path="test/de/fhg/iao/dbtest/DnMappingServiceTest.java" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="d292129a3c34ffe2293bd52690a215a9efb173d4" commitTime="1363542868" name="d292129a3c34ffe2293bd52690a215a9efb173d4" shortMessage="Added test for same DNs." fullMessage="Added test for same DNs.Change-Id: Iae9d98e592b21733da1d57ecd66fe8a4a217b5ea" author="//@persons.0" committer="//@persons.0" parents="//@repositories.0/@commits.5">
+      <resourceChanges path="test/de/fhg/iao/dbtest/DnMappingServiceTest.java" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="9e01f8bc4d0b58707efed141eadd47defe883df8" commitTime="1363541352" name="9e01f8bc4d0b58707efed141eadd47defe883df8" shortMessage="Made db-path local." fullMessage="Made db-path local.Change-Id: I43bee0fd2c95a90e4ca65f764d6b67765233786b" author="//@persons.0" committer="//@persons.0" parents="//@repositories.0/@commits.6">
+      <resourceChanges path="etc/context.xml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="9bcc3651845ca8434cc33771b1af06d80260fb3e" commitTime="1363469349" name="9bcc3651845ca8434cc33771b1af06d80260fb3e" shortMessage="Added .project and fixed bug in build.xml." fullMessage="Added .project and fixed bug in build.xml.Change-Id: I48dc1b6a690310c26d46ee2313a00054212d29a4" author="//@persons.0" committer="//@persons.0" parents="//@repositories.0/@commits.7">
+      <resourceChanges path=".classpath"/>
+      <resourceChanges path=".project"/>
+      <resourceChanges path="build.xml" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="03d7490c1e84288407805a80e20c31ab30488ba8" commitTime="1349787697" name="03d7490c1e84288407805a80e20c31ab30488ba8" shortMessage="Small changes to get rid of warnings is Eclipse." fullMessage="Small changes to get rid of warnings is Eclipse.Change-Id: I725025c2fcdb7da06bc5f67dc8cb3d4d9948298d" author="//@persons.1" committer="//@persons.1" parents="//@repositories.0/@commits.8">
+      <resourceChanges path="src/de/fhg/iao/dbtest/DnMapping.java" resourceChangeKind="MODIFIED"/>
+      <resourceChanges path="src/de/fhg/iao/dbtest/DnMappingDaoImpl.java" resourceChangeKind="MODIFIED"/>
+    </commits>
+    <commits id="fcad63a53ba3d6e17dbd1d5dd835ae2852c3ca6b" commitTime="1344004477" name="fcad63a53ba3d6e17dbd1d5dd835ae2852c3ca6b" shortMessage="Database access test project. First check in. Includes:  * Updated lombok dependency and ant file.  * Removed test reports from repository  * Clean-all now deletes the test reports as well." fullMessage="Database access test project. First check in. Includes: * Updated lombok dependency and ant file. * Removed test reports from repository * Clean-all now deletes the test reports as well.Change-Id: I9ccb566b867cd3ac6f287d060fa3a674e63345b6" author="//@persons.1" committer="//@persons.1" parents="//@repositories.0/@commits.9">
+      <resourceChanges path=".gitignore"/>
+      <resourceChanges path="build-ivy.xml"/>
+      <resourceChanges path="build.xml"/>
+      <resourceChanges path="docs/modularapp/admin/build.xml"/>
+      <resourceChanges path="docs/modularapp/admin/client/build.xml"/>
+      <resourceChanges path="docs/modularapp/admin/client/src/readme.txt"/>
+      <resourceChanges path="docs/modularapp/admin/common/build.xml"/>
+      <resourceChanges path="docs/modularapp/admin/common/src/com/example/modularapp/admin/user/UserManager.java"/>
+      <resourceChanges path="docs/modularapp/admin/server/build.xml"/>
+      <resourceChanges path="docs/modularapp/admin/server/src/com/example/modularapp/admin/user/DefaultUserManager.java"/>
+      <resourceChanges path="docs/modularapp/admin/server/src/com/example/modularapp/admin/user/eis/UserDAO.java"/>
+      <resourceChanges path="docs/modularapp/admin/server/src/com/example/modularapp/admin/user/eis/hibernate/HibernateUserDAO.java"/>
+      <resourceChanges path="docs/modularapp/admin/server/test/com/example/modularapp/admin/user/DefaultUserManagerTest.java"/>
+      <resourceChanges path="docs/modularapp/build.xml"/>
+      <resourceChanges path="docs/modularapp/core/build.xml"/>
+      <resourceChanges path="docs/modularapp/core/common/build.xml"/>
+      <resourceChanges path="docs/modularapp/core/common/src/com/example/modularapp/model/ModelObject.java"/>
+      <resourceChanges path="docs/modularapp/core/common/src/com/example/modularapp/model/User.java"/>
+      <resourceChanges path="docs/modularapp/core/server/build.xml"/>
+      <resourceChanges path="docs/modularapp/core/server/src/com/example/modularapp/orm/hibernate/SimpleHibernateDAO.java"/>
+      <resourceChanges path="docs/modularapp/db/todo.txt"/>
+      <resourceChanges path="docs/modularapp/etc/application.xml"/>
+      <resourceChanges path="docs/modularapp/etc/readme.txt"/>
+      <resourceChanges path="docs/modularapp/lib/easymock/easymock.jar"/>
+      <resourceChanges path="docs/modularapp/lib/easymock/easymockclassextension.jar"/>
+      <resourceChanges path="docs/modularapp/lib/hibernate/hibernate-configuration-3.0.dtd"/>
+      <resourceChanges path="docs/modularapp/lib/hibernate/hibernate-generic.dtd"/>
+      <resourceChanges path="docs/modularapp/lib/hibernate/hibernate-mapping-3.0.dtd"/>
+      <resourceChanges path="docs/modularapp/lib/hibernate/hibernate.jar"/>
+      <resourceChanges path="docs/modularapp/lib/junit/junit.jar"/>
+      <resourceChanges path="docs/modularapp/lib/library-versions.txt"/>
+      <resourceChanges path="docs/modularapp/lib/spring/spring-beans.dtd"/>
+      <resourceChanges path="docs/modularapp/lib/spring/spring.jar"/>
+      <resourceChanges path="docs/modularapp/ordermgt/todo.txt"/>
+      <resourceChanges path="docs/modularapp/reports/todo.txt"/>
+      <resourceChanges path="docs/modularapp/web/todo.txt"/>
+      <resourceChanges path="etc/META-INF/persistence.xml"/>
+      <resourceChanges path="etc/context.xml"/>
+      <resourceChanges path="ivy.xml"/>
+      <resourceChanges path="ivysettings.xml"/>
+      <resourceChanges path="src/de/fhg/iao/dbtest/DnMapping.java"/>
+      <resourceChanges path="src/de/fhg/iao/dbtest/DnMappingDao.java"/>
+      <resourceChanges path="src/de/fhg/iao/dbtest/DnMappingDaoImpl.java"/>
+      <resourceChanges path="src/de/fhg/iao/dbtest/DnMappingService.java"/>
+      <resourceChanges path="src/de/fhg/iao/dbtest/DnMappingServiceImpl.java"/>
+      <resourceChanges path="test/de/fhg/iao/dbtest/DnMappingServiceTest.java"/>
+    </commits>
+    <commits id="911fdc0b55bfccfa7e4177ace4487533214aa8fd" commitTime="1343824078" name="911fdc0b55bfccfa7e4177ace4487533214aa8fd" shortMessage="Initial empty repository" fullMessage="Initial empty repository" author="//@persons.1" committer="//@persons.2"/>
+  </repositories>
+</ariadne-organization:Organization>

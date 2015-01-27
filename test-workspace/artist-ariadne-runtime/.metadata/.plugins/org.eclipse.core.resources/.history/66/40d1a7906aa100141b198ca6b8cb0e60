@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ariadne-organization:Organization xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ariadne-organization="http://www.obeo.fr/dsl/Ariadne/Organization" xmlns:wcm-modeling="http://www.artist-project.eu/wcm/modeling" name="ARTIST Project" description="ARTIST Project">
+  <categories name="MDA Artefacts" description="MDA Artefacts">
+    <projects name="ARTIST Modelling" description="ARTIST Modelling"/>
+  </categories>
+  <megaModels name="CloudModelingLanguage" identifier="CloudModelingLanguage">
+    <elements xsi:type="wcm-modeling:Model" name="PetstoreModel.uml" identifier="/CloudModelingLanguage/contributions/Atos/models/PetstoreModel.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="cloud_modeling_language_conceptual.uml" identifier="/CloudModelingLanguage/contributions/Atos/metamodels-profiles/cloud_modeling_language_conceptual.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="CloudApplicationModelingProfile.profile.uml" identifier="/CloudModelingLanguage/contributions/Atos/metamodels-profiles/CloudApplicationModelingProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="UtilProfile.profile.uml" identifier="/CloudModelingLanguage/UtilProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="ServiceLevelProfile.profile.uml" identifier="/CloudModelingLanguage/ServiceLevelProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="PricingProfile.profile.uml" identifier="/CloudModelingLanguage/PricingProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="PerformanceProfile.profile.uml" identifier="/CloudModelingLanguage/PerformanceProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="MicrosoftAzureProfile.profile.uml" identifier="/CloudModelingLanguage/MicrosoftAzureProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="GoogleAppEngineProfile.profile.uml" identifier="/CloudModelingLanguage/GoogleAppEngineProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="ConceptualOverview.uml" identifier="/CloudModelingLanguage/ConceptualOverview.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="CloudModelingLibrary.uml" identifier="/CloudModelingLanguage/CloudModelingLibrary.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="AmazonAWSProfile.profile.uml" identifier="/CloudModelingLanguage/AmazonAWSProfile.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements name=".project" identifier="/CloudModelingLanguage/.project"/>
+  </megaModels>
+  <megaModels name="CloudOnPremiseIntegration" identifier="CloudOnPremiseIntegration">
+    <elements xsi:type="wcm-modeling:Model" name="WebDeployment.uml" identifier="/CloudOnPremiseIntegration/WebDeployment.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="CloudModelingLibrary.uml" identifier="/CloudOnPremiseIntegration/CloudModelingLibrary.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements name=".project" identifier="/CloudOnPremiseIntegration/.project"/>
+  </megaModels>
+  <megaModels name="PetstoreCloudModel" identifier="PetstoreCloudModel">
+    <elements xsi:type="wcm-modeling:Model" name="objectify_library.uml" identifier="/PetstoreCloudModel/objectify_library.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="objectify.profile.uml" identifier="/PetstoreCloudModel/objectify.profile.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="Test.uml" identifier="/PetstoreCloudModel/Test.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="GoogleAppEngineDeployment.uml" identifier="/PetstoreCloudModel/GoogleAppEngineDeployment.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements xsi:type="wcm-modeling:Model" name="AmazonAWSDeployment.uml" identifier="/PetstoreCloudModel/AmazonAWSDeployment.uml" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+    <elements name=".project" identifier="/PetstoreCloudModel/.project"/>
+  </megaModels>
+  <megaModels name="RemoteSystemsTempFiles" identifier="RemoteSystemsTempFiles">
+    <elements name=".project" identifier="/RemoteSystemsTempFiles/.project"/>
+  </megaModels>
+</ariadne-organization:Organization>

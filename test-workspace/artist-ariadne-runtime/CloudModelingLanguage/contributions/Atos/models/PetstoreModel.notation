@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_CB-iMAvUEeOGta4v5vVuew" type="PapyrusUMLComponentDiagram" name="PetStore Component Model" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_mIXhkAvUEeOGta4v5vVuew" type="2002">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_INZGIAvVEeOGta4v5vVuew" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iPUqoBOvEeOumMaY5VRxoQ" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iPUqoROvEeOumMaY5VRxoQ" key="StereotypeList" value="CloudApplicationModelingProfile::CloudApplication"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iPUqohOvEeOumMaY5VRxoQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iPUqoxOvEeOumMaY5VRxoQ" key="PropStereoDisplay" value="CloudApplicationModelingProfile::CloudApplication.components,CloudApplicationModelingProfile::CloudApplication.name"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iPUqpBOvEeOumMaY5VRxoQ" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_mIYIoAvUEeOGta4v5vVuew" type="5004">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sI4DwAvaEeOGta4v5vVuew" source="Stereotype_Annotation">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sI4DwQvaEeOGta4v5vVuew" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sI4DwgvaEeOGta4v5vVuew" key="StereotypeList" value="Pricing::BaseCosts"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sI4DwwvaEeOGta4v5vVuew" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sI4DxAvaEeOGta4v5vVuew" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sI4DxQvaEeOGta4v5vVuew" key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_mIYIoQvUEeOGta4v5vVuew" type="7001">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mIYIpAvUEeOGta4v5vVuew" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mIYIpQvUEeOGta4v5vVuew" key="showTitle" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8M1eUAvUEeOGta4v5vVuew" key="visible" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:Shape" xmi:id="_KiwlkAvWEeOGta4v5vVuew" type="2002">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Lx9joAvWEeOGta4v5vVuew" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Lx9joQvWEeOGta4v5vVuew" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Lx-KsAvWEeOGta4v5vVuew" key="StereotypeList" value="CloudApplicationModelingProfile::CloudApplicationComponent"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Lx-KsQvWEeOGta4v5vVuew" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Lx-KsgvWEeOGta4v5vVuew" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Lx-KswvWEeOGta4v5vVuew" key="StereotypePropertyLocation" value="Compartment"/>
+        </eAnnotations>
+        <children xmi:type="notation:DecorationNode" xmi:id="_KixMoAvWEeOGta4v5vVuew" type="5004"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_KixMoQvWEeOGta4v5vVuew" visible="false" type="7001">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KixMpAvWEeOGta4v5vVuew" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KixMpQvWEeOGta4v5vVuew" key="showTitle" value="true"/>
+          </eAnnotations>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_KixMogvWEeOGta4v5vVuew"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KixMowvWEeOGta4v5vVuew"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KiwlkQvWEeOGta4v5vVuew"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KiwlkgvWEeOGta4v5vVuew"/>
+        <element xmi:type="uml:Component" href="PetstoreModel.uml#_KilmcAvWEeOGta4v5vVuew"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KiwlkwvWEeOGta4v5vVuew" x="19" y="13" width="190"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_PLiHgAvWEeOGta4v5vVuew" type="2002">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q-9M8AvWEeOGta4v5vVuew" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q-9M8QvWEeOGta4v5vVuew" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q-9M8gvWEeOGta4v5vVuew" key="StereotypeList" value="CloudApplicationModelingProfile::CloudApplicationComponent"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q-9M8wvWEeOGta4v5vVuew" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q-9M9AvWEeOGta4v5vVuew" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q-9M9QvWEeOGta4v5vVuew" key="StereotypePropertyLocation" value="Compartment"/>
+        </eAnnotations>
+        <children xmi:type="notation:DecorationNode" xmi:id="_PLiHhAvWEeOGta4v5vVuew" type="5004"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_PLiHhQvWEeOGta4v5vVuew" visible="false" type="7001">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PLiHiAvWEeOGta4v5vVuew" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PLiHiQvWEeOGta4v5vVuew" key="showTitle" value="true"/>
+          </eAnnotations>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_PLiHhgvWEeOGta4v5vVuew"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PLiHhwvWEeOGta4v5vVuew"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_PLiHgQvWEeOGta4v5vVuew"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_PLiHggvWEeOGta4v5vVuew"/>
+        <element xmi:type="uml:Component" href="PetstoreModel.uml#_PLXIYAvWEeOGta4v5vVuew"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PLiHgwvWEeOGta4v5vVuew" x="223" y="13" width="198"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_TD6HQAvWEeOGta4v5vVuew" type="2002">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UcTdkAvWEeOGta4v5vVuew" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UcTdkQvWEeOGta4v5vVuew" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UcTdkgvWEeOGta4v5vVuew" key="StereotypeList" value="CloudApplicationModelingProfile::CloudApplicationComponent"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UcTdkwvWEeOGta4v5vVuew" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UcTdlAvWEeOGta4v5vVuew" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UcTdlQvWEeOGta4v5vVuew" key="StereotypePropertyLocation" value="Compartment"/>
+        </eAnnotations>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TD6HRAvWEeOGta4v5vVuew" type="5004"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_TD6HRQvWEeOGta4v5vVuew" visible="false" type="7001">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TD6HSAvWEeOGta4v5vVuew" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TD6HSQvWEeOGta4v5vVuew" key="showTitle" value="true"/>
+          </eAnnotations>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_TD6HRgvWEeOGta4v5vVuew"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TD6HRwvWEeOGta4v5vVuew"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_TD6HQQvWEeOGta4v5vVuew"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_TD6HQgvWEeOGta4v5vVuew"/>
+        <element xmi:type="uml:Component" href="PetstoreModel.uml#_TDyLcAvWEeOGta4v5vVuew"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TD6HQwvWEeOGta4v5vVuew" x="439" y="13" width="180"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_mIYIogvUEeOGta4v5vVuew"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIYIowvUEeOGta4v5vVuew"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_mIXhkQvUEeOGta4v5vVuew"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_mIXhkgvUEeOGta4v5vVuew"/>
+    <element xmi:type="uml:Component" href="PetstoreModel.uml#_mH8q0AvUEeOGta4v5vVuew"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIXhkwvUEeOGta4v5vVuew" x="72" y="48" width="649" height="229"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_CB-iMQvUEeOGta4v5vVuew"/>
+  <element xmi:type="uml:Model" href="PetstoreModel.uml#_CB7e4AvUEeOGta4v5vVuew"/>
+</notation:Diagram>
